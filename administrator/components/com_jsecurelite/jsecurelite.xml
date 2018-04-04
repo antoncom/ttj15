@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5">
+	<name>jsecureLite</name>   
+	<author>Ajay Lulia</author>
+	<authorEmail>ajay.lulia@joomlaserviceprovider.com</authorEmail>
+	<creationDate>2012-12-12</creationDate>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorUrl>www.joomlaserviceprovider.com</authorUrl>
+	<version>1.0</version>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<description>jSecure Lite has been successfully installed.</description>
+	
+  	<installfile>install.jsecurelite.php</installfile>
+	<uninstallfile>uninstall.jsecurelite.php</uninstallfile>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jsecurelite.php</filename>
+	</files>
+	<administration>
+		<menu img="components/com_jsecurelite/images/jsecurelite_icon_16x16.png">jSecure Lite </menu>
+	    <submenu>
+		  <menu task="basic">Basic Configuration</menu>
+		  <menu task="help">Help</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>views</folder>
+			<folder>language</folder>
+			<folder>sysplugin</folder>
+
+			<filename>install.jsecurelite.php</filename>
+			<filename>common.php</filename>
+			<filename>uninstall.jsecurelite.php</filename>
+			<filename>admin.jsecurelite.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<filename>params.php</filename>
+			<filename>toolbar.jsecurelite.html.php</filename>
+			<filename>toolbar.jsecurelite.php</filename>
+		</files>
+		
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_jsecurelite.ini</language>
+		</languages>
+
+	</administration>
+	<params>
+	<param name="version" default="1.0" />
+	 </params>
+</install>
+		

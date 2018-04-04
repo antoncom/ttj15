@@ -1,0 +1,9 @@
+.phocadocumentation-navigation .navigation-text,
+#pdoc-top,
+#phoca-doc-sections-box div.pdoc-sections {
+	position:	static;
+}
+#phoca-doc-sections-box .pdoc-category, #phoca-doc-section-box .pdoc-category {
+	background: #fff url('images/icon-folder.png') 0 0 no-repeat;
+	line-height:1.5;
+}

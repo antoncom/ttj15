@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.9" type="plugin" group="editors" method="upgrade">
+	<name>Editor - Redactor for TeamTime</name>
+	<version>1.5.9</version>
+	<creationDate>2012-07-04</creationDate>
+	<author>teamtime.info</author>
+	<copyright></copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+	<authorEmail>info@teamtime.info</authorEmail>
+	<authorUrl>teamtime.info</authorUrl>
+	<description>Redactorjs plugin for Joomla!</description>
+	
+	<files>
+		<filename plugin="jredactor">jredactor.php</filename>
+		<folder>jredactor</folder>
+	</files>
+	
+	<params>
+	</params>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_jredactor.ini</language>
+		<language tag="ru-RU">ru-RU.plg_jredactor.ini</language>
+	</languages>
+</install>

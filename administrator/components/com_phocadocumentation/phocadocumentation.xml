@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+	<name>PhocaDocumentation</name>
+	<creationDate>12/03/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<!-- The version string is recorded in the components table -->
+	<version>1.1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Phoca Documentation</description>
+
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install.phocadocumentation.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.phocadocumentation.php</uninstallfile>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="front">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>phocadocumentation.php</filename>
+		<filename>router.php</filename>
+		<filename>assets/images/bl.png</filename>
+		<filename>assets/images/br.png</filename>
+		<filename>assets/images/icon-category.png</filename>
+		<filename>assets/images/icon-document.png</filename>
+		<filename>assets/images/icon-folder.png</filename>
+		<filename>assets/images/icon-phoca-logo.png</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/next-grey.png</filename>
+		<filename>assets/images/next.png</filename>
+		<filename>assets/images/prev-grey.png</filename>
+		<filename>assets/images/prev.png</filename>
+		<filename>assets/images/tl.png</filename>
+		<filename>assets/images/tr.png</filename>
+		<filename>assets/images/up.png</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/phocadocumentation-ie6.css</filename>
+		<filename>assets/phocadocumentation.css</filename>
+		<filename>helpers/index.html</filename>
+		<filename>helpers/phocadocumentation.php</filename>
+		<filename>helpers/route.php</filename>
+		<filename>models/category.php</filename>
+		<filename>models/index.html</filename>
+		<filename>models/section.php</filename>
+		<filename>models/sections.php</filename>
+		<filename>views/category/index.html</filename>
+		<filename>views/category/metadata.xml</filename>
+		<filename>views/category/tmpl/default.php</filename>
+		<filename>views/category/tmpl/default.xml</filename>
+		<filename>views/category/tmpl/index.html</filename>
+		<filename>views/category/view.html.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/section/index.html</filename>
+		<filename>views/section/metadata.xml</filename>
+		<filename>views/section/tmpl/default.php</filename>
+		<filename>views/section/tmpl/default.xml</filename>
+		<filename>views/section/tmpl/index.html</filename>
+		<filename>views/section/view.html.php</filename>
+		<filename>views/sections/index.html</filename>
+		<filename>views/sections/metadata.xml</filename>
+		<filename>views/sections/tmpl/default.php</filename>
+		<filename>views/sections/tmpl/default.xml</filename>
+		<filename>views/sections/tmpl/index.html</filename>
+		<filename>views/sections/view.html.php</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocadocumentation.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_phocadocumentation.menu.ini</language>
+	</languages>
+
+	<!-- Administration -->
+	<administration>
+		<menu img="components/com_phocadocumentation/assets/images/icon-16-pdoc-menu.png" link="option=com_phocadocumentation">Phoca Documentation</menu>
+		<submenu>
+			<menu img="components/com_phocadocumentation/assets/images/icon-16-pdoc-control-panel.png" link="option=com_phocadocumentation">Control Panel</menu>
+			<menu img="components/com_phocadocumentation/assets/images/icon-16-pdoc-doc.png" link="option=com_phocadocumentation&amp;view=phocadocumentations">Documentation</menu>
+			<menu img="components/com_phocadocumentation/assets/images/icon-16-pdoc-info.png" link="option=com_phocadocumentation&amp;view=phocadocumentationin">Info</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files>
+			<filename>admin.phocadocumentation.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.bak</filename>
+			<filename>install.phocadocumentation.php</filename>
+			<filename>install.sql</filename>
+			<filename>phocadocumentation.xml</filename>
+			<filename>uninstall.phocadocumentation.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>assets/images/icon-16-pdoc-control-panel.png</filename>
+			<filename>assets/images/icon-16-pdoc-doc.png</filename>
+			<filename>assets/images/icon-16-pdoc-info.png</filename>
+			<filename>assets/images/icon-16-pdoc-menu.png</filename>
+			<filename>assets/images/icon-48-cat.png</filename>
+			<filename>assets/images/icon-48-doc.png</filename>
+			<filename>assets/images/icon-48-info.png</filename>
+			<filename>assets/images/icon-48-phoca.png</filename>
+			<filename>assets/images/icon-48-phocadocumentation.png</filename>
+			<filename>assets/images/icon-48-sec.png</filename>
+			<filename>assets/images/icon-phoca-logo.png</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/install.png</filename>
+			<filename>assets/images/logo-phoca.png</filename>
+			<filename>assets/images/logo.png</filename>
+			<filename>assets/images/spacer.gif</filename>
+			<filename>assets/images/update.png</filename>
+			<filename>assets/images/upgrade.png</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/phocadocumentation.css</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/phocadocumentation.php</filename>
+			<filename>controllers/phocadocumentationinstall.php</filename>
+			<filename>controllers/phocadocumentationuninstall.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>elements/phocacategory.php</filename>
+			<filename>elements/phocadocsmod.php</filename>
+			<filename>elements/phocahead.php</filename>
+			<filename>elements/phocasection.php</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.phocadocumentation.html</filename>
+			<filename>helpers/heading.php</filename>
+			<filename>helpers/index.html</filename>
+			<filename>helpers/phocadocumentation.php</filename>
+			<filename>helpers/phocadocumentationcp.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/phocadocumentation.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/phocadocumentationcp/index.html</filename>
+			<filename>views/phocadocumentationcp/tmpl/default.php</filename>
+			<filename>views/phocadocumentationcp/tmpl/index.html</filename>
+			<filename>views/phocadocumentationcp/view.html.php</filename>
+			<filename>views/phocadocumentationin/index.html</filename>
+			<filename>views/phocadocumentationin/tmpl/default.php</filename>
+			<filename>views/phocadocumentationin/tmpl/index.html</filename>
+			<filename>views/phocadocumentationin/view.html.php</filename>
+			<filename>views/phocadocumentations/index.html</filename>
+			<filename>views/phocadocumentations/tmpl/default.php</filename>
+			<filename>views/phocadocumentations/tmpl/index.html</filename>
+			<filename>views/phocadocumentations/view.html.php</filename>
+		</files>
+
+		<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+		<files>
+			<filename>front/assets/images/bl.png</filename>
+			<filename>front/assets/images/br.png</filename>
+			<filename>front/assets/images/icon-category.png</filename>
+			<filename>front/assets/images/icon-document.png</filename>
+			<filename>front/assets/images/icon-folder.png</filename>
+			<filename>front/assets/images/icon-phoca-logo.png</filename>
+			<filename>front/assets/images/index.html</filename>
+			<filename>front/assets/images/next-grey.png</filename>
+			<filename>front/assets/images/next.png</filename>
+			<filename>front/assets/images/prev-grey.png</filename>
+			<filename>front/assets/images/prev.png</filename>
+			<filename>front/assets/images/tl.png</filename>
+			<filename>front/assets/images/tr.png</filename>
+			<filename>front/assets/images/up.png</filename>
+			<filename>front/assets/index.html</filename>
+			<filename>front/assets/phocadocumentation-ie6.css</filename>
+			<filename>front/assets/phocadocumentation.css</filename>
+			<filename>front/controller.php</filename>
+			<filename>front/helpers/index.html</filename>
+			<filename>front/helpers/phocadocumentation.php</filename>
+			<filename>front/helpers/route.php</filename>
+			<filename>front/index.html</filename>
+			<filename>front/models/category.php</filename>
+			<filename>front/models/index.html</filename>
+			<filename>front/models/section.php</filename>
+			<filename>front/models/sections.php</filename>
+			<filename>front/phocadocumentation.php</filename>
+			<filename>front/router.php</filename>
+			<filename>front/views/category/index.html</filename>
+			<filename>front/views/category/metadata.xml</filename>
+			<filename>front/views/category/tmpl/default.php</filename>
+			<filename>front/views/category/tmpl/default.xml</filename>
+			<filename>front/views/category/tmpl/index.html</filename>
+			<filename>front/views/category/view.html.php</filename>
+			<filename>front/views/index.html</filename>
+			<filename>front/views/section/index.html</filename>
+			<filename>front/views/section/metadata.xml</filename>
+			<filename>front/views/section/tmpl/default.php</filename>
+			<filename>front/views/section/tmpl/default.xml</filename>
+			<filename>front/views/section/tmpl/index.html</filename>
+			<filename>front/views/section/view.html.php</filename>
+			<filename>front/views/sections/index.html</filename>
+			<filename>front/views/sections/metadata.xml</filename>
+			<filename>front/views/sections/tmpl/default.php</filename>
+			<filename>front/views/sections/tmpl/default.xml</filename>
+			<filename>front/views/sections/tmpl/index.html</filename>
+			<filename>front/views/sections/view.html.php</filename>
+			<filename>language/en-GB/en-GB.com_phocadocumentation.ini</filename>
+			<filename>language/en-GB/en-GB.com_phocadocumentation.menu.ini</filename>
+			<filename>other/install_xml.php</filename>
+		</files>
+
+		<!-- Language -->
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocadocumentation.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_phocadocumentation.menu.ini</language>
+		</languages>
+
+	</administration>
+</install>

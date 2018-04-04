@@ -1,0 +1,17 @@
+
+.icon-32-print {
+	background-image: url('../images/icon-32-print.png');
+}
+
+#filter_project {
+	/*font-size:9pt;*/
+	background-color: white;
+}
+
+.filtergroup0, .filtergroup {
+	margin: 5px 3px 5px 3px;
+}
+
+.filtergroup {
+	background-color: #DDDDDD;
+}

@@ -1,0 +1,121 @@
+/* css for fullscreen switcher */
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#FullscreenSwitch{
+	height:17px;
+	background-color:white;
+	background: url(images/fullscreen.png) 0 0 no-repeat;
+	padding: 3px 0 0 35px;
+	cursor: pointer;
+}
+
+#FullscreenSwitch.max{
+	background-color:orange;
+	background: url(images/fullscreen.png) 0 -20px no-repeat;
+}
+
+body.fullscreen #border-top,
+body.fullscreen #header-box,
+body.fullscreen #border-bottom,
+body.fullscreen #footer,
+body.fullscreen #toolbar-box
+{
+	display:none;
+}
+
+
+body.fullscreen div#header-box{
+	height:0;
+	overflow:hidden;
+	display:none;
+}
+
+
+body.fullscreen #content-box,
+body.fullscreen #content-box div.border,
+body.fullscreen #content-box div.border div.padding,
+body.fullscreen #content-box div.border div.padding div#toolbar-box
+{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom {
+	height: 54px;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom table {
+
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom table.toolbar {
+	width: 30%;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom .title-diagramm {
+	font-size: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #0B55C4;
+	display:block;
+
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom td {
+	padding-top: 17px;
+}
+
+body.fullscreen #SwimlanePanel-toolbar div.time {
+	display:none;
+}
+
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom td.button {
+	padding: 4px 0 0 10px;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom table.toolbar a {
+	border: 1px solid #d4e1fc;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom table.toolbar a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	color: #0B55C4;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom table.toolbar span {
+	width: 26px;
+	height: 26px;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom .icon-32-playprocess {
+	background: url('images/icon-26-process.png') no-repeat;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom .icon-32-saveprocess {
+	background: url('images/icon-26-process.png') -49px 0 no-repeat;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom .icon-32-exitprocess {
+	background: url('images/icon-26-process.png') -98px 0 no-repeat;
+}
+
+body.fullscreen #SwimlanePanel-toolbar #toolbar.toolbar {
+	display:block;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom .icon-32-playprocess.stop {
+	background: url('images/icon-26-stopprocess.png') no-repeat;
+}
+
+body.fullscreen #SwimlanePanel-toolbar .header_bottom td .ui-button-text {
+	padding: 0px 0px 0px 0px;
+}

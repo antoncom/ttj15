@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>TeamTime</name>
+	<author>teamtime.info</author>
+	<creationDate>August 2010</creationDate>
+	<copyright>based on Teamlog beta 0.9.2 component for Joomla from yootheme.com copyright Copyright (C) 2008 YOOtheme Ltd. &amp; Co. KG. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+	<authorEmail>info@teamtime.info</authorEmail>
+	<authorUrl>www.teamtime.info</authorUrl>
+	<version>0.9.2 BETA</version>
+	<description>TeamTime Joomla! Component</description>
+	
+	<languages folder="frontend/language">
+		<language tag="en-GB">en-GB.com_teamtime.ini</language>
+		<language tag="ru-RU">ru-RU.com_teamtime.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">installation/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">installation/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="frontend">
+		<filename>controller.php</filename>
+		<filename>teamtime.php</filename>		
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>		
+	</files>
+	
+	<administration>
+		<menu img="components/com_teamtime/assets/images/teamtime-16.png">TeamTime</menu>
+		<submenu>
+			<menu link="option=com_teamtime&amp;controller=cpanel">Control Panel</menu>
+			<menu link="option=com_teamtime&amp;controller=report">Accounting</menu>
+		</submenu>
+		
+		<languages folder="administrator/language">
+			<language tag="en-GB">en-GB.com_teamtime.ini</language>
+			<language tag="ru-RU">ru-RU.com_teamtime.ini</language>	
+			<language tag="en-GB">en-GB.com_teamtime.menu.ini</language>
+			<language tag="ru-RU">ru-RU.com_teamtime.menu.ini</language>	
+		</languages>
+		
+		<files folder="administrator">
+			<filename>changelog.php</filename>
+			<filename>helper.php</filename>
+			<filename>teamtime.php</filename>
+			<filename>teamtime_helpers.php</filename>
+			<filename>index.html</filename>						
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>installation</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>tables</folder>		
+			<folder>views</folder>		
+		</files>
+	</administration>
+</install>

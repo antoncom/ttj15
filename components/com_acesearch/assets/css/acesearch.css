@@ -1,0 +1,276 @@
+/* Field set */
+.acesearch_fieldset {
+	float: left;
+	width: 95%;
+	border: solid 1px #ccc;
+}
+
+/* Legend */
+.acesearch_legend {
+	border: 1px solid gainsboro;
+	background: #F9F9F9;
+	color: #404040;
+	padding: 5px 15px 5px 15px;
+}
+
+/* Search input box */
+.acesearch_input {
+	width: 300px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 6px;
+}
+
+/* Small input box */
+.acesearch_input_small {
+	width: 150px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 6px;
+}
+
+/* Tiny input box */
+.acesearch_input_tiny {
+	width: 20px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 6px;
+}
+
+/* Select box */
+.acesearch_selectbox {
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 5px;
+    width:130px
+}
+
+/* Search button */
+.acesearch_button {	
+	color: white;
+	font-size: 14px;
+	padding: 5px 20px 5px 20px;
+	border: 1px solid #F9F9F9;
+	background: #404040;
+}
+
+/* Label */
+.acesearch_span_label {
+	float: left;
+	width: 150px;
+	line-height: 28px;
+	padding-top: 5px;
+}
+
+/* Field */
+.acesearch_span_field {
+	float: left;
+	width: 250px;
+	line-height: 28px;
+	padding-top: 5px;
+}
+
+/* Highlight */
+.acesearch_highlight {
+	
+	font-weight:bold;
+	padding:1px 4px;
+}
+
+/* Module */
+.search_module {
+	width:200px;
+	margin: 10px 0 60px 5px;
+    padding: 0;
+}
+.acesearch_input_module {
+	width: 151px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 6px;
+}
+.acesearch_span_label_module {
+	float: left;
+	width: 65px;
+	line-height: 34px;
+	padding-top: 5px;
+}
+
+.acesearch_span_field_module {
+	float: left;
+	line-height: 28px;
+	padding-top: 5px;
+}
+
+.acesearch_input_small_module {
+	width: 87px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 6px;
+}
+
+.acesearch_selectbox_module {
+	width:100px;
+	line-height: 28px;
+	background: #F9F9F9;
+	border: 1px solid gainsboro;
+	padding: 5px;
+}
+
+/* Other */
+.acesearch_clear {
+	clear: both;
+	height: 10px;
+}
+
+.input_label { 
+	line-height: 28px;
+}
+
+.label {
+	font-weight: 12px bold;
+	color: #626262;
+}
+
+.about {
+	font-weight:9px;
+}
+
+/* Pagination */
+#acesearch_pagination { 
+	float: left; 
+	width: 100%;
+	height: 35px; 
+	background-color:#ededed;
+}
+
+.limitbox {
+	float:left; 
+	margin-top:5px;
+}
+.pagination_top {
+	float:right;
+}
+
+.pagination_bottom {
+	float:right;
+}
+
+/* Extra fields */
+#acesearch_progress {
+	width: 10px;
+	height: 20px;
+	background: url(../images/indicator.png) 100% 60% no-repeat;
+	visibility: hidden;
+	float: right;
+}
+
+/* Dots */
+#dotttt {
+	margin-top:10px;
+	margin-bottom:10px;
+	border-bottom:dotted thin #CCCCCC;
+}
+
+/* Autocompleter */
+ul.autocompleter-choices{
+	position:absolute;
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:1px solid #EEEEEE;
+	background-color:white;
+	border-right-color:#DDDDDD;
+	border-bottom-color:#DDDDDD;
+	text-align:left;
+	font-family:Verdana,Geneva,Arial,Helvetica,sans-serif;
+	z-index:50;
+}
+
+ul.autocompleter-choices li{
+	background:none;
+	position:relative;
+	padding:0.1em 1.5em 0.1em 1em;
+	cursor:pointer;
+	font-weight:normal;
+	font-size:1em;
+}
+
+ul.autocompleter-choices li.autocompleter-selected{
+	background-color:#444;
+	color:#fff;
+}
+
+ul.autocompleter-choices span.autocompleter-queried{
+	font-weight:bold;
+}
+
+ul.autocompleter-choices li.autocompleter-selected span.autocompleter-queried{
+	color:#9FCFFF;
+}
+
+/** Default Form*/
+table.adminForm {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+table.adminForm tr.row0 {
+	background-color: #F7F8F9;
+}
+
+table.adminForm tr.row1 {
+	background-color: #eeeeee;
+}
+
+table.adminForm th {
+	font-size: 15px;
+	font-weight:normal;
+	font-variant:small-caps;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	color: #666666;
+	background: url(../images/background.gif);
+	background-repeat: repeat;
+}
+
+table.adminForm td {
+	padding: 3px;
+	text-align: left;
+	border: 1px;
+	border-style:solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+
+table.adminForm2 {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 5px;
+}
+
+table.adminForm2 td {
+	padding: 5px;
+	text-align: center;
+	border: 1x;
+	border-style: solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+
+.adminForm2 td:hover {
+	background-color: #B5CDE8;
+	border:	1px solid #30559C;
+}

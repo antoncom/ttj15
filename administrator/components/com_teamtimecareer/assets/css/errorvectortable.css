@@ -1,0 +1,94 @@
+
+div.errorvectortable {
+  background: #fff;
+  color: #000;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+
+  font-size: 13px;
+}
+
+div.errorvectortable th { font-weight: bold; padding: 5px; text-align: left; }
+
+div.errorvectortable td { font-size: 100%; padding: 5px; }
+
+
+div.errorvectortable table.bordered {
+  border-top: 1px solid #A9B1D4;
+  border-right: 1px none #A9B1D4;
+  border-bottom: 1px none #A9B1D4;
+  border-left: 1px solid #A9B1D4;
+  width:95%;
+  margin:0px;
+  padding:0px;
+  float:none;
+}
+
+div.errorvectortable table.bordered tr td {
+  border-top: 1px none #A9B1D4;
+  border-right: 1px solid #A9B1D4;
+  border-bottom: 1px solid #A9B1D4;
+  border-left: 1px none #A9B1D4;
+  margin: 50px;
+  padding: 2px 3px 2px 7px;
+
+}
+
+div.errorvectortable table.bordered tr th {
+  text-align: center;
+  border-top: 1px none #A9B1D4;
+  border-right: 1px solid #A9B1D4;
+  border-bottom: 1px solid #A9B1D4;
+  border-left: 1px none #A9B1D4;
+  padding: 2px 3px 0px 5px;
+  margin:0px;
+  background-color: #ededef;
+}
+
+
+div.errorvectortable table.bordered tr td.ralign {
+  text-align: right;
+  padding-right: 6px; 
+  border-top: 1px none #A9B1D4;
+  border-right: 1px solid #A9B1D4;
+  border-bottom: 1px solid #A9B1D4;
+  border-left: 1px none #A9B1D4;
+}
+
+div.errorvectortable table.bordered tr td table tr td {
+  border:0px;
+  padding:0px;
+}
+
+div.errorvectortable table.bordered tr.parent td.ptarget {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.errorvectortable span.red {
+  color: #800000 ;
+}
+
+div.errorvectortable span.green {
+  color: #005102;
+  font-weight: bold;
+}
+
+div.errorvectortable table.bordered tr td.skill1,
+div.errorvectortable table.bordered tr td.skill2,
+div.errorvectortable table.bordered tr td.skill3,
+div.errorvectortable table.bordered tr td.skill4,
+div.errorvectortable table.bordered tr td.skill5,
+div.errorvectortable table.bordered tr td.skill6
+{
+  border-bottom: none;
+}
+
+div.errorvectortable table.bordered tr td.lskill1,
+div.errorvectortable table.bordered tr td.lskill2,
+div.errorvectortable table.bordered tr td.lskill3,
+div.errorvectortable table.bordered tr td.lskill4,
+div.errorvectortable table.bordered tr td.lskill5,
+div.errorvectortable table.bordered tr td.lskill6 
+{
+}

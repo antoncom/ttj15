@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<params group="default_params">
+		<param name="handler" type="handlerlist" default="1" label="COM_ACESEARCH_EXTENSIONS_HANDLER" description="COM_ACESEARCH_EXTENSIONS_HANDLER_HELP" />
+		<param name="custom_name" type="text" default="" label="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME" description="COM_ACESEARCH_EXTENSIONS_CUSTOM_NAME_HELP" />
+		<param name="result_limit" type="text" default="" label="COM_ACESEARCH_CONFIG_RESULT_LIMIT" description="COM_ACESEARCH_CONFIG_RESULT_LIMIT_HELP" />
+		<param name="access" type="sql" default="0" query="SELECT id, name FROM #__groups" key_field="id" value_field="name" label="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS" description="COM_ACESEARCH_EXTENSIONS_VIEW_ACCESS_HELP" />
+	</params>
+</metadata>

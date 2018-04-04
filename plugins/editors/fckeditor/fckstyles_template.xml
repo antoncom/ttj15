@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+					<Styles><Style name="SC_Item" element="p">
+										<Attribute name="class" value="SC_Item" />
+									</Style>
+<Style name="Bold" element="p">
+										<Attribute name="class" value="Bold" />
+									</Style>
+<Style name="Title" element="p">
+										<Attribute name="class" value="Title" />
+									</Style>
+<Style name="Code" element="p">
+										<Attribute name="class" value="Code" />
+									</Style>
+
+</Styles>

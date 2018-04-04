@@ -1,0 +1,4 @@
+table.contentpaneopen td, table.contentpaneopen td p	{
+	text-align:left;
+	border:1px solid red;
+}

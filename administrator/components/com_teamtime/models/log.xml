@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Log Edit Form</name>
+	<params addpath="/administrator/components/com_content/elements">
+		<param name="created" type="calendar" default="" label="Created Date" description="DETAILCREATED" />
+		<param name="date" type="calendar" default="" label="Date" description="DETAILDATE" />
+		<param name="duration" type="text" default="" label="Duration" description="DETAILDURATION" />
+		<param name="money" type="text" default="" label="Overhead expenses" description="Overhead expenses" />
+	</params>
+</form>

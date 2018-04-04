@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<install type="plugin" group="system" version="1.5">
+	<name>System - jSecure Lite</name>
+	<creationDate>2012-12-12</creationDate>
+	<author>Ajay Lulia</author>
+	<authorEmail>ajay.lulia@joomlaserviceprovider.com</authorEmail>
+	<copyright>This plugin is released under the GNU/GPL License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorUrl>www.joomlaserviceprovider.com</authorUrl>
+	<version>1.0</version>
+	<description>
+	<![CDATA[	
+			jSecure Lite secures the admin login page. Set the parameters for this plugin in the jSecure Lite component admin screen.
+			Click on: Components -> jSecure Lite
+	]]>		
+	</description>
+	<files>
+		<filename plugin="jsecurelite">jsecurelite.php</filename>
+		<filename>404.html</filename>
+	</files>
+	<params />
+</install>

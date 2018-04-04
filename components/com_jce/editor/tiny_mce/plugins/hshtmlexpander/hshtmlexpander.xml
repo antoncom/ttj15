@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<install version="1.5.0" type="plugin" plugin="hshtmlexpander">
+	<name>Highslide HTML Expander</name>
+	<version>2.0.1</version>
+	<creationDate>Aug 2009</creationDate>
+	<author>Ken Lowther</author>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>http://www.joomlanook.com</authorUrl>
+	<copyright>Ken Lowther</copyright>
+	<license>GPL</license>
+	<description><![CDATA[
+	<p>HsHtmlExpander 2.0.1</p>
+	<ul><li>Added numberposition to options tab.</li></ul>
+	<p>HsHtmlExpander 2.0.0</p>
+	<p>Enhanced to support Highslide version 4.</p>
+	]]></description>
+	<icon>hshtmlexpander</icon>
+	<layout>hshtmlexpander</layout>
+	<elements></elements>
+	<files>
+		<filename>editor_plugin.js</filename>
+		<filename>hshtmlexpander.php</filename>
+        <filename>css/hshtmlexpander.css</filename>
+        <filename>css/index.html</filename>
+        <filename>img/hshtmlexpander.gif</filename>
+        <filename>img/index.html</filename>
+        <filename>index.html</filename>
+        <filename>js/hshtmlexpander.js</filename>
+        <filename>js/index.html</filename>
+        <filename>langs/en.js</filename>
+        <filename>langs/en_dlg.js</filename>
+        <filename>langs/fr.js</filename>
+        <filename>langs/fr_dlg.js</filename>
+        <filename>langs/index.html</filename>
+	</files>
+	<variables></variables>
+	<params group="defaults">
+		<param name="hshtmlexpander_target" type="list" default="_self" label="PARAM DEFAULT TARGET" description="PARAM DEFAULT TARGET DESC">
+        	<option value="_self">_self</option>
+			<option value="_blank">_blank</option>
+			<option value="_parent">_parent</option>
+			<option value="_top">_top</option>
+		</param>
+	</params>
+	<params group="access">
+        <param name="hshtmlexpander_article" type="list" default="1" label="PARAM ARTICLE ACCESS" description="PARAM ARTICLE ACCESS DESC">
+           	<option value="1">YES</option>
+           	<option value="0">NO</option>
+		</param>
+		<param name="hshtmlexpander_section" type="list" default="1" label="PARAM SECTION ACCESS" description="PARAM SECTION ACCESS DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+		</param>
+		<param name="hshtmlexpander_category" type="list" default="1" label="PARAM CATEGORY ACCESS" description="PARAM CATEGORY ACCESS DSEC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+		</param>
+		<param name="hshtmlexpander_static" type="list" default="1" label="PARAM STATIC ACCESS" description="PARAM STATIC ACCESS DESC">
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+		</param>
+		<param name="hshtmlexpander_contact" type="list" default="1" label="PARAM CONTACT ACCESS" description="PARAM CONTACT ACCESS DESC">
+           	<option value="1">YES</option>
+            <option value="0">NO</option>
+		</param>
+    </params>
+	<languages>
+		<language tag="en-GB">en-GB.com_jce_hshtmlexpander.ini</language>
+		<language tag="fr-FR">fr-FR.com_jce_hshtmlexpander.ini</language>
+	</languages>
+	<help>
+		<topic key="hshtmlexpander.about" title="Help About" />
+		<topic key="hshtmlexpander.interface" title="Help Interface" />
+		<topic key="hshtmlexpander.content" title="Help Links" />
+		<topic key="hshtmlexpander.events" title="Help Events" />
+		<topic key="hshtmlexpander.advanced" title="Help Advanced" />
+		<topic key="hshtmlexpander.insert" title="Help Insert" />
+		<topic key="hshtmlexpander.email" title="Help Email" />
+	</help>
+</install>

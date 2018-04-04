@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" group="editors-xtd" version="1.5">
+	<name>Editor Button - Modules Anywhere</name>
+	<description>Modules Anywhere ...place modules anywhere in Joomla!</description>
+	<version>1.1.4</version>
+	<creationDate>July 2009</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2009 - NoNumber! - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Main Files -->
+	<files>
+		<filename plugin="editorbuttons">modulesanywhere.php</filename>
+		<folder>modulesanywhere</folder>
+	</files>
+
+	<!-- Language Files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_modulesanywhere.ini</language>
+	</languages>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/editors-xtd/modulesanywhere/elements">
+		<param name="@title" type="title" default=""
+			label="Modules Aywhere editor button" description="This button makes inserting {module} tags easy!"
+			image="../plugins/editors-xtd/modulesanywhere/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/modulesanywhere"
+			download_url="http://www.nonumber.nl/modulesanywhere/download"
+			help_url="http://www.nonumber.nl/modulesanywhere"
+			version_url="http://www.nonumber.nl/versions"
+			version_file="version_modulesanywhere" />
+		<param name="enable_frontend" type="radio" default="1" label="Enable in frontend" description="Enable in frontend (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

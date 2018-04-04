@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>user</Author>
+  <LastAuthor>user</LastAuthor>
+  <Created>2010-04-18T12:14:28Z</Created>
+  <Company>ThinApp</Company>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7799</WindowHeight>
+  <WindowWidth>18036</WindowWidth>
+  <WindowTopX>114</WindowTopX>
+  <WindowTopY>43</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Hyperlink">
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#0000FF" ss:Underline="Single"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#999999"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#808080" ss:Bold="1"/>
+   <Interior ss:Color="#F0F0F0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#0000FF" ss:Underline="Single"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#808080"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#808080"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#0000FF" ss:Underline="Single"/>
+   <Interior ss:Color="#F9F9F9" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#808080"/>
+   <Interior ss:Color="#F9F9F9" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Time"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#808080"/>
+   <Interior ss:Color="#F9F9F9" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"
+     ss:Color="#999999"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Size="8"
+    ss:Color="#333333" ss:Bold="1"/>
+   <Interior ss:Color="#F3F3F3" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="6" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s63" ss:DefaultColumnWidth="100"
+   ss:DefaultRowHeight="10.693069306930692">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="263.04950495049508"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="125.46534653465346"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="99.801980198019791"/>
+
+   <Row ss:AutoFitHeight="0" ss:Height="25.663366336633661">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">{s_name}</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">{s_hours_plan}</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">{s_duration}</Data></Cell>
+		<Cell ss:StyleID="s64"><Data ss:Type="String">{s_planned_cost}</Data></Cell>
+		<Cell ss:StyleID="s64"><Data ss:Type="String">{s_actual_cost}</Data></Cell>
+		<Cell ss:StyleID="s64"><Data ss:Type="String">{s_overhead_expenses}</Data></Cell>
+   </Row>
+
+	 <!-- BEGIN rows -->
+
+<!-- BEGIN row1 -->
+
+   <Row ss:AutoFitHeight="0" ss:Height="15.683168316831683">
+    <Cell ss:StyleID="s66"><Data
+      ss:Type="String">{name}</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">{splan}</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">{duration}</Data></Cell>
+		<Cell ss:StyleID="s68"><Data ss:Type="String">{splanned_cost}</Data></Cell>
+		<Cell ss:StyleID="s68"><Data ss:Type="String">{sfact_cost}</Data></Cell>
+		<Cell ss:StyleID="s68"><Data ss:Type="String">{scosts} / {smoney}</Data></Cell>
+   </Row>
+	 <!-- END row1 -->
+
+<!-- BEGIN row2 -->
+   <Row ss:AutoFitHeight="0" ss:Height="16.93069306930693">
+    <Cell ss:StyleID="s69"><Data
+      ss:Type="String">{name}</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">{splan}</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">{duration}</Data></Cell>
+		<Cell ss:StyleID="s71"><Data ss:Type="String">{splanned_cost}</Data></Cell>
+		<Cell ss:StyleID="s71"><Data ss:Type="String">{sfact_cost}</Data></Cell>
+		<Cell ss:StyleID="s71"><Data ss:Type="String">{scosts} / {smoney}</Data></Cell>
+   </Row>
+<!-- END row2 -->
+
+ <!-- END rows -->
+ 
+   <Row ss:AutoFitHeight="0" ss:Height="14.257425742574258">
+    <Cell ss:MergeAcross="1" ss:StyleID="s72"><Data ss:Type="String">{total_plan}</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">{total}</Data></Cell>
+		<Cell ss:StyleID="s72"><Data ss:Type="String">{total_planned_cost}</Data></Cell>
+		<Cell ss:StyleID="s72"><Data ss:Type="String">{total_fact_cost}</Data></Cell>
+		<Cell ss:StyleID="s72"><Data ss:Type="String">{total_costs} / {total_money}</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

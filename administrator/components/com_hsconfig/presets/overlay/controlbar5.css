@@ -1,0 +1,32 @@
+/*
+ *	controlbar5 overlay preset
+*/
+.controlbar5 {
+	background: url(/plugins/content/highslide/graphics/controlbar5.gif);
+	width: 83px;
+	height: 18px;
+	/* float:right; */
+}
+.controlbar5 a {
+	display: block;
+	float: left;
+	height: 18px;
+}
+.controlbar5 a:hover {
+	background-image: url(/plugins/content/highslide/graphics/controlbar5-hover.gif);
+}
+.controlbar5 .previous {
+	width: 20px;
+}
+.controlbar5 .next {
+	width: 20px;
+	background-position: -20px 0;
+}
+.controlbar5 .highslide-move {
+	width: 20px;
+	background-position: -40px 0;
+}
+.controlbar5 .close {
+	width: 20px;
+	background-position: -60px 0;
+}

@@ -1,0 +1,12 @@
+ol.todo_content li
+{
+	font-size: 16px;	
+}
+
+h3.todo_content
+{
+	font-size: 24px;
+	font-family: Arial, Verdana
+	font-weight: normal;
+	color: #808080;
+}

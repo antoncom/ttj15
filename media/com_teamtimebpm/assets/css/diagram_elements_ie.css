@@ -1,0 +1,5 @@
+.bpmn_activity_iefix {
+	display: inline-block;
+	width: 0;
+	overflow: hidden;
+}

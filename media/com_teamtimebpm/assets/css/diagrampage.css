@@ -1,0 +1,159 @@
+body {
+	overflow: hidden;
+}
+
+/* swimlane toolbar */
+
+#SwimlanePanel-toolbar {
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	min-width: 885px;	
+}
+
+#SwimlanePanel-toolbar div.ui-dialog-titlebar {
+	text-align: center;
+	padding-bottom: 4px;
+}
+
+#SwimlanePanel-toolbar li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#SwimlanePanel-toolbar li button {
+	vertical-align: middle;
+	width: 70px;
+	height: 50px;
+}
+
+#SwimlanePanel-toolbar li label {
+	vertical-align: middle;
+	width: 68px;
+	height: 48px;
+}
+
+#SwimlanePanel-toolbar .header_top {
+	background: #9ebeff;
+	color: #039;
+	height: 61px;
+	padding: 15px 0 0 25px;
+}
+
+#SwimlanePanel-toolbar .header_top .title-diagramm {
+	font-size: 18px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+#SwimlanePanel-toolbar .header_top .subtitle-sfera {
+	font-size: 14px;
+	margin: 5px 0 0;
+}
+
+#SwimlanePanel-toolbar .menu {
+	float: right;
+	margin: 5px 30px 0 20px;
+}
+
+#SwimlanePanel-toolbar .cmd_menu {
+	float: left;
+	margin: 0 10px;
+}
+
+#SwimlanePanel-toolbar .cmd_img {
+	height: 19px;
+	width: 19px;
+	margin: 0 auto 5px;
+}
+
+#SwimlanePanel-toolbar .cmd_playback {
+	background: url(images/button.png) -7px 0 no-repeat;
+}
+
+#SwimlanePanel-toolbar .cmd_save {
+	background: url(images/button.png) -49px 0 no-repeat;
+}
+
+#SwimlanePanel-toolbar .cmd_end-edit {
+	background: url(images/button.png) -93px 0 no-repeat;
+}
+
+#SwimlanePanel-toolbar .cmd_label {
+	font-size: 11px;
+	color: black;
+}
+
+#SwimlanePanel-toolbar .header_bottom {
+	background: #d4e1fc;
+	height: 32px;
+	border: 1px solid #a3c2eb;
+	border-radius: 5px;
+	padding: 0 20px 0 25px;
+	color: #000;
+}
+
+#SwimlanePanel-toolbar .header_bottom .time div, .header_bottom table {
+	float: left;
+}
+
+#SwimlanePanel-toolbar .header_bottom td {
+	padding-right: 20px;
+	vertical-align: middle;
+	padding-top: 6px;
+}
+
+#SwimlanePanel-toolbar .header_bottom td .ui-button-text {
+	padding: 0 30px 0 0.5em;
+}
+
+#SwimlanePanel-toolbar .header_bottom select {
+	width: 161px;
+}
+
+#SwimlanePanel-toolbar .header_bottom .show_grid {
+	display: block;
+	background: url(images/grid.png) 0 0 no-repeat;
+	padding: 0 0 0 35px;
+	height: 20px;
+	line-height:20px;
+	font-size:11px;
+}
+
+#SwimlanePanel-toolbar .header_bottom .hide_grid {
+	background: url(images/grid.png) 0 -20px no-repeat;
+	padding: 2px 0 0 35px;
+	height: 20px;
+}
+
+#SwimlanePanel-toolbar .header_bottom .time {
+	float: right;
+}
+
+#SwimlanePanel-toolbar .header_bottom .time * {
+	border-left: 2px solid #5990ce;
+	padding: 0 0 0 15px;
+	margin: 8px 10px;
+}
+
+#SwimlanePanel-toolbar .header_bottom .time span {
+	border-left: none;
+	padding-left: 3px;
+	margin: 0;
+}
+
+#SwimlanePanel-toolbar .ui-state-default {
+	font-weight: normal;
+	color: #000;
+	border: none;
+	background: none;
+}
+
+#SwimlanePanel-toolbar #toolbar.toolbar {
+display:none;
+}
+
+#SwimlanePanel-toolbar .title-diagramm {
+display:none;
+}

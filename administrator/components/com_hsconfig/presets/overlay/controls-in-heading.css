@@ -1,0 +1,26 @@
+/*
+ * overlay preset: controls-in-heading
+*/
+
+/* remove buttons from the controls  */
+.highslide-play {
+	display: none !important;
+}
+.highslide-pause {
+	display: none !important;
+}
+.highslide-full-expand {
+	display: none !important;
+}
+.highslide-move {
+	display: block !important;
+}
+.controls-in-heading .highslide-controls .highslide-move a {
+	background-position: -80px 0;
+}
+.controls-in-heading .highslide-controls .highslide-move a:hover {
+	background-position: -80px -20px;
+}
+.controls-in-heading .highslide-controls .highslide-move a.disabled {
+	background-position: -80px -40px !important;
+}

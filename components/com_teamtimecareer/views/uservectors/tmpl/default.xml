@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+  <layout title="Uservector layout">
+    <message>
+			<![CDATA[Uservector layout for page]]>
+    </message>
+  </layout>
+  <state>
+    <name>Uservector layout</name>
+    <description>Uservector layout for page</description>
+    <params>
+    </params>
+  </state>
+</metadata>

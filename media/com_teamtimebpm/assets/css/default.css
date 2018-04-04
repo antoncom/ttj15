@@ -1,0 +1,50 @@
+
+.icon-48-teamtimebpm {
+  background-image: url('../images/icon-48-bpmn.png');
+}
+
+.typeListBoxPanel.activeArchiveHeaderElement select#archived {
+	width: 85px;
+}
+
+.icon-32-playprocess {
+	background: url('images/icon-32-playprocess.png') no-repeat;
+}
+
+.icon-32-playprocess.stop {
+	background: url('images/icon-32-stopprocess.png') no-repeat;
+}
+
+.icon-32-saveprocess {
+	background: url('images/icon-32-saveprocess.png') no-repeat;
+}
+
+.icon-32-exitprocess {
+	background: url('images/icon-32-exitprocess.png') no-repeat;
+}
+
+.icon-32-savetemplate {
+	background: url('images/icon-32-saveprocess.png') no-repeat;
+}
+
+.icon-32-exittemplate {
+	background: url('images/icon-32-exitprocess.png') no-repeat;
+}
+
+/*
+#adminForm .importTemplateTable#importTemplate {
+}
+
+#adminForm .importTemplateTable#cancelImport {	
+}*/
+
+#todos-form .todo_table th.first-column, 
+#todos-form .todo_table td.first-column {
+	border-right:none;
+}
+
+#todos-form .todo_table th.process-column, 
+#todos-form .todo_table td.process-column {
+	padding-right: 10px;
+}
+

@@ -1,0 +1,199 @@
+/* http://www.phoca.cz/ */
+.phoca-doc-hr {
+	border-bottom: 3px solid #e9e9e9;
+	margin-bottom: 10px;
+}
+
+#phoca-doc-sections-box a img {
+	border:		0px;
+	padding:	0;
+	margin:		0;
+}
+
+/* sections box */
+#phoca-doc-sections-box div.pdoc-sections {
+	width:		33%;
+	position:	relative;
+	float:		left;
+	background: url('images/br.png') right bottom no-repeat;
+	margin:		0px;
+	padding:	0px;
+}
+.phocadocumentation-navigation .navigation-text,
+#pdoc-top {
+	position:	relative;
+	float:		right;
+	background: url('images/br.png') right bottom no-repeat;
+	margin:		0px;
+	padding:	0px;
+}
+
+.phocadocumentation-navigation .navigation-text div,
+#pdoc-top div,
+#phoca-doc-sections-box div.pdoc-sections div {
+	background: url('images/bl.png') left bottom no-repeat;
+}
+
+.phocadocumentation-navigation .navigation-text div div,
+#pdoc-top div div,
+#phoca-doc-sections-box div.pdoc-sections div div {
+	background: url('images/tr.png') right top no-repeat;
+}
+
+#phoca-doc-sections-box div.pdoc-sections div div div {
+	background: url('images/tl.png') left top no-repeat;
+	padding:	10px;
+}
+
+.phocadocumentation-navigation .navigation-text div div div,
+#pdoc-top div div div {
+	background: url('images/tl.png') left top no-repeat;
+	padding:	10px 10px 10px 10px;
+}
+
+.phocadocumentation-navigation .navigation-text div div div div,
+#pdoc-top div div div div {
+	background: #ffffff;
+	padding:	5px 10px 5px 10px;
+	text-align:	center;
+}
+
+.phocadocumentation-navigation .navigation-text div div div b {
+color: rgb(204, 204, 204); 
+padding: 1px 1px 1px 1px;
+font-size: 5px;
+position:inherit;
+}
+
+#phoca-doc-sections-box div.pdoc-sections div div div h3 {
+	margin:			0px;
+	padding:		5px;
+	margin-bottom:	7px;
+	background: 	#fafafa;
+	border:			1px solid #e9e9e9;
+}
+
+.phocadocumentation-navigation .navigation-text div div div h5,
+#pdoc-top div div div h5 {
+	margin:			0px;
+	padding:		5px;
+	margin-bottom:	3px;
+	background: 	#fafafa;
+	border:			1px solid #e9e9e9;
+	text-align:		center;
+}
+
+
+#phoca-doc-section-box .pdoc-section,
+#phoca-doc-category-box .pdoc-category,
+#phoca-doc-file-box .pdoc-file {
+	margin:		5px;
+}
+
+#phoca-doc-file-box .pdoc-file-details {
+	border: 0;
+}
+
+
+/* sections, section */
+#phoca-doc-sections-box .pdoc-category,
+#phoca-doc-section-box .pdoc-category {
+	padding-left:	20px;
+	background: transparent url('images/icon-folder.png') 0 center no-repeat;
+	
+}
+
+/* section, category */ 
+
+#phoca-doc-section-box .pdoc-section h3,
+#phoca-doc-category-box .pdoc-category h3{
+	margin:			0;
+	padding:		5px;
+	background: 	#fafafa;
+	border:			1px solid #e9e9e9;
+	margin-bottom:	7px;
+}
+
+#phoca-doc-section-box .pdoc-section div.pdoctop,
+#phoca-doc-category-box .pdoc-category div.pdoctop {
+	float:		right;
+	position:	relative;
+	width:		16px;
+	margin-top:	5px;
+	margin-right:7px;
+}
+#phoca-doc-sections-box  h3 small,
+#phoca-doc-section-box .pdoc-section h3 small,
+#phoca-doc-category-box .pdoc-category h3 small{
+	color:		#BF6070;
+	font-size:	small;
+	font-weight:normal;
+}
+
+#phoca-doc-sections-box  h3 a{
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+/* icon next to document*/
+ .pdoc-document ,
+#phoca-doc-category-box .pdoc-document{
+	padding-left:20px;
+	background: url('images/icon-document.png') 0px center no-repeat;
+	height:16px;
+    line-height:16px;
+}
+#phoca-doc-most-viewed-box .pdoc-document  {
+	padding-left:20px;
+	background: url('images/icon-document.png') 0px center no-repeat;
+}
+
+
+/* Plugin */
+#phoca-doc-category-box-plugin .pdoc-document {
+	padding-left:20px;
+	background: url('images/icon-document.png') 0 center no-repeat;
+	text-align:left;
+	padding-top:4px;
+	padding-bottom:4px;
+	
+}
+
+/* Module */
+#phoca-doc-sections-box-module .sections {
+	color:#BF6070;
+	
+}
+/*
+.phocadocumentation-navigation {
+	padding:2px;
+	border: 1px dotted #ffe699;
+	width:6em;
+	position:relative;
+	float:right;
+	text-align:center;
+	margin-left:5px;
+}
+
+.phocadocumentation-navigation .navigation-text {
+	color:#BF6070;
+	background-color: #ffe699;
+	padding:2px;
+	margin-bottom:3px;
+	font-size:10px;
+	text-align:center;
+}*/
+
+#phoca-doc-section-box .section div.pdoctop, #phoca-doc-category-box .category div.pdoctop {
+	float:		right;
+	position:	relative;
+	width:		16px;
+	margin-top:	5px;
+	margin-right:7px;
+}
+
+.bgPhocaPDocClass {
+	padding:		5px;
+	background:		#fafafa;
+	border: 		1px solid #e9e9e9;
+}

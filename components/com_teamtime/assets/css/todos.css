@@ -1,0 +1,141 @@
+.style1 {
+	color: #999999
+}
+
+#duration, #money {
+	font-size: 14px;
+}
+
+/* todo list styles */
+.todo_table {
+	border: 1px solid #f0cd91;
+	background-color: #fff08c;
+	background-image: url("../images/todo_table_bg.gif");
+	background-repeat: repeat-x;
+	background-position: top left;
+
+
+}
+.todo_table tr th {
+	border-right: 1px solid #f0cd91;
+	border-bottom: 2px solid #f0cd91;
+	color: #ba8e42;
+	font-size: 12px;
+
+}
+
+.todo_table tr td {
+	border-right: 1px solid #f0cd91;
+	border-top: 1px solid #f0cd91;
+	height: 28px;
+	font-size: 15px;
+}
+
+.todo_table span {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.captioncell {
+	color: #ba8e42;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.chkbx {
+	background-image: url("../images/checkbox_unchecked.gif")!important;
+	background-repeat: no-repeat!important;
+	background-position: top center;
+	display:block;
+	float:left;
+	height:20px;
+	width:30px;
+
+}
+
+table.todo_table tr.result_row td {
+	border-top-width: 2px;
+	border-top-color: #f0cd91;
+}
+
+table.todo_table tr td:last-child {
+	text-align: right;
+}
+
+table.todo_table tr td:first-child a {
+	max-width: 95%;
+	display: block;
+	float:left;
+}
+
+table.todo_table tr.active_row td {
+	background-color: #ffee5c!important;
+}
+
+.chkbx_checked {
+	background-image: url("../images/checkbox_checked.gif")!important;
+	background-repeat: no-repeat!important;
+	background-position: top center;
+	display:block;
+	float:left;
+	height:20px;
+	width:31px;
+}
+
+.pr_name {
+	font-size:12px;
+}
+
+.hours_plan {
+	font-size:12px;
+}
+
+#start_work {
+	width:165px;
+	background-color:#7AA97C;
+}
+
+#bStop {
+	width:165px;
+	background-color:#E1A2A4;
+}
+
+#bContinue {
+	width:165px;
+	background-color:#E1A2A4;
+}
+
+#bPause {
+	width:165px;
+	background-color:#EEEEEE;
+}
+
+.todo_date {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.checklist-checkbox {
+	background-image: url("../images/checkbox_unchecked.gif")!important;
+	background-repeat: no-repeat!important;
+	background-position: top center;
+	display:block;
+	float:left;
+	height:20px;
+	width:50px;
+}
+
+.checklist-checkbox.checked {
+	background-image: url("../images/checkbox_checked.gif")!important;
+	background-repeat: no-repeat!important;
+	background-position: top center;
+	display:block;
+	float:left;
+	height:20px;
+	width:50px;
+}
+
+.checklist-checkbox.checked.done {
+	background-image: url("../images/checkbox_checked_d.gif")!important;
+	border: 1px dashed #000000;
+}

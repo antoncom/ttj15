@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+}
+	
+.borderTImage {
+	background-color: #d9e5f4;
+	height: 55px;
+	width: 440px;
+	border-bottom: 2px solid #387DAC;
+}
+
+.bpDialogHeader {
+	color: #387dac;
+	font-size: 20px;
+	white-space: nowrap;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	padding-left: 11px;
+	padding-top: 15px;
+}
+
+table.bpDialog td {
+	padding: 0;
+}
+
+table.bpDialog {
+	color: #1A1818;
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding: 2px;
+	overflow: hidden;
+	z-index: 999;
+	border-collapse: collapse;
+}
+
+.bpDialogContent {
+	background-color: white;
+	vertical-align: top;
+}
+
+.bpCreateProcessLayoutTable {
+	z-index: 999;
+	background-color: #e8f1f8;
+	width: 427px;
+}
+
+.bpDialogClientPadding {
+	padding-top: 10px;
+	padding-left: 3px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+}
+
+.bpCreateProcessLayoutTable .typeListBoxPanel {
+	float: left;
+	padding: 5px 20px 4px 10px;
+}
+
+.bpCreateProcessLayoutTable .inputbox {
+	width: auto;
+}
+
+.bpCreateProcessLayoutTable .filterWidget {
+	float: left;
+	position: relative;
+	width: 174px;
+	height: 21px;
+	background: white;
+	border: 1px solid #bbb;
+	border-radius: 5px; 
+	margin: 6px 0 10px 0;
+}
+
+.bpCreateProcessLayoutTable .filter_left {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 5px;
+}
+
+.bpCreateProcessLayoutTable .filter_left div {
+	background: url(../images/filter_search.png) no-repeat;
+	width: 16px;
+	height: 13px;
+}
+
+.bpCreateProcessLayoutTable .filter_middle {
+	display: table-cell;
+	vertical-align: middle;
+	height: 21px;
+}
+
+.bpCreateProcessLayoutTable .filter_text {
+	font-size: 11px;
+	border: none;
+	width: 124px;
+	margin-right: 21px;
+	height: 12px;
+	color: #aaa;
+}
+
+.bpCreateProcessLayoutTable .filter_cancel {
+	position: absolute;
+	display: none;
+	right: 0;
+	top: 0;
+	background: url(../images/filter_cancel.png) no-repeat;
+	width: 22px;
+	height: 21px;
+	cursor: pointer;
+}
+
+/*стили фильтра в активном состоянии*/
+
+.bpCreateProcessLayoutTable .filter_left_activ div {
+	background: url(../images/filter_search.png) 0 -13px no-repeat;
+}
+
+.bpCreateProcessLayoutTable .filter_text_activ {
+	font-size: 11px;
+	color: #555;
+}
+
+.bpCreateProcessLayoutTable .filter_cancel_activ {
+	display: block;
+}
+
+
+.ListProcess {
+	overflow-x: auto;
+	overflow-y: auto;
+	position: relative;
+	zoom: 1;
+	height: 350px;
+	width: 430px;
+	background-color: white;
+	border: 1px solid #808080;
+}
+
+.simpleSelectProcessRow {
+	border: 1px solid white;
+	padding: 15px 6px 15px 50px;
+	background: url('../images/pros_icon_36.png') 4px 10px no-repeat;
+	cursor: pointer;
+	color: #232729;
+	font-size: 12px;
+	min-height: 26px;
+	border-radius: 6px;
+	-moz-transition: all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	margin: 4px;
+	overflow-x: hidden;
+}
+
+.simpleSelectProcessRow:hover{
+	box-shadow: 0 1px 1px #ddd;
+	border:1px solid #d3d3d3;
+	background-color:#ffefaf;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.simpleSelectProcessRow .processName {
+	font-size: 13px;
+	font-weight: bold;
+	color: #1d4fb7;
+	white-space: nowrap;
+	width: 310px;
+	overflow-x: hidden;
+}
+
+.simpleSelectProcessRow .projectName {
+	width: 310px;
+	font-size: 11px;
+	color: #666;
+	overflow-x: hidden;
+}
+
+.simpleSelectProcessRow .checkMark {
+	float: right;
+	height: 21px;
+	width: 20px;
+	margin-top: 5px;
+}
+
+.simpleSelectProcessRow:hover .checkMark{
+	background:url('../images/ok_sm_20.png') 0 0 no-repeat;
+}

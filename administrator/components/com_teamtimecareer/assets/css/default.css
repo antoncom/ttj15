@@ -1,0 +1,31 @@
+
+.icon-48-teamtimecareer {
+  background-image: url('../images/icon-48-dotu.png');
+}
+
+.item_parent a {
+  font-size:12px;
+  font-weight: bold;
+  color:#034E7F;
+  letter-spacing:1px;
+}
+
+.parent_sum {
+  color: #972B2B;
+  font-weight: bold;
+}
+
+select#parent_id {
+  background-color: #FFDDDD;
+  width: 250px;
+}
+
+select#user_id {
+  background-color: #FFDDDD;
+  width: 250px;
+}
+
+select#target_id {
+  background-color: #FFDDDD;
+  width: 250px;
+}

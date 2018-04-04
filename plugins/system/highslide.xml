@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Highslide</name>
+	<author>Ken Lowther</author>
+	<creationDate>Mar 2011</creationDate>
+	<copyright>This edition of Highslide JS Plugin is released under the GNU/GPL License, copyright Ken Lowther</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>www.joomlanook.com</authorUrl>
+	<version>2.0.4</version>
+	<description>HIGHSLIDE</description>
+	<files>
+		<filename plugin="highslide">highslide.php</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_highslide.ini</language>
+        <language tag="fr-FR">fr-FR.plg_system_highslide.ini</language>
+    </languages>
+</install>

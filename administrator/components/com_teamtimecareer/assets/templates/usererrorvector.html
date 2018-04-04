@@ -1,0 +1,120 @@
+
+<table summary="Вектор текущего состояния" class="bordered" style="width: 100%;"
+       cellspacing="0" cellpadding="0" border="0"
+       id="userVectorTeamtimeCareer-{user_id}">
+
+  <!-- BEGIN block_table_title -->
+  <caption><strong>Вектор ошибки сотрудника: {user_name}</strong></caption>
+  <!-- END block_table_title -->
+
+  <tbody>
+    <tr>
+      <th  style="width:100%"><strong><span style="color: #333333;">{txt_my_goals}</span></strong></th>
+
+      <th width="1%"><span color="#333333" style="color: #333333;">{txt_significance_of_goal}</span></th>
+
+      <th width="1%"><span style="color: #333333;">{txt_my_skill_level}</span></th>
+
+      <th width="1%"><span color="#333333" style="color: #333333;">{txt_highness_of_goal}</span></th>
+
+      <th width="1%"><span color="#333333" style="color: #333333;">{txt_my_progress}</span></th>
+
+      <th width="1%"><span color="#333333" style="color: #333333;">{txt_hourly_rate_in_statement}</span></th>
+
+      <!-- BEGIN block_user_tax_2 -->
+      <th width="1%">
+        <span color="#333333" style="color: #333333;">{txt_social_exp}<br>{user_tax_2}%&nbsp;</span>
+      </th>
+      <!-- END block_user_tax_2 -->
+
+      <th width="1%"><span color="#333333" style="color: #333333;">{txt_hourly_rate_accrued}</span></th>
+
+      <!-- BEGIN block_user_tax_1 -->
+      <th width="1%">
+        {txt_tax}<br>{user_tax_1}%&nbsp;
+      </th>
+      <!-- END block_user_tax_1 -->
+
+      <th width="1%">{txt_hourly_rate_cash}</th>
+
+    </tr>
+
+
+    <!-- BEGIN row -->
+
+    <tr {rowtype_class} {node_id_attr} {children_of_node_class}>
+      <td class="ptarget" {row_padding_attr}>
+				{target_name}
+				{target_description}
+		</td>
+
+		<td class="ptarget {skill_class1}">{target_balance}</td>
+		<td class="ptarget">{state_value}</td>
+		<td class="ptarget">{target_value}</td>
+		<td class="ptarget"><span {class_achievement}>{achievement}</span></td>
+		<td class="ptarget {skill_class2}">{target_hourprice}</td>
+
+		<!-- BEGIN block_user_tax_2_value -->
+		<td class="ptarget {skill_class3}">{user_tax_2_value}</td>
+		<!-- END block_user_tax_2_value -->
+
+		<td class="ptarget {skill_class4}">{money}</td>
+
+		<!-- BEGIN block_user_tax_1_value -->
+		<td class="{skill_class5}">{user_tax_1_value}</td>
+		<!-- END block_user_tax_1_value -->
+
+		<td class="{skill_class6}">{result_money}</td>
+	</tr>
+	<!-- END row -->
+
+	<tr>
+		<td><span
+				style="text-decoration: underline; text-transform: uppercase"><strong><em>{txt_total}</em></strong></span></td>
+		<td><b><i><span style="text-decoration: underline;">{total_target_balance}</span></i></b></td>
+		<td><span style="text-decoration: underline;"><strong><em>{total_state_value}</em></strong></span></td>
+		<td><span style="text-decoration: underline;"><strong><em>{total_target_value}</em></strong></span></td>
+		<td><span style="text-decoration: underline;"><em><strong><span style="color: #ff0000;">{total_achievement}</span></strong></em></span></td>
+		<td><b><i><span style="text-decoration: underline;"> <span style="font-style: normal; font-weight: normal;"><b><i><span style="text-decoration: underline;">{total_target_hourprice}</span></i></b></span></span></i></b></td>
+
+		<!-- BEGIN block_user_tax_2_total -->
+		<td>
+			<b><i><span style="text-decoration: underline;">{total_user_tax_2}</span></i></b>
+		</td>
+		<!-- END block_user_tax_2_total -->
+
+		<td><b><i><span style="text-decoration: underline;">
+
+						<span style="font-style: normal; font-weight: normal;"><em><strong>{total_money}</strong></em></span></span></i></b></td>
+
+		<!-- BEGIN block_user_tax_1_total -->
+		<td>
+			{total_user_tax_1}
+		</td>
+		<!-- END block_user_tax_1_total -->
+
+		<td>{total_result_money}</td>
+	</tr>
+</tbody>
+</table>
+
+<script>
+
+  jQuery(function ($) {
+
+    $("#userVectorTeamtimeCareer-{user_id}").treeTable({
+      indent: 15
+    });
+
+    var cleanCells = function (i, n) {
+      $(n).html("&nbsp;");
+    };
+
+    for (var i = 1; i <= 6; i++) {
+      $("#userVectorTeamtimeCareer-{user_id} td.skill" + i
+        + ", #userVectorTeamtimeCareer-{user_id} td.lskill" + i).each(cleanCells);
+    }
+
+  });
+
+</script>

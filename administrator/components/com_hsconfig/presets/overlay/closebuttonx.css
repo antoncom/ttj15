@@ -1,0 +1,17 @@
+/*
+ * 	closebuttonx overlay preset
+*/
+.closebuttonx {
+	position: relative;
+	padding: 0;
+	cursor: pointer;
+}
+.closebuttonx a {
+	display: block;
+	height: 16px;
+	width: 16px;
+	background-image: url(/plugins/content/highslide/graphics/closeX.png);
+}
+.closebuttonx a:hover {
+	background-position: 0 16px;
+}

@@ -1,0 +1,11 @@
+<div class="highslide-controls">
+<ul>
+<li class="highslide-previous" ><a href="#" onclick="return hs.previous(this);" title="{hs.lang.previousTitle}" ><span>{hs.lang.previousText}</span></a></li>
+<li class="highslide-play" ><a href="#" title="{hs.lang.playTitle}" ><span>{hs.lang.playText}</span></a></li>
+<li class="highslide-pause" ><a href="#" title="{hs.lang.pauseTitle}" ><span>{hs.lang.pauseText}</span></a></li>
+<li class="highslide-next" ><a href="#" onclick="return hs.next(this);" title="{hs.lang.nextTitle}"><span>{hs.lang.nextText}</span></a></li>
+<li class="highslide-move" ><a href="#" onclick="return false;" title="{hs.lang.moveTitle}" ><span>{hs.lang.moveText}</span></a></li>
+<li class="highslide-full-expand" ><a href="#" title="{hs.lang.fullExpandTitle}" ><span>{hs.lang.fullExpandText}</span></a></li>
+<li class="highslide-close" ><a href="#" onclick="return hs.close(this);" title="{hs.lang.closeTitle}" ><span>{hs.lang.closeText}</span></a></li>
+</ul>
+</div>

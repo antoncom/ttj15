@@ -1,0 +1,454 @@
+<?php
+
+// no direct access
+defined('_JEXEC') or die('Restricted access');
+
+// include assets css/js
+$templatepre = strtolower(substr($mainframe->getTemplate(), 0, 3));
+JHTML::stylesheet('default.css', 'components/com_teamtime/assets/css/');
+if ($templatepre != 'yoo') JHTML::stylesheet('reset.css', 'components/com_teamtime/assets/css/');
+JHTML::script('log.js', 'components/com_teamtime/assets/js/');
+
+?>
+
+<?php
+	JFilterOutput::objectHTMLSafe($this->item, ENT_QUOTES);
+	$get = JRequest::get('get');
+	//print_r($this->_models['log']->_user_todos);
+	//exit;
+	
+				
+	jimport('joomla.html.pane');
+
+	$editor =& JFactory::getEditor();
+	
+	$pane	=& JPane::getInstance('sliders');
+	$format = JText::_('DATE_FORMAT_LC2');
+
+	$user    =& YFactory::getUser();
+	if($user->check_pause()){
+		$user->reset_pause();
+		$user->set_pause();
+	}
+
+	//$current_todo_id = JRequest::getVar("todo_id");
+	//if($current_todo_id == "")
+	$current_todo_id = 0;
+
+set_include_path(
+	get_include_path().PATH_SEPARATOR.
+	JPATH_ROOT."/administrator/components/com_teamtime/assets/PEAR");
+if(!class_exists("Services_JSON"))
+	require_once("Services/JSON.php");
+
+$json = new Services_JSON();
+if(file_exists(JPATH_ROOT."/administrator/components/com_teamtime/config.json")){
+	$json = new Services_JSON();
+	$conf_data = $json->decode(file_get_contents(
+		JPATH_ROOT."/administrator/components/com_teamtime/config.json"));
+}
+else{
+	$conf_data = new stdClass();
+	$conf_data->show_costs = 1;
+}
+
+$has_any_logs = false;
+foreach($this->other_logs as $row){
+	if(sizeof($row['logs']) > 0){
+		$has_any_logs = true;
+		break;
+	}
+}
+
+?>
+<style type="text/css">
+<!--
+.style1 {color: #999999}
+#duration, #money {
+	font-size: 14px;
+}
+-->
+
+/* todo list styles */
+.todo_table{
+    border: 1px solid #f0cd91;
+    background-color: #fff08c;
+    background-image: url(components/com_teamtime/assets/images/todo_table_bg.gif);
+    background-repeat: repeat-x;
+    background-position: top left;
+
+
+}
+.todo_table tr th{
+    border-right: 1px solid #f0cd91;
+    border-bottom: 2px solid #f0cd91;
+    color: #ba8e42;
+    font-size: 12px;
+
+}
+
+.todo_table tr td{
+    border-right: 1px solid #f0cd91;
+    border-top: 1px solid #f0cd91;
+    height: 28px;
+    font-size: 15px;
+
+
+
+}
+
+.todo_table span{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.captioncell{
+    color: #ba8e42;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.chkbx{
+
+    background-image: url(components/com_teamtime/assets/images/checkbox_unchecked.gif)!important;
+    background-repeat: no-repeat;
+    background-position: top left;
+    display:block;
+    float:left;
+    height:20px;
+    width:21px;
+
+}
+table.todo_table tr.result_row td{
+    border-top-width: 2px;
+    border-top-color: #f0cd91;
+    white-space: nowrap;
+}
+
+
+
+table.todo_table tr td:last-child{
+	text-align: right;
+}
+
+table.todo_table tr td:first-child a{
+	max-width: 95%;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+table.todo_table tr.active_row td{
+    background-color: #ffee5c!important;
+    white-space: nowrap;
+}
+
+.chkbx_checked{
+    background-image: url(components/com_teamtime/assets/images/checkbox_checked.gif)!important;
+    background-repeat: no-repeat;
+    background-position: top left;
+    display:block;
+    float:left;
+    height:20px;
+    width:21px;
+}
+
+</style>
+
+<div id="yoo-teamlog">
+
+	<h1 class="user">
+		<?php echo $this->user->name; ?>
+		<a id="todos-trigger" class="todos-trigger" style="text-transform: none;"
+			 href="javascript:void(0)">[<?=JText::_("TODOS"); ?>: <?php echo count($this->todos); ?>]</a>
+		<a id="projects-trigger" class="todos-trigger" style="text-transform: none;"
+			 href="javascript:void(0)">[<?=JText::_("PROJECTS"); ?>: <?php echo count($this->projects); ?>]</a>
+	</h1>
+
+	<div class="todos">		
+		<div id="todos" class="todos-line">
+			<?php include('todos.php'); ?>
+		</div>
+	</div>
+						
+	<!-- todos end -->	
+
+	<div class="logs">
+
+		<div class="left">
+
+			<div class="log-panel">
+
+				<form id="main_form_log" 
+						onsubmit="return log_form_onsubmit();"
+						method="post" action="<?php echo JRoute::_('index.php');?>">
+					<input type="hidden" id="todo_id" name="todo_id" value="<?=$current_todo_id?>">
+
+					<div>
+					<table width="100%" border="0" cellspacing="5">
+  <tr>
+    <td valign="top"><?php include('selectproj.php'); ?></td>
+    <td width="100%" valign="bottom"><div>
+					<?php include('inputcomment.php'); ?>
+
+			<table>
+			<tr valign="center">
+				<td height="20">
+					<?php include('durationselect.php'); ?>
+				</td>
+				<td height="20">
+					<? if($conf_data->show_costs == "0"){?>
+						<input name="money" id="tmoney" style="display:none;" value="">
+					<?}else{?>
+						<div id="money" style="display: none;">
+							<label>Накладные&nbsp;расходы:&nbsp;<input name="money" id="tmoney" alt="p9x" value="" size="4" maxlength="4"></label>
+						</div>
+					<?}?>
+				</td>				
+			</tr>
+			</table>
+
+					<?php include('startstoplog.php'); ?>
+				</div></td>
+  </tr>	
+</table>
+
+	</div>		
+					<input type="hidden" value="com_teamtime" name="option"/>
+					<?php echo JHTML::_('form.token'); ?> 
+				</form>
+
+				<div id="project-description">
+				<?php
+				
+
+
+
+				if(($get['status'] == "started")) 				
+				{
+					foreach ($this->_models['log']->_user_todos as $tod)
+					{
+						if ($tod->state == 1)
+						{
+							//alert( $this->_models['log']->_user_todos[0]->state);
+							echo $tod->description;
+						}
+					}
+				} 
+				?> 
+				</div>
+
+
+				<div id="project_data">
+				</div>
+
+				<p>&nbsp;</p>
+				<div id="task_data">
+				</div>
+				
+			</div>
+			<!-- log-panel end -->
+			
+		</div>
+		<!-- left-log end -->
+
+<table width="100%"  border="0">
+  <tr>
+    <td valign="top" width="100%"><div class="user-log">
+
+				<?php foreach ($this->user_logs as $date => $logs) : ?>
+					<span class="date">
+						<?php echo $date; ?>
+					</span>
+					<ul class="log">
+					<?php foreach ($logs as $log) : ?>
+						<li>
+							<span href="javascript:void(0)" class="tooltip" title="<?php echo $log->getProjectName().' :: '.$log->getTaskName().' ('.$log->getDurationText().')'; ?>"><?php
+								echo convert_to_links($log->description); ?>
+								<?php echo $log->money != 0? ("[".$log->money." руб.]") : ""; ?><br>
+								<div class="light"><?php echo $log->getProjectName().' :: '.$log->getTaskName().' ('.$log->getDurationText().')'; ?></div>
+							</span>
+							<?php
+							//if(DateHelper::isToday($log->date)){
+								?>
+								 <span class="delta">
+									- <?php	echo JText::sprintf('%S ago', $log->getDeltaText()); ?>
+									<a href="<?php echo JRoute::_('index.php?log_id='.$log->id.'&task=removelog');?>"><?php echo JText::_('Delete'); ?></a>
+								</span>
+								<?php
+							//}
+							?>
+
+						</li>
+					<?php endforeach; ?>
+					</ul>
+				<?php endforeach; ?>
+			</div>
+			<!-- user-log end --></td>
+		
+    <td valign="top" align="right">
+			<div class="right">
+				<?php if ($has_any_logs) : ?>
+				<h5 align="left" class="style1"><?=JText::_("CURRENT_TASKS")?>: </h5>
+				<div class="team-log">
+					<div class="team-log-t">
+						<div class="team-log-b">
+							<div class="team-log-l">
+								<div class="team-log-r">
+									<div class="team-log-tl">
+										<div class="team-log-tr">
+											<div class="team-log-bl">
+												<div class="team-log-br">
+													<div class="team-log-loading">
+														<div class="team-log-line">
+															<div id="team-log" class="team-log-hole">
+																<?php include('teamlog.php'); ?>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php endif; ?>
+			<!-- team-log end -->
+			</div>
+		<!-- right-log end --></td>
+  </tr>
+</table>
+
+			
+
+
+
+
+		
+
+	</div>
+	<!-- log-container end -->
+
+</div>
+
+
+<script type="text/javascript">
+	window.addEvent('domready', function(){
+		var app = new Teamlog('<?php echo JRoute::_('index.php?option='.$this->option.'&controller='.$this->controller.'&view=log&format=raw', false);?>', { msgDeletelog: '<?php echo JText::_('Are you sure you want to delete the log?'); ?>' });
+
+		<? $unclog = $user->getUncompletedLog();
+		if(sizeof($unclog) > 0){?>
+			app.attachEvents({enable_todos:false});
+		<?}else{?>
+			app.attachEvents({enable_todos:true});
+		<?}?>
+	});
+
+(function($){
+
+$(document).ready(function(){
+	//set client time
+	var set_local_time = function(){
+		return;
+
+		var v = parseInt($("#hours").val()) +
+			new Date().getTimezoneOffset()/60;
+		if(v < 0)
+			v = 0;
+		$("#hours").val(v);
+	};
+
+	var pauseClick = function(){
+		$.post("/index.php?option=com_teamtime&task=set_pause",
+			function(data){
+				set_local_time();
+
+				$('#bPause').attr("disabled", "disabled");
+				$('#bStop').css({"display": "none"});
+				$('#bContinue').css({"display": ""});
+				$('#imagePause').css({"display": ""});
+
+				$('#hours').attr("disabled", "disabled");
+				$('#minutes').attr("disabled", "disabled");
+			});
+	};
+	$('#bPause').click(pauseClick);
+
+	$('#bContinue').click(function(){
+		$.post("/index.php?option=com_teamtime&task=reset_pause",
+			function(data){
+				$('#bPause').removeAttr("disabled");
+				$('#bStop').css({"display": ""});
+				$('#bContinue').css({"display": "none"});
+				$('#imagePause').css({"display": "none"});
+
+				$('#hours').removeAttr("disabled");
+				$('#minutes').removeAttr("disabled");
+			});
+	});
+
+	/*$.get("/index.php?option=com_teamtime&task=check_pause&t="+new Date().getTime(),
+		function(data){
+			//if not begin - no check pause
+			if($("#bStart").length > 0) return;
+			if(parseInt(data) != 0){
+				$.post("/index.php?option=com_teamtime&task=reset_pause&t="+new Date().getTime(),
+					function(data){
+						pauseClick();
+					});
+			}
+			else
+				set_local_time();
+		});*/
+
+	if($("#bStart").length == 0){
+		$('#tmoney').autoNumeric();
+		$('#money').css({"display": ""});
+	}
+});
+
+})(jQuery);
+
+/* ------------------------------------ */
+
+(function($){
+$(document).ready(function(){
+
+$('#start_work').hide();
+
+<?php
+	$unclog = $user->getUncompletedLog();
+	if(sizeof($unclog) > 0 /*&& !$unclog[0]->todo_id*/){?>
+		var project_id = <?=$unclog[0]->project_id?>;
+		var task_id = <?=$unclog[0]->task_id?>;
+
+		$("#project_data").load(
+			"index.php?option=com_teamtime&controller=&view=log&format=raw&task=load_project_description&project_id="+
+			project_id);
+
+		$("#task_data").load(
+			"index.php?option=com_teamtime&controller=&view=log&format=raw&task=load_task_description&task_id="+
+			task_id);
+
+		$("#todos-trigger").removeClass('todos-trigger').addClass('todos-trigger1');
+		$("#projects-trigger").removeClass('todos-trigger').addClass('todos-trigger1');
+
+	<?}else{?>
+
+		$("#projectshape-id").hide();
+		$("#task-id").hide();
+
+		$('#projects-trigger').click(function() {
+			$("#projectshape-id").toggle();
+			$("#task-id").toggle();
+		});
+	<?}?>
+
+});
+})(jQuery);
+</script>

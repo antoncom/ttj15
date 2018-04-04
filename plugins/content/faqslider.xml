@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install type="plugin" version="1.5.0" group="content" method="upgrade">
+	<name>Content - FAQ Slider Plugin</name>
+	<author>Matt Faulds</author>
+	<creationDate>January 2010</creationDate>
+	<copyright>Copyright 2009 Trafalgar Design</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@trafalgardesign.com</authorEmail>
+	<authorUrl>http://www.trafalgardesign.com</authorUrl>
+	<version>0.7.4</version>
+	<description>FS_DESCRIPTION</description>
+	<files>
+		<filename plugin="faqslider">faqslider.php</filename>
+		<folder>faqslider</folder>
+	</files>
+	<languages>
+	   <language tag="en-GB">en-GB.plg_content_faqslider.ini</language>
+	</languages>
+	<params>
+	   <param type="spacer" default=" "/>
+	   <param name="defaulttype" type="radio" default="sliders" label="FS_DEFAULT_TYPE" description="FS_DEFAULT_TYPE_DESC">
+		   <option value="sliders">Sliders</option>
+		   <option value="tabs">Tabs</option>
+	   </param>
+	   <param name="defaultsource" type="radio" default="art" label="FS_DEFAULT_SOURCE" description="FS_DEFAULT_SOURCE_DESC">
+		   <option value="art">Articles</option>
+		   <option value="mod">Modules</option>
+		   <option value="inline">Inline</option>
+	   </param>
+	   <param name="ordering" type="list" default="ordering" label="FS_ORDERING" description="FS_ORDERING_DESC">
+		   <option value="ordering">Joomla</option>
+		   <option value="title asc">Alpha Ascending</option>
+		   <option value="title desc">Alpha Descending</option>
+		   <option value="created asc">Date Added Ascending</option>
+		   <option value="created desc">Date Added Descending</option>
+		   <option value="modified asc">Date Modified Ascending</option>
+		   <option value="modified desc">Date Modified Descending</option>
+	   </param>
+	   <param name="css" type="radio" default="1" label="FS_CSS" description="FS_CSS_DESC">
+		   <option value="1">Yes</option>
+		   <option value="0">No</option>
+	   </param>
+   </params>
+   <params group="advanced">
+	   <param type="spacer" default="FS_SLIDERS_TYPE"/>
+	   <param name="native" type="list" default="1" label="FS_NATIVE" description="FS_NATIVE_DESC">
+		  <option value="1">FS_NATIVE_SLIDERS</option>
+		  <option value="0">FS_ALT_SLIDERS</option>
+	   </param>
+	   <param type="spacer" default="FS_NATIVE_SLIDERS"/>
+	   <param name="startclosed" type="radio" default="-1" label="FS_STARTCLOSED" description="FS_STARTCLOSED_DESC">
+		  <option value="-1">Yes</option>
+		  <option value="0">No</option>
+	   </param>
+	   <param name="opacity" type="radio" default="1" label="FS_OPACITY" description="FS_OPACITY_DESC">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+	   </param>
+	   <param type="spacer" default="FS_ALT_SLIDERS"/>
+	   <param name="expandcollapse" type="radio" default="1" label="FS_EXPANDCOLLAPSE" description="FS_EXPANDCOLLAPSE_DESC">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+	   </param>
+	   <param name="ecsep" type="text" length="4" default="|" label="FS_EXPANDCOLLAPSE_SEP" description="FS_EXPANDCOLLAPSE_SEP_DESC"/>
+	   <param name="refocus" type="radio" default="1" label="FS_REFOCUS" description="FS_REFOCUS_DESC">
+		  <option value="1">Yes</option>
+		  <option value="0">No</option>
+	   </param>
+	   <param type="spacer" default=""/>
+	   <param type="spacer" default="FS_ARTICLE_PROCESSING"/>
+	   <param name="processart" type="radio" default="0" label="FS_PROCESS_ART" description="FS_PROCESS_ART_DESC">
+		   <option value="1">Full Article</option>
+		   <option value="0">Article Text Only</option>
+	   </param>
+	   <param name="show_title" type="list" default="0" label="FS_SHOW" description="FS_SHOW_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link_titles" type="list" default="0" label="FS_LINKED_TITLES" description="FS_LINKED_TITLES_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_intro" type="list" default="" label="FS_INTRO_TEXT" description="FS_INTRO_TEXT_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_section" type="list" default="0" label="FS_PARAMSECTION" description="FS_PARAMSECTION_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="link_section" type="list" default="0" label="FS_PARAMSECTIONLINK" description="FS_PARAMSECTIONLINK_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_category" type="list" default="0" label="FS_PARAMCATEG" description="FS_PARAMCATEG_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="link_category" type="list" default="0" label="FS_PARAMCATEGLINK" description="FS_PARAMCATEGLINK_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_vote" type="list" default="0" label="FS_PARAMRATING" description="FS_PARAMRATING_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_author" type="list" default="0" label="FS_PARAMAUTHOR" description="FS_PARAMAUTHOR_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_create_date" type="list" default="0" label="FS_PARAMCREATEDATE" description="FS_PARAMCREATEDATE_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_modify_date" type="list" default="1" label="FS_PARAMMODIFYDATE" description="FS_PARAMMODIFYDATE_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_pdf_icon" type="list" default="0" label="FS_PARAMPDF" description="FS_PARAMPDF_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_print_icon" type="list" default="0" label="FS_PARAMPRINT" description="FS_PARAMPRINT_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_email_icon" type="list" default="0" label="FS_PARAMEMAIL" description="FS_PARAMEMAIL_DESC">
+			<option value="">Use Article Params</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+   		<param name="show_readmore" type="radio" default="0" label="FS_SHOW_READMORE" description="FS_SHOW_READMORE_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="readmore_limit" type="text" length="4" default="500" label="FS_READMORE_LIMIT" description="FS_READMORE_LIMIT_DESC"/>
+		<param name="readmore_link" type="text" length="20" default="Read More..." label="FS_READMORE_LINK" description="FS_READMORE_LINK_DESC"/>
+		<param type="spacer" default=""/>
+		<param type="spacer" default="FS_MODULE"/>
+		<param name="modstyle" type="list" default="xhtml" label="FS_MODSTYLE" description="FS_MODSTYLE_DESC">
+		   <option value="xhtml">Xhtml</option>
+		   <option value="table">Table</option>
+		   <option value="none">None</option>
+		   <option value="horz">Horz</option>
+		   <option value="rounded">Rounded</option>
+		   <option value="outline">Outline</option>
+	    </param>
+	    <param name="modordering" type="list" default="ordering" label="FS_MODORDERING" description="FS_MODORDERING_DESC">
+		   <option value="ordering">Joomla</option>
+		   <option value="title asc">Alpha Ascending</option>
+		   <option value="title desc">Alpha Descending</option>
+	    </param>
+		<param type="spacer" default=""/>
+	    <param type="spacer" default="FS_SECTION_PROCESSING"/>
+	    <param name="catdesc" type="radio" default="1" label="FS_CATDESC" description="FS_CATDESC_DESC">
+	    	<option value="1">Yes</option>
+	    	<option value="0">No</option>
+	    </param>
+	    <param name="catordering" type="list" default="ordering" label="FS_CATORDERING" description="FS_CATORDERING_DESC">
+		   <option value="ordering">Joomla</option>
+		   <option value="title asc">Alpha Ascending</option>
+		   <option value="title desc">Alpha Descending</option>
+	    </param>
+		<param type="spacer" default=""/>
+	   	<param type="spacer" default="FS_DEBUGGING"/>
+	   	<param name="debug" type="radio" default="0" label="FS_DEBUG" description="FS_DEBUG_DESC">
+		   <option value="1">Yes</option>
+		   <option value="0">No</option>
+	   	</param>
+	   	<param name="developer" type="radio" default="0" label="FS_DEVELOPER" description="FS_DEVELOPER_DESC">
+		   <option value="1">Yes</option>
+		   <option value="0">No</option>
+	   	</param>
+   </params>
+</install>

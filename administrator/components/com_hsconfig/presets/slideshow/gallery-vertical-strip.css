@@ -1,0 +1,19 @@
+/*
+ * gallery preset: gallery-vertical-strip
+*/
+
+/* center the text caption */
+.highslide-caption {
+	width: 100%;
+	text-align: center;
+}
+/* remove the close button from the controls since we already have one in the corner of the image */
+.highslide-close {
+	display: none !important;
+}
+/* put the image number in front of the caption */
+.highslide-number {
+	display: inline;
+	padding-right: 1em;
+	color: white;
+}

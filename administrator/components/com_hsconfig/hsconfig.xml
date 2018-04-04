@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>HsConfig</name>
+	<creationDate>May 2009</creationDate>
+	<author>Ken Lowther</author>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>http://www.joomlanook.com</authorUrl>
+	<copyright>This edition of Highslide JS Configuration is released under the GNU/GPL License</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.0.1</version>
+	<description>
+	&lt;p&gt;Highslide JS Configuration component 2.0.1&lt;/p&gt;
+	&lt;p&gt;Changelog (from 2.0.0):&lt;ul&gt;
+	&lt;li&gt;Corrected install error that occurred on PHP 4 based servers.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Highslide JS Configuration component 2.0.0&lt;/p&gt;
+	&lt;p&gt;Initial release supporting Highslide JS version 4&lt;/p&gt;
+	</description>
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>hsconfig.php</filename>
+		<filename>index.html</filename>
+		<filename>models/hsconfig.php</filename>
+		<filename>models/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/hsconfig/index.html</filename>
+		<filename>views/hsconfig/view.html.php</filename>
+		<filename>views/hsconfig/tmpl/default.php</filename>
+		<filename>views/hsconfig/tmpl/index.html</filename>
+	</files>
+    <installfile>install.hsconfig.php</installfile>
+	<administration>
+		<menu img="components/com_hsconfig/images/highslidelogo.png">Highslide JS Configuration</menu>
+		<files folder="admin">
+			<filename>admin.hsconfig.php</filename>
+			<filename>controller.php</filename>
+			<filename>helper.php</filename>
+			<filename>index.html</filename>
+			<filename>install.hsconfig.php</filename>
+			<filename>LICENSE.php</filename>
+			<filename>LICENSES.php</filename>
+			<filename>controllers/hsconfig.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>css/icons.css</filename>
+			<filename>css/index.html</filename>
+			<filename>css/default.css</filename>
+			<filename>css/ssscreenshot.css</filename>
+			<filename>css/opexample.css</filename>
+			<filename>js/dotab.js</filename>
+			<filename>js/index.html</filename>
+			<filename>js/opexample.js</filename>
+			<filename>js/ssscreenshot.js</filename>
+			<filename>images/index.html</filename>
+			<filename>images/highslidelogo.png</filename>
+			<filename>images/toolbar/index.html</filename>
+			<filename>images/toolbar/icon-32-applypublish.png</filename>
+			<filename>images/toolbar/icon-32-savepublish.png</filename>
+			<filename>helper/hsconfig.php</filename>
+			<filename>helper/index.html</filename>
+			<filename>models/hsconfig.php</filename>
+			<filename>models/hsconfigs.php</filename>
+			<filename>models/index.html</filename>
+			<filename>presets/overlay/closebutton.html</filename>
+			<filename>presets/overlay/closebutton.jpg</filename>
+			<filename>presets/overlay/closebuttonx.css</filename>
+			<filename>presets/overlay/closebuttonx.html</filename>
+			<filename>presets/overlay/closebuttonx.jpg</filename>
+			<filename>presets/overlay/controlbar4.css</filename>
+			<filename>presets/overlay/controlbar4.html</filename>
+			<filename>presets/overlay/controlbar4.jpg</filename>
+			<filename>presets/overlay/controlbar5.css</filename>
+			<filename>presets/overlay/controlbar5.html</filename>
+			<filename>presets/overlay/controlbar5.jpg</filename>
+			<filename>presets/overlay/controls-in-heading.css</filename>
+			<filename>presets/overlay/controls-in-heading.html</filename>
+			<filename>presets/overlay/controls-in-heading.jpg</filename>
+			<filename>presets/overlay/controls-in-heading.js</filename>
+			<filename>presets/overlay/imageflow-controlbar4.css</filename>
+			<filename>presets/overlay/imageflow-controlbar4.html</filename>
+			<filename>presets/overlay/imageflow-controlbar4.jpg</filename>
+			<filename>presets/overlay/index.html</filename>
+			<filename>presets/overlay/none-selected.jpg</filename>
+			<filename>presets/slideshow/borderless-floating-caption.jpg</filename>
+			<filename>presets/slideshow/borderless-floating-caption.js</filename>
+			<filename>presets/slideshow/controls-in-heading.jpg</filename>
+			<filename>presets/slideshow/controls-in-heading.js</filename>
+			<filename>presets/slideshow/dark-design.jpg</filename>
+			<filename>presets/slideshow/dark-design.js</filename>
+			<filename>presets/slideshow/gallery-floating-thumbs.jpg</filename>
+			<filename>presets/slideshow/gallery-floating-thumbs.js</filename>
+			<filename>presets/slideshow/gallery-horizontal-strip.jpg</filename>
+			<filename>presets/slideshow/gallery-horizontal-strip.js</filename>
+			<filename>presets/slideshow/gallery-in-box.jpg</filename>
+			<filename>presets/slideshow/gallery-in-box.js</filename>
+			<filename>presets/slideshow/gallery-in-page.css</filename>
+			<filename>presets/slideshow/gallery-in-page.jpg</filename>
+			<filename>presets/slideshow/gallery-in-page.js</filename>
+			<filename>presets/slideshow/gallery-thumbstrip-above.jpg</filename>
+			<filename>presets/slideshow/gallery-thumbstrip-above.js</filename>
+			<filename>presets/slideshow/gallery-thumbstrip-below.jpg</filename>
+			<filename>presets/slideshow/gallery-thumbstrip-below.js</filename>
+			<filename>presets/slideshow/gallery-vertical-strip.css</filename>
+			<filename>presets/slideshow/gallery-vertical-strip.jpg</filename>
+			<filename>presets/slideshow/gallery-vertical-strip.js</filename>
+			<filename>presets/slideshow/index.html</filename>
+			<filename>presets/slideshow/no-border-floating-caption.jpg</filename>
+			<filename>presets/slideshow/no-border-floating-caption.js</filename>
+			<filename>presets/slideshow/none-selected.jpg</filename>
+			<filename>presets/slideshow/white-design.jpg</filename>
+			<filename>presets/slideshow/white-design.js</filename>
+			<filename>tables/hsconfig.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/index.html</filename>
+			<filename>views/hsconfig/index.html</filename>
+			<filename>views/hsconfig/view.html.php</filename>
+			<filename>views/hsconfig/tmpl/form.php</filename>
+			<filename>views/hsconfig/tmpl/navigation.php</filename>
+			<filename>views/hsconfig/tmpl/index.html</filename>
+			<filename>views/hsconfigs/index.html</filename>
+			<filename>views/hsconfigs/view.html.php</filename>
+			<filename>views/hsconfigs/tmpl/default.php</filename>
+			<filename>views/hsconfigs/tmpl/index.html</filename>
+		</files>
+	    <languages>
+   		     <language tag="en-GB">admin/en-GB.com_hsconfig.ini</language>
+    	</languages>
+	</administration>
+	<params group="general">
+		<param name="enableKeyListener" type="radio" default="tru" label="Enable key listener" description="TIPENABLEKEYLISTENER">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="expandCursor" type="text" default="zoomin.cur" label="Expand cursor" description="TIPEXPANDCURSOR" />
+    	<param name="restoreCursor" type="text" default="zoomout.cur" label="Restore cursor" description="TIPRESTORECURSOR" />
+    	<param name="loadingOpacity" type="text" default="0.75" label="Loading opacity" description="TIPLOADINGOPACITY"/>
+		<param name="dynamicallyUpdateAnchors" type="radio" default="tru" label="Dynamically update anchors" description="TIPDYNAMICALLYUPDATEANCHORS">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="numberOfImagesToPreload" type="text" default="5" label="Images to preload" description="TIPNUMBEROFIMAGESTOPRELOAD" />
+    	<param name="zIndexCounter" type="text" default="1001" label="Z-Index counter" description="TIPZINDEXCOUNTER"/>
+    	<param name="openerTagNames" type="text" default="" label="Opener tag names" description="TIPOPENERTAGNAMES"/>
+    </params>
+	<params group="popupcontent">
+		<param name="outlineType" type="filelist" default="-1" directory="plugins/content/highslide/graphics/outlines" stripext="1" filter=".png" hide_default="1" label="Outline" description="TIPOUTLINETYPE" />
+    	<param name="outlineStartOffset" type="text" default="3" label="Outline start offset" description="TIPOUTLINESTARTOFFSET" />
+		<param name="wrapperClassname" type="text" default='' size="50" label="Wrapper classname" description="TIPWRAPPERCLASS" />
+		<param name="align" type="list" default="" label="Alignment" description="TIPALIGNMENT">
+			<option value="">- None Selected -</option>
+			<option value="auto">Auto</option>
+			<option value="center">Center</option>
+		</param>
+        <param name="anchor" type="list" default="" label="Anchor" description="TIPANCHOR">
+			<option value="">- None Selected -</option>
+			<option value="auto">Auto</option>
+			<option value="top">Top</option>
+			<option value="top right">Top, right</option>
+			<option value="top left">Top, left</option>
+			<option value="bottom">Bottom</option>
+			<option value="bottom right">Bottom, right</option>
+			<option value="bottom left">Bottom, left</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</param>
+    	<param name="backgroundDimmingColor" type="text" default="black" label="Dimming color" description="TIPBACKGROUNDDIMMINGCOLOR"/>
+		<param name="showCredits" type="radio" default="tru" label="Credits" description="TIPCREDITS">
+			<option value="fals">Hide</option>
+			<option value="tru">Show</option>
+		</param>
+		<param name="crVPosition" type="list" default="top" label="Credits vertical position" description="TIPCRVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="crHPosition" type="list" default="left" label="Credits horizontal position" description="TIPCRHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="creditsHref" type="text" default='http://highslide.com' size="50" label="Credits href link" description="TIPCREDITSHREF" />
+		<param name="numberPosition" type="list" default="-1" label="Number position" description="TIPNUMBERPOSITION">
+            <option value="-1">- None Selected -</option>
+            <option value="caption">Caption</option>
+            <option value="heading">Heading</option>
+        </param>
+		<param name="captionEval" type="list" default="-1" label="Caption" description="TIPCAPTION">
+            <option value="-1">- None Selected -</option>
+            <option value="this.thumb.alt">ALT Attribute from IMG Tag</option>
+            <option value="this.thumb.title">TITLE Attribute from IMG Tag</option>
+            <option value="this.thumb.src">SRC Attribute from IMG Tag</option>
+            <option value="this.a.title">TITLE Attribute from A HREF Tag</option>
+            <option value="this.a.href">HREF Attribute from A HREF Tag</option>
+        </param>
+		<param name="captionText" type="text" default="" size="50" label="Caption text" description="TIPCAPTIONTEXT" />
+		<param name="headingEval" type="list" default="-1" label="Heading" description="TIPHEADING">
+            <option value="-1">- None Selected -</option>
+            <option value="this.thumb.alt">ALT Attribute from IMG Tag</option>
+            <option value="this.thumb.title">TITLE Attribute from IMG Tag</option>
+            <option value="this.thumb.src">SRC Attribute from IMG Tag</option>
+            <option value="this.a.title">TITLE Attribute from A HREF Tag</option>
+            <option value="this.a.href">HREF Attribute from A HREF Tag</option>
+        </param>
+		<param name="headingText" type="text" default="" size="50" label="Heading text" description="TIPHEADINGTEXT" />
+		<param name="maincontentEval" type="list" default="-1" label="Main content" description="TIPMAINCONTENT">
+            <option value="-1">- None Selected -</option>
+            <option value="this.a.title">TITLE Attribute from A HREF Tag</option>
+            <option value="this.a.href">HREF Attribute from A HREF Tag</option>
+        </param>
+		<param name="maincontentText" type="text" default="" size="50" label="Main content text" description="TIPMAINCONTENTTEXT" />
+		<param name="width" type="text" default='' label="Width" description="TIPWIDTH" />
+		<param name="height" type="text" default='' label="Height" description="TIPHEIGHT" />
+    	<param name="minWidth" type="text" default="200" label="Minimum width" description="TIPMINWIDTH" />
+    	<param name="minHeight" type="text" default="200" label="Minimum height" description="TIPMINHEIGHT" />
+    	<param name="maxWidth" type="text" default="" label="Maximum width" description="TIPMAXWIDTH" />
+    	<param name="maxHeight" type="text" default="" label="Maximum height" description="TIPMAXHEIGHT" />
+    	<param name="marginTop" type="text" default="10" label="Margin top" description="TIPMARGINTOP" />
+    	<param name="marginBottom" type="text" default="15" label="Margin bottom" description="TIPMARGINBOTTOM" />
+    	<param name="marginLeft" type="text" default="10" label="Margin left" description="TIPMARGINLEFT" />
+    	<param name="marginRight" type="text" default="15" label="Margin right" description="TIPMARGINRIGHT" />
+		<param name="targetX" type="text" default='' size="50" label="TargetX" description="TIPTARGETX" />
+		<param name="targetY" type="text" default='' size="50" label="TargetY" description="TIPTARGETY" />
+    	<param name="fullExpandOpacity" type="text" default="1.0" label="Full expand opacity" description="TIPFULLEXPANDOPACITY"/>
+		<param name="fullExpandVPosition" type="list" default="bottom" label="Full expand vertical position" description="TIPFULLEXPANDVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="fullExpandHPosition" type="list" default="right" label="Full expand horizontal position" description="TIPFULLEXPANDHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+	</params>
+	<params group="popupbehavior">
+		<param name="outlineWhileAnimating" type="radio" default="2" label="Outline while animating" description="TIPOUTLINEWHILEANIMATING">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+			<option value="2">HTML Only</option>
+		</param>
+		<param name="allowSizeReduction" type="radio" default="tru" label="Allow size reduction" description="TIPALLOWSIZEREDUCTION">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="allowMultipleInstances" type="radio" default="tru" label="Allow multiple instances" description="TIPALLOWMULTIPLEINSTANCES">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="modalWhenDimmed" type="radio" default="no" label="Modal when dimmed" description="TIPMODALWHENDIMMED">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+    	<param name="dimmingOpacity" type="text" default="0" label="Dimming opacity" description="TIPDIMMINGOPACITY"/>
+    	<param name="dimmingDuration" type="text" default="50" label="Dimming duration" description="TIPDIMMINGDURATION"/>
+    	<param name="easing" type="list" default="easeInQuad" label="Easing" description="TIPEASING" >
+			<option value="null">- None Selected -</option>
+			<option value="easeInQuad">EaseInQuad</option>
+			<option value="linearTween">LinearTween</option>
+			<option value="easeOutQuad">EaseOutQuad</option>
+			<option value="easeInOutQuad">EaseInOutQuad</option>
+			<option value="easeInCubic">EaseInCubic</option>
+			<option value="easeOutCubic">EaseOutCubic</option>
+			<option value="easeInOutCubic">EaseInOutCubic</option>
+			<option value="easeInQuart">EaseInQuart</option>
+			<option value="easeOutQuart">EaseOutQuart</option>
+			<option value="easeInOutQuart">EaseInOutQuart</option>
+			<option value="easeInQuint">EaseInQuint</option>
+			<option value="easeOutQuint">EaseOutQuint</option>
+			<option value="easeInOutQuint">EaseInOutQuint</option>
+			<option value="easeInSine">EaseInSine</option>
+			<option value="easeOutSine">EaseOutSine</option>
+			<option value="easeInOutSine">EaseInOutSine</option>
+			<option value="easeInExpo">EaseInExpo</option>
+			<option value="easeOutExpo">EaseOutExpo</option>
+			<option value="easeInOutExpo">EaseInOutExpo</option>
+			<option value="easeInCirc">EaseInCirc</option>
+			<option value="easeOutCirc">EaseOutCirc</option>
+			<option value="easeInOutCirc">EaseInOutCirc</option>
+			<option value="easeInElastic">EaseInElastic</option>
+			<option value="easeOutElastic">EaseOutElastic</option>
+			<option value="easeInOutElastic">EaseInOutElastic</option>
+			<option value="easeInBack">EaseInBack</option>
+			<option value="easeOutBack">EaseOutBack</option>
+			<option value="easeInOutBack">EaseInOutBack</option>
+			<option value="easeInBounce">EaseInBounce</option>
+			<option value="easeOutBounce">EaseOutBounce</option>
+			<option value="easeInOutBounce">EaseInOutBounce</option>
+		</param>
+    	<param name="easingClose" type="list" default="Use easing" label="Easing close" description="TIPEASINGCLOSE" >
+			<option value="">Use Easing</option>
+			<option value="easeInQuad">EaseInQuad</option>
+			<option value="linearTween">LinearTween</option>
+			<option value="easeOutQuad">EaseOutQuad</option>
+			<option value="easeInOutQuad">EaseInOutQuad</option>
+			<option value="easeInCubic">EaseInCubic</option>
+			<option value="easeOutCubic">EaseOutCubic</option>
+			<option value="easeInOutCubic">EaseInOutCubic</option>
+			<option value="easeInQuart">EaseInQuart</option>
+			<option value="easeOutQuart">EaseOutQuart</option>
+			<option value="easeInOutQuart">EaseInOutQuart</option>
+			<option value="easeInQuint">EaseInQuint</option>
+			<option value="easeOutQuint">EaseOutQuint</option>
+			<option value="easeInOutQuint">EaseInOutQuint</option>
+			<option value="easeInSine">EaseInSine</option>
+			<option value="easeOutSine">EaseOutSine</option>
+			<option value="easeInOutSine">EaseInOutSine</option>
+			<option value="easeInExpo">EaseInExpo</option>
+			<option value="easeOutExpo">EaseOutExpo</option>
+			<option value="easeInOutExpo">EaseInOutExpo</option>
+			<option value="easeInCirc">EaseInCirc</option>
+			<option value="easeOutCirc">EaseOutCirc</option>
+			<option value="easeInOutCirc">EaseInOutCirc</option>
+			<option value="easeInElastic">EaseInElastic</option>
+			<option value="easeOutElastic">EaseOutElastic</option>
+			<option value="easeInOutElastic">EaseInOutElastic</option>
+			<option value="easeInBack">EaseInBack</option>
+			<option value="easeOutBack">EaseOutBack</option>
+			<option value="easeInOutBack">EaseInOutBack</option>
+			<option value="easeInBounce">EaseInBounce</option>
+			<option value="easeOutBounce">EaseOutBounce</option>
+			<option value="easeInOutBounce">EaseInOutBounce</option>
+		</param>
+		<param name="padToMinWidth" type="radio" default="fals" label="Pad to minimum width" description="TIPPADTOMINWIDTH">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="thumbNail" type="radio" default="hidden" label="Thumbnail" description="TIPTHUMBNAIL">
+			<option value="hidden">Hide</option>
+			<option value="visible">Show</option>
+		</param>
+		<param name="blockRightClick" type="radio" default="fals" label="Block right click" description="TIPBLOCKRIGHTCLICK">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="mouseHoverAction" type="radio" default="" label="Mouse hover action" description="TIPMOUSEHOVERACTION">
+    		<option value="">None</option>
+			<option value="focus">AutoFocus</option>
+			<option value="close">AutoClose</option>
+		</param>
+		<param name="fadeInOut" type="radio" default="fals" label="Fade In/Out" description="TIPFADEINOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="useBox" type="radio" default="fals" label="Use constraining box" description="TIPUSEBOX">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="transitions" type="list" default="'expand'" label="Transitions" description="TIPTRANSITIONS">
+            <option value="'fade'">Fade</option>
+			<option value="'fade', 'crossfade'">Fade, Crossfade</option>
+            <option value="'fade', 'expand'">Fade, Expand</option>
+<!--            <option value="'crossfade'">Crossfade</option> -->
+<!--            <option value="'crossfade', 'fade'">Crossfade, Expand</option> -->
+<!--            <option value="'crossfade', 'expand'">Crossfade, Expand</option> -->
+            <option value="'expand'">Expand</option>
+            <option value="'expand', 'fade'">Expand, Fade</option>
+            <option value="'expand', 'crossfade'">Expand, Crossfade</option>
+        </param>
+    	<param name="transitionDuration" type="text" default="500" label="Transition duration" description="TIPTRANSITIONDURATION" />
+		<param name="dragbyheading" type="radio" default="tru" label="Drag by heading" description="TIPDRAGBYHEADING">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="dragSensitivity" type="text" default="5" label="Drag sensitivity" description="TIPDRAGSENSITIVITY" />
+    	<param name="expandDuration" type="text" default="250" label="Expand duration" description="TIPEXPANDDURATION" />
+    	<param name="expandSteps" type="text" default="10" label="Expand steps" description="TIPEXPANDSTEPS" />
+    	<param name="restoreDuration" type="text" default="250" label="Restore duration" description="TIPRESTOREDURATION" />
+    	<param name="restoreSteps" type="text" default="10" label="Restore steps" description="TIPRESTORESTEPS" />
+	</params>
+	<params group="customoverlay">
+		<param name="ovOverlayId" type="text" default="" size="50" label="Overlay Id" description="TIPOVOVERLAYID" />
+		<param name="ovThumbnailId" type="text" default="" size="50" label="Thumbnail Id" description="TIPOVTHUMBNAILID" />
+		<param name="ovSlideshowGroup" type="text" default="" size="50" label="Slideshow group" description="TIPOVSLIDESHOWGROUP" />
+		<param name="ovFade" type="radio" default="1" label="Fade In/Out" description="TIPOVFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="ovVPosition" type="list" default="top" label="Overlay vertical position" description="TIPOVVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="ovHPosition" type="list" default="right" label="Overlay horizontal position" description="TIPOVHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="ovOVOffsetX" type="text" default="" label="OffsetX" description="TIPOVOVOFFSETX" />
+		<param name="ovOVOffsetY" type="text" default="" label="OffsetY" description="TIPOVOVOFFSETY" />
+		<param name="ovOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPOVOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="ovHideOnMouseOut" type="radio" default="tru" label="Hide on mouseout" description="TIPOVHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="ovOpacity" type="text" default="" label="Overlay opacity" description="TIPOVOPACITY"/>
+		<param name="ovWidth" type="text" default="" label="Overlay width" description="TIPOVWIDTH" />
+		<param name="ovOVClassname" type="text" default="" label="Class name" description="TIPOVOVCLASSNAME" />
+		<param name="ovUseOnHtml" type="radio" default="fals" label="Use on HTML" description="TIPOVUSEONHTML">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    </params>
+	<params group="overlaypresets">
+		<param name="opPreset" type="filelist" default="-1" directory="administrator/components/com_hsconfig/presets/overlay" stripext="1" filter=".html" exclude="index.html" hide_default="1" label="Preset" description="TIPOPPRESETS" />
+		<param name="opOverlayId" type="text" default="" size="50" label="Overlay Id" description="TIPOPOVERLAYID" />
+		<param name="opThumbnailId" type="text" default="" size="50" label="Thumbnail Id" description="TIPOPTHUMBNAILID" />
+		<param name="opSlideshowGroup" type="text" default="" size="50" label="Slideshow group" description="TIPOPSLIDESHOWGROUP" />
+		<param name="opFade" type="radio" default="1" label="Fade In/Out" description="TIPOPFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="opVPosition" type="list" default="top" label="Overlay vertical position" description="TIPOPVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="opHPosition" type="list" default="right" label="Overlay horizontal position" description="TIPOPHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="opOVOffsetX" type="text" default="" label="OffsetX" description="TIPOPOVOFFSETX" />
+		<param name="opOVOffsetY" type="text" default="" label="OffsetY" description="TIPOPOVOFFSETY" />
+		<param name="opOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPOPOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="opHideOnMouseOut" type="radio" default="tru" label="Hide on mouseout" description="TIPOPHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="opOpacity" type="text" default="" label="Overlay opacity" description="TIPOPOPACITY"/>
+		<param name="opWidth" type="text" default="" label="Overlay width" description="TIPOPWIDTH" />
+		<param name="opOVClassname" type="text" default="" label="Class name" description="TIPOPOVCLASSNAME" />
+		<param name="opUseOnHtml" type="radio" default="fals" label="Use on HTML" description="TIPOPUSEONHTML">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    </params>
+	<params group="htmlextensions">
+		<param name="allowWidthReduction" type="radio" default="fals" label="Allow width reduction" description="TIPALLOWWIDTHREDUCTION">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="allowHeightReduction" type="radio" default="tru" label="Allow height reduction" description="TIPALLOWHEIGHTREDUCTION">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="cacheAjax" type="radio" default="tru" label="Cache AJAX" description="TIPCACHEAJAX">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="preserveContent" type="radio" default="tru" label="Preserve content" description="TIPPRESERVECONTENT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="objectLoadTime" type="radio" default="before" label="Object load time" description="TIPOBJECTLOADTIME">
+			<option value="before">Before</option>
+			<option value="after">After</option>
+		</param>
+        <param name="objectType" type="list" default="" label="Object type" description="TIPOBJECTTYPE">
+			<option value="-1">- None Selected -</option>
+			<option value="iframe">IFrame</option>
+			<option value="ajax">AJAX</option>
+			<option value="swf">Flash</option>
+		</param>
+    </params>
+	<params group="flash">
+		<param name="flVersion" type="text" default="" size="3" label="Version" description="TIPFLVERSION" />
+		<param name="flExpressInstallURL" type="text" default="" size="70" label="Express installSwf URL" description="TIPFLEXPRESSINSTALLURL" />
+		<param name="flFlashvars" type="text" default="" size="70" label="Flashvars" description="TIPFLFLASHVARS" />
+		<param name="flParams" type="text" default="" size="70" label="Params" description="TIPFLPARAMS" />
+		<param name="flAttribs" type="text" default="" size="70" label="Attributes" description="TIPFLATTRIBS" />
+		<param name="objectHeight" type="text" default='' label="Object height" description="TIPOBJECTHEIGHT" />
+		<param name="objectWidth" type="text" default='' label="Object width" description="TIPOBJECTWIDTH" />
+    </params>
+	<params group="htmlskin">
+		<param name="htEnableSkin" type="radio" default="0" label="Enable skin" description="TIPHTENABLESKIN">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+    </params>
+	<params group="captionoverlay">
+		<param name="caEnableCaptionOverlay" type="radio" default="0" label="Enable caption overlay" description="TIPCAENABLECAPTIONOVERLAY">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="caFade" type="radio" default="0" label="Fade In/Out" description="TIPCAFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="caOVVPosition" type="list" default="below" label="Overlay vertical position" description="TIPCAOVVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="caOVHPosition" type="list" default="-1" label="Overlay horizontal position" description="TIPCAOVHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="caOVOffsetX" type="text" default="" label="OffsetX" description="TIPCAOVOFFSETX" />
+		<param name="caOVOffsetY" type="text" default="" label="OffsetY" description="TIPCAOVOFFSETY" />
+		<param name="caOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPCAOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="caHideOnMouseOut" type="radio" default="fals" label="Hide on mouseout" description="TIPCAHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="caOpacity" type="text" default="" label="Overlay opacity" description="TIPCAOPACITY"/>
+		<param name="caOVWidth" type="text" default="" label="Overlay width" description="TIPCAOVWIDTH" />
+		<param name="caOVClassname" type="text" default="" label="Class name" description="TIPCAOVCLASSNAME" />
+    </params>
+	<params group="headingoverlay">
+		<param name="hdEnableHeadingOverlay" type="radio" default="0" label="Enable heading overlay" description="TIPHDENABLEHEADINGOVERLAY">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="hdFade" type="radio" default="0" label="Fade In/Out" description="TIPHDFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="hdOVVPosition" type="list" default="above" label="Overlay vertical position" description="TIPHDOVVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="hdOVHPosition" type="list" default="-1" label="Overlay horizontal position" description="TIPHDOVHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="hdOVOffsetX" type="text" default="" label="OffsetX" description="TIPHDOVOFFSETX" />
+		<param name="hdOVOffsetY" type="text" default="" label="OffsetY" description="TIPHDOVOFFSETY" />
+		<param name="hdOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPHDOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="hdHideOnMouseOut" type="radio" default="fals" label="Hide on mouseout" description="TIPHDHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="hdOpacity" type="text" default="" label="Overlay opacity" description="TIPHDOPACITY"/>
+		<param name="hdOVWidth" type="text" default="" label="Overlay width" description="TIPHDOVWIDTH" />
+		<param name="hdOVClassname" type="text" default="" label="Class name" description="TIPHDOVCLASSNAME" />
+    </params>
+	<params group="slideshowpresets">
+		<param name="ssPreset" type="filelist" default="-1" directory="administrator/components/com_hsconfig/presets/slideshow" stripext="1" filter=".js" hide_default="1" label="Preset" description="TIPSSPRESETS" />
+		<param name="sspSlideshowGroup" type="text" default='' size="26" label="Slideshow group(s)" description="TIPSSSLIDESHOWGROUP" />
+		<param name="sspInterval" type="text" default='5000' label="Interval" description="TIPSSINTERVAL" />
+		<param name="sspRepeat" type="radio" default="fals" label="Repeat" description="TIPSSREPEAT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="sspAutoplay" type="radio" default="fals" label="Autoplay" description="TIPSSAUTOPLAY">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+	</params>
+	<params group="slideshow">
+		<param name="ssEnableSlideshow" type="radio" default="0" label="Enable slideshow" description="TIPSSENABLESLIDESHOW">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="ssSlideshowGroup" type="text" default='' size="26" label="Slideshow group(s)" description="TIPSSSLIDESHOWGROUP" />
+		<param name="ssInterval" type="text" default='5000' label="Interval" description="TIPSSINTERVAL" />
+		<param name="ssRepeat" type="radio" default="fals" label="Repeat" description="TIPSSREPEAT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="ssAutoplay" type="radio" default="fals" label="Autoplay" description="TIPSSAUTOPLAY">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="ssUseControls" type="radio" default="tru" label="Use Controls" description="TIPSSUSECONTROLS">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+		<param name="ssFixedControls" type="radio" default="tru" label="Fixed Controls" description="TIPSSFIXEDCONTROLS">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+			<option value="fit">Fit</option>
+		</param>
+		<param name="ssFade" type="radio" default="1" label="Fade In/Out" description="TIPSSFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="ssOVVPosition" type="list" default="top" label="Overlay vertical position" description="TIPSSOVVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="ssOVHPosition" type="list" default="center" label="Overlay horizontal position" description="TIPSSOVHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="ssOVOffsetX" type="text" default="" label="OffsetX" description="TIPSSOVOFFSETX" />
+		<param name="ssOVOffsetY" type="text" default="" label="OffsetY" description="TIPSSOVOFFSETY" />
+		<param name="ssOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPSSOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="ssHideOnMouseOut" type="radio" default="tru" label="Hide on mouseout" description="TIPSSHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="ssOpacity" type="text" default="" label="Overlay opacity" description="TIPSSOPACITY"/>
+		<param name="ssOVWidth" type="text" default="" label="Overlay width" description="TIPSSOVWIDTH" />
+		<param name="ssOVClassname" type="text" default="" label="Class name" description="TIPSSOVCLASSNAME" />
+    </params>
+	<params group="thumbstrip">
+		<param name="tsEnableThumbstrip" type="radio" default="0" label="Enable thumbstrip" description="TIPTSENABLETHUMBSTRIP">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="tsOVMode" type="list" default="top" label="Mode" description="TIPTSOVMODE">
+			<option value="-1">- None Selected -</option>
+			<option value="horizontal">Horizontal</option>
+			<option value="vertical">Vertical</option>
+			<option value="float">Float</option>
+		</param>
+		<param name="tsFade" type="radio" default="1" label="Fade In/Out" description="TIPTSFADE">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+			<option value="2">Not in IE</option>
+		</param>
+		<param name="tsOVVPosition" type="list" default="top" label="Overlay vertical position" description="TIPTSOVVPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="above">Above</option>
+			<option value="top">Top</option>
+			<option value="middle">Middle</option>
+			<option value="bottom">Bottom</option>
+			<option value="below">Below</option>
+		</param>
+		<param name="tsOVHPosition" type="list" default="center" label="Overlay horizontal position" description="TIPTSOVHPOSITION">
+			<option value="-1">- None Selected -</option>
+			<option value="leftpanel">Left Panel</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+			<option value="rightpanel">Right Panel</option>
+		</param>
+		<param name="tsOVOffsetX" type="text" default="" label="OffsetX" description="TIPTSOVOFFSETX" />
+		<param name="tsOVOffsetY" type="text" default="" label="OffsetY" description="TIPTSOVOFFSETY" />
+		<param name="tsOVRelativeTo" type="list" default="-1" label="Relative to" description="TIPTSOVRELATIVETO">
+			<option value="-1">- None Selected -</option>
+			<option value="viewport">Viewport</option>
+			<option value="expander">Expander</option>
+		</param>
+		<param name="tsHideOnMouseOut" type="radio" default="tru" label="Hide on mouseout" description="TIPTSHIDEONMOUSEOUT">
+			<option value="fals">No</option>
+			<option value="tru">Yes</option>
+		</param>
+    	<param name="tsOpacity" type="text" default="" label="Overlay opacity" description="TIPTSOPACITY"/>
+		<param name="tsOVWidth" type="text" default="" label="Overlay width" description="TIPTSOVWIDTH" />
+		<param name="tsOVClassname" type="text" default="" label="Class name" description="TIPTSOVCLASSNAME" />
+	</params>
+    <params group="languagestrings">
+		<param name="cssDirection" type="list" default="-1" label="CSS Direction" description="TIPCSSDIRECTION">
+			<option value="-1">- None Selected -</option>
+			<option value="ltr">Left to right</option>
+			<option value="rtl">Right to left</option>
+		</param>
+		<param name="creditsText" type="text" default='' size="50" label="Credits text" description="TIPCREDITSTEXT" />
+		<param name="creditsTitle" type="text" default='' size="50" label="Credits title" description="TIPCREDITSTITLE" />
+		<param name="loadingText" type="text" default='' size="50" label="Loading text" description="TIPLOADINGTEXT" />
+		<param name="loadingTitle" type="text" default='' size="50" label="Loading title" description="TIPLOADINGTITLE" />
+		<param name="restoreTitle" type="text" default='' size="50" label="Restore title" description="TIPRESTORETITLE" />
+		<param name="focusTitle" type="text" default='' size="50" label="Focus title" description="TIPFOCUSTITLE" />
+		<param name="fullExpandText" type="text" default='' size="50" label="Full expand text" description="TIPFULLEXPANDTEXT" />
+		<param name="fullExpandTitle" type="text" default='' size="50" label="Full expand title" description="TIPFULLEXPANDTITLE" />
+		<param name="closeText" type="text" default='' size="50" label="Close text" description="TIPCLOSETEXT" />
+		<param name="closeTitle" type="text" default='' size="50" label="Close title" description="TIPCLOSETITLE" />
+		<param name="moveText" type="text" default='' size="50" label="Move text" description="TIPMOVETEXT" />
+		<param name="moveTitle" type="text" default='' size="50" label="Move title" description="TIPMOVETITLE" />
+		<param name="nextText" type="text" default='' size="50" label="Next text" description="TIPNEXTTEXT" />
+		<param name="nextTitle" type="text" default='' size="50" label="Next title" description="TIPNEXTTITLE" />
+		<param name="previousText" type="text" default='' size="50" label="Previous text" description="TIPPREVIOUSTEXT" />
+		<param name="previousTitle" type="text" default='' size="50" label="Previous title" description="TIPPREVIOUSTITLE" />
+		<param name="playText" type="text" default='' size="50" label="Play text" description="TIPPLAYTEXT" />
+		<param name="playTitle" type="text" default='' size="50" label="Play title" description="TIPPLAYTITLE" />
+		<param name="pauseText" type="text" default='' size="50" label="Pause text" description="TIPPAUSETEXT" />
+		<param name="pauseTitle" type="text" default='' size="50" label="Pause title" description="TIPPAUSETITLE" />
+		<param name="resizeTitle" type="text" default='' size="50" label="Resize title" description="TIPRESIZETITLE" />
+		<param name="number" type="text" default='' size="50" label="Number" description="TIPNUMBER" />
+	</params>
+    <languages>
+        <language tag="en-GB">en-GB.com_hsconfig.ini</language>
+    </languages>
+</install>

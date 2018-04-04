@@ -1,0 +1,36 @@
+/* the styles are also written in template.css */
+a.PDF_link, a.XLS_link	{
+	height: 32px;
+	display:block;
+	width:auto;
+	padding: 5px 0 0 45px;
+}
+
+a.PDF_link	{
+	background: url(/images/ico_pdf.gif) no-repeat left top;
+}
+
+a.XLS_link	{
+	background: url(/images/ico_xls.gif) no-repeat left top;
+}
+
+table.Table_NO_border, 
+table.Table_NO_border tbody tr td   {
+	border:0px none #ffffff;
+}
+
+a.Note_in_Text	{
+	background: url(/images/pop-icon.png) no-repeat right 2px;
+	padding-right: 15px;
+	margin-right: 3px;
+	text-decoration:none;
+	color: #2b579b;
+}
+
+td.encycloAuthor
+{
+padding-top:20px;
+}
+
+
+/*  */

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>sh404SEF - system - plugin</name>
+	<author>Yannick Gaultier</author>
+	<creationDate>Febbruary 2008</creationDate>
+	<copyright>(C) 2008 Yannick Gaultier. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>shumisha@gmail.com</authorEmail>
+	<authorUrl>http://extensions.siliana.net/en/</authorUrl>
+	<version>Version_1.0.Beta</version>
+	<description>Hook up with sh404SEF routing</description>
+	<files>
+		<filename plugin="shsef">shsef.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

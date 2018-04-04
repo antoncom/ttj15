@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesearch_ext" version="1.5.0" method="upgrade">
+	<name>Polls</name>
+	<author>JoomAce LLC</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>(C) 2009-2011 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.0</version>
+	<description>Polls extension for AceSearch.</description>
+	<client>2</client>
+	<files>
+		<filename acesearch_ext="com_poll">com_poll.php</filename>
+	</files>
+	<fields>
+		<field client="2" name="name" type="checkbox" jtext="COM_ACESEARCH_FIELDS_TITLE" value="1" />
+	</fields>
+</install>

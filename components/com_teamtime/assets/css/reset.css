@@ -1,0 +1,153 @@
+/*
+ * Browser Reset
+ */
+
+div#yoo-teamlog div,
+div#yoo-teamlog dl,
+div#yoo-teamlog dt,
+div#yoo-teamlog dd,
+div#yoo-teamlog ul,
+div#yoo-teamlog ol,
+div#yoo-teamlog li,
+div#yoo-teamlog h1,
+div#yoo-teamlog h2,
+div#yoo-teamlog h3,
+div#yoo-teamlog h4,
+div#yoo-teamlog h5,
+div#yoo-teamlog h6,
+div#yoo-teamlog pre,
+div#yoo-teamlog form,
+div#yoo-teamlog fieldset,
+div#yoo-teamlog input,
+div#yoo-teamlog textarea,
+div#yoo-teamlog p,
+div#yoo-teamlog blockquote,
+div#yoo-teamlog th,
+div#yoo-teamlog td {
+	margin: 0; 
+	padding: 0;
+	background: none;
+}
+
+div#yoo-teamlog fieldset, div#yoo-teamlog img { border: 0; }
+div#yoo-teamlog a:focus { outline: none; }
+
+/*
+ * New standard values
+ */
+
+/* paragraph */
+div#yoo-teamlog p { margin: 1em 0; }
+
+/* lists */
+div#yoo-teamlog ul, div#yoo-teamlog ol, div#yoo-teamlog dl { margin: 1em 0; padding-left: 30px }
+div#yoo-teamlog dl { margin: 1em 0; }
+div#yoo-teamlog dd { padding-left: 40px; }
+
+/* tables */
+div#yoo-teamlog td, div#yoo-teamlog th { padding: 1px; }
+
+/* forms */
+div#yoo-teamlog fieldset { border: 1px solid #c8c8c8; }
+div#yoo-teamlog legend { background: #ffffff; }
+
+div#yoo-teamlog textarea,
+div#yoo-teamlog input[type='text'],
+div#yoo-teamlog input[type='password'],
+div#yoo-teamlog select {
+	border: 1px solid #c8c8c8; background: #ffffff;
+}
+
+div#yoo-teamlog textarea:hover,
+div#yoo-teamlog input[type='text']:hover,
+div#yoo-teamlog input[type='password']:hover,
+div#yoo-teamlog select:hover {
+	border-color: #aaaaaa;
+}
+
+div#yoo-teamlog textarea:focus,
+div#yoo-teamlog input[type='text']:focus,
+div#yoo-teamlog input[type='password']:focus,
+div#yoo-teamlog select:focus {
+	border-color: #8c8c8c; outline: 2px solid #dcdcdc;
+}
+
+div#yoo-teamlog input[type='button'],
+div#yoo-teamlog input[type='submit'],
+div#yoo-teamlog input[type='checkbox'],
+div#yoo-teamlog input[type='image'],
+div#yoo-teamlog input[type='radio'],
+div#yoo-teamlog input[type='reset'],
+div#yoo-teamlog select, button {
+	cursor: pointer;
+}
+
+div#yoo-teamlog input[type='hidden'] { display: none; }
+
+div#yoo-teamlog fieldset { padding: 0 1em 1em 1em; }
+div#yoo-teamlog legend { padding: 0 .8em 0 .8em; }
+div#yoo-teamlog textarea, div#yoo-teamlog input[type='text'], div#yoo-teamlog input[type='password'] { padding: .1em 0 .1em .4em; }
+div#yoo-teamlog option { padding: 0 .4em .1em .4em; }
+
+/*div#yoo-teamlog form div { margin: .8em 0 .8em 0; }*/
+
+div#yoo-teamlog button, div#yoo-teamlog input[type='button'] { padding: .2em .3em .2em .1em; line-height: 100%; }
+
+/* links */
+div#yoo-teamlog a:link, div#yoo-teamlog a:visited { text-decoration: none; }
+div#yoo-teamlog a:hover { text-decoration: underline; }
+
+/* headings */
+div#yoo-teamlog h1,
+div#yoo-teamlog h2,
+div#yoo-teamlog h3,
+div#yoo-teamlog h4,
+div#yoo-teamlog h5,
+div#yoo-teamlog h6 {
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 100%;
+}
+
+div#yoo-teamlog h1 { font-size: 300%; }
+div#yoo-teamlog h2 { font-size: 250%; }
+div#yoo-teamlog h3 { font-size: 200%; }
+div#yoo-teamlog h4 { font-size: 175%; }
+div#yoo-teamlog h5 { font-size: 150%; }
+div#yoo-teamlog h6 { font-size: 125%; }
+
+/* horizontal rule */
+div#yoo-teamlog hr {
+	margin: .5em 0 .5em 0;
+	display: block;
+	background: #c8c8c8;
+	color: #c8c8c8; /** IE6 only */
+	height: 1px;
+	border: none;
+}
+
+/* blockquotes, cites */
+div#yoo-teamlog blockquote {
+	margin: 1em 0 1em 1.5em;
+	padding: .5em 0 .5em 0;
+	border-top: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	font-style: italic;
+	font-size: 120%
+}
+
+/* preformatted text elements */
+div#yoo-teamlog pre {
+	margin: 1em 0px 1em 0px;
+	padding: .5em 0 .5em 1em;
+	border: 1px dotted #aab4be;
+	border-left: 20px solid #b4b4b4;
+	background: #f4f5f6;
+	font-size: 90%;
+}
+
+/* acronym */
+div#yoo-teamlog acronym, div#yoo-teamlog abbr {
+	border-bottom: 1px dashed #969696;
+	cursor: help;
+}

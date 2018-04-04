@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ACESEARCH_MENU_ADVANCED_SEARCH">
+		<message>
+			<![CDATA[COM_ACESEARCH_MENU_ADVANCED_SEARCH_HELP]]>
+		</message>
+	</layout>
+	<state>
+		<name>AceSearch: Advanced Search</name>
+		<description>Advanced search page.</description>
+		<params addpath="/administrator/components/com_acesearch/library/elements">
+			<param name="component" type="componentlist" default="" label="COM_ACESEARCH_MENU_COMPONENT" description="COM_ACESEARCH_MENU_COMPONENT_HELP" />
+		</params>
+	</state>
+</metadata>

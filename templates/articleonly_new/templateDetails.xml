@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>articleonly_new</name>
+	<creationDate>10 June 2008</creationDate>
+	<author>Ken Lowther</author>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>http://www.joomlanook.com</authorUrl>
+	<version>1.0.2</version>
+	<description>Article Only</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>css/template.css</filename>
+	</files>
+</install>

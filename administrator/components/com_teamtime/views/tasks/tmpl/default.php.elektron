@@ -1,0 +1,225 @@
+<?php defined('_JEXEC') or die('Restricted access'); ?>
+
+<form action="index.php" method="post" name="adminForm">
+<table>
+	<tr>
+		<td align="left" width="100%">
+			<?php echo JText::_('Filter'); ?>:
+			<input type="text" name="search" id="search" value="<?php echo $this->lists['search'];?>" class="text_area" onchange="document.adminForm.submit();" />
+			<button onclick="this.form.submit();"><?php echo JText::_( 'Go' ); ?></button>
+			<button onclick="document.getElementById('search').value='';this.form.getElementById('filter_state').value='';this.form.submit();"><?php echo JText::_('Reset'); ?></button>
+		</td>
+		<td nowrap="nowrap">
+			<?php echo $this->lists['select_state']; ?>
+		</td>		
+	</tr>
+</table>
+<div id="tablecell">
+	<table class="adminlist" border=1>
+	<thead>
+		<tr>
+			<th width="5">
+				<?php echo JText::_('NUM'); ?>
+			</th>
+			<th width="20">
+				<input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" />
+			</th>
+			<th  class="title">
+				<?php echo JHTML::_('grid.sort', 'Name', 'a.name', @$this->lists['order_Dir'], @$this->lists['order']); ?>
+			</th>
+			<th  class="title">
+				<?php echo JHTML::_('grid.sort', 'Type', 'type_name', @$this->lists['order_Dir'], @$this->lists['order']); ?>
+			</th>
+			<th  class="title">
+				<?php echo JHTML::_('grid.sort', 'Project', 'project_name', @$this->lists['order_Dir'], @$this->lists['order']); ?>
+			</th>
+			<th  class="title">
+				<?php echo JHTML::_('grid.sort', 'State', 'a.state', @$this->lists['order_Dir'], @$this->lists['order']); ?>
+			</th>
+			<th width="1%" nowrap="nowrap">
+				<?php echo JHTML::_('grid.sort', 'ID', 'a.id', @$this->lists['order_Dir'], @$this->lists['order']); ?>
+			</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="10">
+				<?php echo $this->pagination->getListFooter(); ?>
+			</td>
+		</tr>
+	</tfoot>
+	<tbody>
+	<?php
+//	print_r($this->items);
+//	exit;
+	$k = 0;
+	$i=-1;
+	$old = '';
+	foreach ($this->items as $row)
+//	for ($i=0, $n=count($this->items); $i < $n; $i++)
+	{
+		$i++;
+		
+//		$row     = &$this->items[$i];
+//	print_r($this->items );
+//		exit;
+		$link    = JRoute::_('index.php?option='.$this->option.'&controller='.$this->controller.'&view=type&task=edit&cid[]='.$row->id);
+		$checked = JHTML::_('grid.id', $i, $row->id);
+	?>
+		<tr class="<?php echo "row$k"; ?>">
+			<td>
+				<?php echo $this->pagination->getRowOffset($i); ?>
+			</td>
+			<td align="center">
+				<?php echo $checked; ?>
+			</td>
+			 <!-- <td> удалить при использовании кода сли€ни€ €чеек-->
+			
+			<?php 
+			$sc = 1;
+			//  од сли€ни€ €чеек имен
+			$n=count($this->items);
+			for($op = $i;  $op<$n; $op++) 
+			{
+				if ($this->items[$op]->name != $this->items[$op+1]->name){break;}
+			}
+			$op =$op - $i +1;
+			
+			if (($op > 1) && ($this->items[$i-1]->name != $this->items[$i]->name))
+			{ echo '<td rowspan="'.$op.'">';
+			
+			?>	
+
+				<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->name; ?>">
+					<a href="<?php echo $link  ?>"><?php echo $row->name; ?></a>
+				</span>
+			</td>
+			<?php 
+			}  
+			if (($op == 1) && ($this->items[$i-1]->name != $this->items[$i]->name)) {
+
+			?>
+			<td>
+
+			<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->name; ?>">
+					<a href="<?php echo $link  ?>"><?php echo $row->name; ?></a>
+				</span>
+			</td>
+			<?php  } ?>
+			
+			<?php //  од сли€ни€ €чеек типов
+			if (($this->items[$i]->name == $this->items[$i+1]->name)/*($this->items[$i]->name != $this->items[$i-1]->type_name)*/)
+//			&&($this->items[$i]->name != $this->items[$i-1]->name))
+				{
+					$n=count($this->items);
+					for($op = $i;  $op<$n; $op++) 
+					{
+						if (($this->items[$op]->type_name != $this->items[$op+1]->type_name) ||
+						($this->items[$op]->name != $this->items[$op+1]->name)){break;}
+					}
+					$op =$op - $i +1;
+					
+					if (
+					(($op > 1) && ($this->items[$i-1]->type_name != $this->items[$i]->type_name)) or
+					(($op > 1) && ($this->items[$i-1]->type_name == $this->items[$i]->type_name) && 
+					($this->items[$i-1]->name != $this->items[$i]->name))
+					)
+					{ echo '<td rowspan="'.$op.'">';
+					
+					?>	
+		
+						<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->type_name; ?>">
+							<a href="<?php echo $link  ?>"><?php echo $row->type_name; ?></a>
+						</span>
+					</td>
+					<?php 
+					}
+					if (
+					(($op == 1) && ($this->items[$i-1]->type_name != $this->items[$i]->type_name)) or
+					(($op == 1) && ($this->items[$i-1]->type_name == $this->items[$i]->type_name) && 
+					($this->items[$i-1]->name != $this->items[$i]->name))
+					)
+					{
+					?>	
+					<td>
+						<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->type_name; ?>">
+							<a href="<?php echo $link  ?>"><?php echo $row->type_name; ?></a>
+						</span>
+					</td>
+					<?php
+					}
+					  
+			  	} 
+			
+			if (($this->items[$i]->name == $this->items[$i-1]->name) && ($this->items[$i]->name != $this->items[$i+1]->name) && ($this->items[$i]->type_name != $this->items[$i-1]->type_name)) 
+				{
+				?>	
+					<td>
+						<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->type_name; ?>">
+							<a href="<?php echo $link  ?>"><?php echo $row->type_name; ?></a>
+						</span>
+					</td>
+					<?php
+
+				}
+			
+			if (($this->items[$i]->name != $this->items[$i-1]->name) && ($this->items[$i]->name != $this->items[$i+1]->name)) 
+				{
+				?>	
+					<td>
+						<span class="editlinktip hasTip" title="<?php echo JText::_('Edit Project');?>::<?php echo $row->type_name; ?>">
+							<a href="<?php echo $link  ?>"><?php echo $row->type_name; ?></a>
+						</span>
+					</td>
+					<?php
+				}	
+			 // од сли€ни€ €чеек типов закончен
+			 ?>
+			
+			<?php /*?>
+			<td>
+				<?php echo $row->type_name; ?>
+			</td>
+			<?php */?>
+			<td>
+				<?php echo $row->project_name; ?>
+			</td>
+			<td align="center">
+				<?php
+					echo JHTML::_('teamlog.taskstatelist', array(), "state".$row->id, 'class="inputbox" onchange="submitStateChange(\'setState\', '.$row->id.');"', 'value', 'text', $row->state);
+				?>
+			</td>
+			<td align="center">
+				<?php echo $row->id; ?>
+			</td>
+		</tr>
+		<?php
+			$k = 1 - $k;
+		}
+		?>
+	</tbody>
+	</table>
+</div>
+<input type="hidden" id="state_change_id" name="state_change_id" value="" />
+<input type="hidden" name="option" value="<?php echo $this->option; ?>" />
+<input type="hidden" name="controller" value="<?php echo $this->controller; ?>" />
+<input type="hidden" name="task" value="" />
+<input type="hidden" name="boxchecked" value="0" />
+<input type="hidden" name="filter_order" value="<?php echo $this->lists['order']; ?>" />
+<input type="hidden" name="filter_order_Dir" value="<?php echo $this->lists['order_Dir']; ?>" />
+<?php //echo JHTML::_('form.token'); ?>
+
+</form>
+
+<script language="javascript" type="text/javascript">
+	function submitStateChange(pressbutton, id) {
+		var form = document.adminForm;
+		if (pressbutton == 'cancel') {
+			submitform( pressbutton );
+			return;
+		}
+
+		$('state_change_id').setProperty('value',id);
+		submitform( pressbutton );
+	}
+</script>

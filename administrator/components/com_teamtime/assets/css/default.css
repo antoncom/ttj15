@@ -1,0 +1,102 @@
+/*
+ * general
+*/
+
+.icon-48-teamtime {
+  background: url("../images/teamtime.png") 0 0 no-repeat;
+}
+
+.icon-48-cal {
+  background: url("../images/icon-48-cal.png") 0 0 no-repeat;
+}
+
+.icon-48-doc {
+  background: url("../images/icon-48-doc.png") 0 0 no-repeat;
+}
+
+.icon-48-Doty {
+  background: url("../images/icon-48-Doty.png") 0 0 no-repeat;
+}
+
+.icon-48-uchet {
+  background: url("../images/icon-48-uchet.png") 0 0 no-repeat;
+}
+
+/*
+ * report
+*/
+
+#content-controls {
+  overflow: hidden;
+}
+
+div.select-date, div.select-date select{
+  float: left;
+}
+
+div.select-date img {
+  margin: 0px 0px 0px 2px;
+  float: left;
+}
+
+div.select-date input, div.select-date button {
+  margin: 0px 0px 0px 5px;
+  float: left;
+}
+
+div.select-user {
+  margin: 0px 5px 0px 0px;
+  float: right;
+}
+
+div.select-project {
+  float: right;
+}
+
+#content-area h2 {
+  margin: 10px 0px;
+  padding: 5px;
+  background: #f0f0f0;
+  border: 1px solid #cdcdcd;
+}
+
+#content-area div.user-report-week {
+  margin: 10px 0px;
+}
+
+#content-area div.user-report-week h3 {
+  margin: 0px;
+  padding: 5px;
+  color: #0b55c4;
+}
+
+select#target_id {
+  background-color: #FFDDDD;
+  width: 250px;
+}
+
+/* piechart */
+#holder-typeChart,
+#holder-userChart {
+  width: 500px;
+  height: 300px;
+}
+
+#holder-projectsChart {
+  width: 500px;
+  height: 300px;
+}
+
+table.project-report-charts {
+  width: 100%;
+}
+
+.sendmail-disabled {
+	color: #888888;
+}
+
+/* fancybox */
+
+.fancybox-opened {
+	z-index: 20003;
+}

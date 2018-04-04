@@ -1,0 +1,22 @@
+/*
+ * gallery preset: gallery-in-page
+*/
+
+.highslide-image {
+	border: 1px solid black;
+}
+.highslide-controls {
+	width: 90px !important;
+}
+.highslide-controls .highslide-close {
+	display: none;
+}
+.highslide-caption {
+	padding: .5em 0;
+}
+#gallery-area {
+	width: 620px;
+	height: 520px;
+	border: 1px solid silver;
+	margin: 0 auto;
+}

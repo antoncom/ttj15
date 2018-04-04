@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+	Hotel Reservation Script 1.0 - English Localization File
+	created by: Martin Ivanov
+	website: http://acidmartin.com or http://acidmartin.wemakesites.net
+	email: acid_martin@yahoo.com or martin@yahoo.com
+-->
+<items>
+ <personalinfo>Personal Information</personalinfo>
+ <firstname>Name:</firstname>
+ <surname>Surname:</surname>
+ <email>Email:</email>
+ <phonenumber>Phone Number:</phonenumber>
+ <arrival>Check-in</arrival>
+ <departure>Check-out</departure>
+ <day>Day:</day>
+ <month>Month:</month>
+ <year>Year:</year>
+ <accomodation>Accomodation</accomodation>
+ <typeofroom>Type of Room:</typeofroom>
+ <numberofguests>Number of Guests:</numberofguests>
+ <additionalinfo>Additional Information</additionalinfo>
+ <submitbutton>Submit Form</submitbutton>
+ <resetbutton>Reset Form</resetbutton>
+ <mandatoryfield>Необходимо заполнить.</mandatoryfield>
+ <invalidemail>Некорректный Email.</invalidemail>
+ <invalidphone>Некорректный номер тел.</invalidphone>
+ <invalidnumberofguests>Некорректное число.</invalidnumberofguests>
+</items>

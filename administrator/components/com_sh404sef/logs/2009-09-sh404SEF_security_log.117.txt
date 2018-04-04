@@ -1,0 +1,381 @@
+Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
+2009-09-01	06:42:07	Page not found (404)	195.88.32.160	195.88.32.160	Mozilla/4.0 (compatible; MSIE 5.5; Windows 95)	GET	/about/component/option,com_phocaguestbook/Itemid,79/id,1/view,phocaguestbook/	http://www.evrikahotel.ru/component/option,com_phocaguestbook/Itemid,79/id,1/view,phocaguestbook/
+2009-09-01	06:42:33	Page not found (404)	65.55.106.204	msnbot-65-55-106-204.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806/1224.html
+2009-09-01	07:32:02	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/lr	10 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:02	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/lr/cafe.html	11 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:03	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/lr/sauna.html	11 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:03	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/news/c-lr.html	12 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:03	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/news/mk-about-evrika.html	13 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:07	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/news/q-q.html	10 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:07	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/partnership/tourfirm.html	11 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:08	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/rooms	11 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:08	Flooding	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/special	12 requests in less than 10 seconds (max = 10)
+2009-09-01	07:32:19	Page not found (404)	62.195.73.117	i73117.upc-i.chello.nl	Java/1.6.0_06	GET	/media/system/js/)return
+2009-09-01	08:29:56	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; Alexa Toolbar; (R1 1.5))	POST	/about/guestbook.html	
+2009-09-01	08:50:50	Flooding	89.110.49.128	mail.perint.ru	Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13	GET	/	10 requests in less than 10 seconds (max = 10)
+2009-09-01	08:51:17	Flooding	89.110.49.128	mail.perint.ru	Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13	GET	/rooms/	10 requests in less than 10 seconds (max = 10)
+2009-09-01	09:29:14	Page not found (404)	74.6.17.183	llf520167.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/main/image/_ID-325.html
+2009-09-01	11:11:57	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Opera/9.64 (Windows NT 5.1; U; en) Presto/2.1.1	GET	/admin/to_xml_yandex.php
+2009-09-01	16:20:03	Page not found (404)	195.230.89.34	gw3.fep.ru	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)	GET	/t%3C/td%3E%3C/tr%3E%3C/table%3E%3C/div%3E%3Cdiv%20id=	http://www.evrikahotel.ru/lr/
+2009-09-01	20:46:33	Page not found (404)	65.55.106.115	msnbot-65-55-106-115.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/
+2009-09-01	22:37:32	Page not found (404)	65.55.106.160	msnbot-65-55-106-160.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/1216.html
+2009-09-01	22:39:06	Page not found (404)	91.214.46.18	unknown.altushost.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-02	06:15:34	Page not found (404)	65.55.207.25	msnbot-65-55-207-25.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-318.html
+2009-09-02	11:53:33	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Opera/8.01 (Windows NT 5.1)	POST	/about/guestbook.html	
+2009-09-02	13:31:23	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1)	GET	/netcat/modules/netshop/export/yandexml.php
+2009-09-03	07:39:44	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)	POST	/about/guestbook.html	
+2009-09-03	17:22:43	Page not found (404)	91.214.46.18	unknown.altushost.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-03	20:57:04	Page not found (404)	65.55.207.120	msnbot-65-55-207-120.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-26.html
+2009-09-03	20:57:35	Page not found (404)	65.55.106.187	msnbot-65-55-106-187.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/price/_spec-17.html
+2009-09-03	22:59:34	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/Operation%20canceled
+2009-09-03	23:45:40	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.6) Gecko/2009011913 AdCentriaIM/1.7 Firefox/3.0.6	GET	/eshop/yml/
+2009-09-04	14:23:28	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; KKman2.0)	POST	/about/guestbook.html	
+2009-09-04	16:15:44	Page not found (404)	72.30.161.242	llf531008.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/price/_spec-17.html
+2009-09-04	22:54:37	Page not found (404)	95.133.140.221	95.133.140.221	Opera/9.20 (Windows NT 5.1; U; ru)	GET	/engine/modules/antibot.php	http://evrikahotel.ru/
+2009-09-05	00:02:01	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13	GET	/includes/shop.yandex.php
+2009-09-05	00:31:38	Page not found (404)	65.55.106.134	msnbot-65-55-106-134.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-30.html
+2009-09-05	01:32:34	Page not found (404)	65.55.207.22	msnbot-65-55-207-22.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-29.html
+2009-09-05	11:03:34	Page not found (404)	65.55.106.114	msnbot-65-55-106-114.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/contacts.html
+2009-09-05	17:39:34	Page not found (404)	65.55.106.137	msnbot-65-55-106-137.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/_ID-10.html
+2009-09-06	11:10:04	Page not found (404)	65.55.207.25	msnbot-65-55-207-25.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/_ID-16.html
+2009-09-06	19:30:22	Page not found (404)	95.132.23.68	68-23-132-95.pool.ukrtel.net		GET	/engine/modules/antibot.php
+2009-09-06	23:40:54	Page not found (404)	200.54.148.34	200.54.148.34	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-06	23:41:00	Page not found (404)	92.45.22.226	asy226.asy22.tellcom.com.tr	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-06	23:41:02	Page not found (404)	89.248.172.146	89.248.172.146	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-07	00:41:00	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.3) Gecko/2008092417 AdCentriaIM/1.7 Firefox/3.0.3	GET	/export_yml.php
+2009-09-07	04:40:32	Page not found (404)	65.55.106.230	msnbot-65-55-106-230.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-16.html
+2009-09-07	21:43:33	Page not found (404)	65.55.106.229	msnbot-65-55-106-229.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1.html
+2009-09-08	01:38:35	Page not found (404)	65.55.106.156	msnbot-65-55-106-156.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/
+2009-09-08	01:39:05	Page not found (404)	65.55.207.29	msnbot-65-55-207-29.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-323.html
+2009-09-08	01:42:03	Page not found (404)	65.55.106.133	msnbot-65-55-106-133.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-13.html
+2009-09-08	03:39:34	Page not found (404)	65.55.106.115	msnbot-65-55-106-115.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-11.html
+2009-09-08	05:55:33	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13	GET	/media/market.php
+2009-09-08	08:51:03	Page not found (404)	65.55.106.134	msnbot-65-55-106-134.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-30.html
+2009-09-08	15:56:05	Page not found (404)	65.55.106.159	msnbot-65-55-106-159.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-26.html
+2009-09-08	22:38:39	Page not found (404)	65.55.106.227	msnbot-65-55-106-227.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-27.html
+2009-09-09	01:13:03	Page not found (404)	217.16.27.41	plesk.gohost.ru	Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6	GET	/components/com_extcalendar/cal_popup.php
+2009-09-09	01:27:08	Page not found (404)	65.55.207.22	msnbot-65-55-207-22.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-27.html
+2009-09-09	01:33:38	Page not found (404)	65.55.106.208	msnbot-65-55-106-208.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-17.html
+2009-09-09	02:58:00	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-10.html
+2009-09-09	02:58:30	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/order/_cat-16.html
+2009-09-09	02:59:00	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/order/_cat-15.html
+2009-09-09	02:59:30	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/order/_cat-14.html
+2009-09-09	03:00:00	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/order/_cat-13.html
+2009-09-09	03:00:36	Page not found (404)	65.98.224.7	cust-65-98-224-7.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/order/_cat-12.html
+2009-09-09	04:49:40	Page not found (404)	65.55.207.28	msnbot-65-55-207-28.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806.html
+2009-09-09	05:13:12	<script> tag in POST	91.124.239.91	91-239-124-91.pool.ukrtel.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; YPC 3.0.2; .NET CLR 1.1.4322; yplus 4.4.02b)	POST	/about/guestbook.html	
+2009-09-09	05:48:38	Page not found (404)	65.55.207.123	msnbot-65-55-207-123.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews.html
+2009-09-09	10:38:53	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13	GET	/yml/export_yml.php
+2009-09-09	12:12:56	Page not found (404)	65.240.132.42	65.240.132.42	Xenu Link Sleuth 1.3c	GET	/plugins/editors/tinymce/jscripts/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=file&folder=
+2009-09-09	12:13:02	Page not found (404)	65.240.132.42	65.240.132.42	Xenu Link Sleuth 1.3c	GET	/plugins/editors/tinymce/jscripts/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=file&folder=
+2009-09-09	13:51:09	Page not found (404)	65.55.106.231	msnbot-65-55-106-231.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-27.html
+2009-09-09	18:39:08	Page not found (404)	65.55.106.184	msnbot-65-55-106-184.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806/1218.html
+2009-09-09	20:22:30	Page not found (404)	68.38.146.32	c-68-38-146-32.hsd1.pa.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/about/
+2009-09-09	20:25:03	Page not found (404)	71.235.217.221	c-71-235-217-221.hsd1.ct.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/lr/cafe.html
+2009-09-09	20:26:43	Page not found (404)	68.195.88.197	ool-44c358c5.dyn.optonline.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/lr/sauna.html
+2009-09-09	20:27:11	Page not found (404)	74.56.140.165	modemcable165.140-56-74.mc.videotron.ca	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/lr/
+2009-09-09	20:28:17	Page not found (404)	67.87.33.16	ool-43572110.dyn.optonline.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/special/
+2009-09-09	20:30:36	Page not found (404)	24.175.51.40	cpe-24-175-51-40.elp.res.rr.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/news/mk-about-evrika.html
+2009-09-09	20:31:03	Page not found (404)	68.186.158.228	68-186-158-228.dhcp.sffl.va.charter.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/news/q-q.html
+2009-09-09	20:31:36	Page not found (404)	71.195.147.72	c-71-195-147-72.hsd1.ma.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/news/q-q.html
+2009-09-09	20:32:48	Page not found (404)	76.23.41.35	c-76-23-41-35.hsd1.ut.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/news/c-lr.html
+2009-09-09	20:33:49	Page not found (404)	71.195.147.72	c-71-195-147-72.hsd1.ma.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	http://www.evrikahotel.ru/exlinks.html
+2009-09-09	23:48:38	Page not found (404)	65.55.107.181	msnbot-65-55-107-181.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-32.html
+2009-09-10	01:52:19	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/rooms/studio.html	10 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:20	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/exlinks.html	10 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:20	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/index.php?option=com_content&view=article&id=53:1-&catid=34:2008-11-10-14-14-21&Itemid=54	11 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:21	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/index.php?option=com_content&view=article&id=55:1-&catid=34:2008-11-10-14-14-21&Itemid=54	10 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:22	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/index.php?option=com_content&view=article&id=59:1-&catid=34:2008-11-10-14-14-21&Itemid=54	10 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:22	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/index.php?option=com_content&view=article&id=54:1-&catid=34:2008-11-10-14-14-21&Itemid=54	11 requests in less than 10 seconds (max = 10)
+2009-09-10	01:52:23	Flooding	194.67.18.202	indexer11.aport.ru	Mozilla/5.0 (compatible; AportWorm/3.2; +http://www.aport.ru/help)	GET	/index.php?option=com_content&view=article&id=60:1-&catid=34:2008-11-10-14-14-21&Itemid=54	11 requests in less than 10 seconds (max = 10)
+2009-09-10	03:01:12	Page not found (404)	65.55.106.134	msnbot-65-55-106-134.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews.html
+2009-09-10	03:27:38	Page not found (404)	65.55.106.203	msnbot-65-55-106-203.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-12.html
+2009-09-10	09:37:43	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.12; ips-agent) Gecko/20050922 Fedora/1.0.7-1.1.fc4 Firefox/1.0.7	GET	/shop/yml.php
+2009-09-10	10:30:51	Page not found (404)	77.40.48.250	250.48.pppoe.mari-el.ru	Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2	GET	/a
+2009-09-10	11:04:43	Page not found (404)	65.55.207.99	msnbot-65-55-207-99.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-12.html
+2009-09-10	15:25:50	Page not found (404)	77.40.23.84	84.23.pppoe.mari-el.ru	Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13	GET	/administraor/?hoteladmin800
+2009-09-10	15:28:26	Page not found (404)	77.40.23.84	84.23.pppoe.mari-el.ru	Mozilla/5.0 (Windows; U; Windows NT 5.1; ru; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13	GET	/administraor/?hoteladmin800
+2009-09-10	15:32:39	Page not found (404)	65.55.207.135	msnbot-65-55-207-135.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-32.html
+2009-09-10	18:53:45	Flooding	188.186.22.193	188.186.22.193	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)	GET	/	10 requests in less than 10 seconds (max = 10)
+2009-09-11	04:18:42	Page not found (404)	72.30.142.88	llf531151.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/main/image/_ID-303.html
+2009-09-11	11:07:07	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1); MAXTHON 2.0)	GET	/export/export_yml.php
+2009-09-11	17:38:13	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/contacts.html
+2009-09-11	17:38:20	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/about/1216/1225.html
+2009-09-11	17:38:23	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/about/1216/1226.html
+2009-09-11	17:38:26	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/about/1216/1227.html
+2009-09-11	17:38:29	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/about/806.html
+2009-09-11	17:38:31	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/companynews/_ID-27.html
+2009-09-11	17:38:34	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/companynews/_ID-29.html
+2009-09-11	17:38:37	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/companynews/_ID-30.html
+2009-09-11	17:38:40	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/companynews/_ID-32.html
+2009-09-11	19:25:26	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/main/companynews/Operation%20canceled
+2009-09-11	20:08:10	Page not found (404)	65.55.207.69	msnbot-65-55-207-69.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-29.html
+2009-09-11	21:18:02	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/addfav.php?pid=1037&ref=displayimage.php%3Fpos%3D-1037?4a6f4598?29c6a958?e0d85170?931ff9f0?2c64e8c0
+2009-09-11	23:11:28	Page not found (404)	94.127.144.38	94.127.144.38	Mozilla/5.0 (compatible; Dolphin/1.0; +http://telehouse.ru/crawler.html)	GET	/journal_addcomment.php?action=newcomment&journalid=1853924&jpostid=106740257&jcommid=&page=?b9114d68?29c6a958?f9e95300?126a3b90?6d402bf0?fa271de0?525b0b20?b28ef860?2c64e8c0?1e29d790
+2009-09-12	08:09:37	Page not found (404)	65.55.207.120	msnbot-65-55-207-120.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-10.html
+2009-09-12	11:27:59	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506)	GET	/shop/yandex.php
+2009-09-12	11:35:40	Page not found (404)	65.55.207.46	msnbot-65-55-207-46.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-10.html
+2009-09-12	16:50:20	Page not found (404)	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-12	16:50:37	Flooding	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/hotels-in-yoshkar-ola.html	10 requests in less than 10 seconds (max = 10)
+2009-09-12	16:50:38	Flooding	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/mk-about-evrika.html	11 requests in less than 10 seconds (max = 10)
+2009-09-12	16:50:39	Flooding	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/q-q.html	12 requests in less than 10 seconds (max = 10)
+2009-09-12	16:50:40	Flooding	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/c-lr.html	12 requests in less than 10 seconds (max = 10)
+2009-09-12	16:50:41	Flooding	94.102.48.202	94.102.48.202	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/exlinks.html	11 requests in less than 10 seconds (max = 10)
+2009-09-12	23:10:22	Page not found (404)	194.8.75.251	194.8.75.251	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-13	09:38:33	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/1.22 (compatible; MSIE 2.0d; Windows NT)	POST	/about/guestbook.html	
+2009-09-14	00:00:08	Page not found (404)	65.55.207.96	msnbot-65-55-207-96.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-314.html
+2009-09-14	08:04:44	Page not found (404)	92.241.168.110	92.241.168.110		GET	/javascript:reloadcaptcha();
+2009-09-14	08:08:15	Page not found (404)	92.241.168.110	92.241.168.110		GET	/.pdf
+2009-09-15	01:08:09	Page not found (404)	65.55.207.136	msnbot-65-55-207-136.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806/1217.html
+2009-09-15	13:09:13	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6	GET	/yml/
+2009-09-15	15:16:56	Page not found (404)	66.96.220.69	669622069.hostnoc.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.50	GET	/feed/"index.php?Itemid=55">кафе</a></span>
+2009-09-15	15:16:57	Page not found (404)	66.96.220.69	669622069.hostnoc.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.50	GET	/feed/"index.php?Itemid=56">Сауны</a></span>
+2009-09-15	15:18:39	Page not found (404)	66.96.220.69	669622069.hostnoc.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.50	GET	/feed/"index.php
+2009-09-15	21:12:08	Page not found (404)	65.55.106.208	msnbot-65-55-106-208.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-316.html
+2009-09-15	22:29:22	Page not found (404)	66.150.224.245	66.150.224.245	Mozilla/5.0 (compatible; WebDataCentreBot/1.0; +http://WebDataCentre.com/)	GET	/feed/&quot;index.php?Itemid=55&quot;&gt;кафе&lt;/a&gt;&lt;/span&gt;
+2009-09-15	22:29:24	Page not found (404)	66.150.224.245	66.150.224.245	Mozilla/5.0 (compatible; WebDataCentreBot/1.0; +http://WebDataCentre.com/)	GET	/feed/&quot;index.php?Itemid=56&quot;&gt;Сауны&lt;/a&gt;&lt;/span&gt;
+2009-09-15	22:31:19	Page not found (404)	66.150.224.245	66.150.224.245	Mozilla/5.0 (compatible; WebDataCentreBot/1.0; +http://WebDataCentre.com/)	GET	/feed/&quot;index.php
+2009-09-16	13:12:07	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 3.0.04506; FDM)	GET	/xml/
+2009-09-17	12:44:37	Page not found (404)	65.55.106.233	msnbot-65-55-106-233.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-306.html
+2009-09-17	13:06:17	Page not found (404)	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/cache/html/0b5674471093d042048ecfb3fe9009df0.htm?id=1457
+2009-09-18	07:57:13	Page not found (404)	65.55.106.205	msnbot-65-55-106-205.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/1216.html
+2009-09-18	09:39:38	Page not found (404)	65.55.207.75	msnbot-65-55-207-75.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806/1224.html
+2009-09-18	12:01:22	Page not found (404)	72.30.142.189	llf531117.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/main/order/_cat-12.html
+2009-09-18	18:28:30	Flooding	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/rooms?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:31:54	Flooding	70.36.100.66	70.36.100.66	FlickySearchBot/1.0 (+testMode)	GET	/special?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:31:57	Flooding	216.245.223.50	50-223-245-216.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:41:07	Page not found (404)	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/feed/index.php?itemid=55
+2009-09-18	18:41:41	Page not found (404)	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/feed/index.php?itemid=56
+2009-09-18	18:44:34	Flooding	70.36.100.66	70.36.100.66	FlickySearchBot/1.0 (+testMode)	GET	/rooms?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:45:12	Flooding	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/lr?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:48:07	Flooding	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/special?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:53:30	Flooding	70.36.100.66	70.36.100.66	FlickySearchBot/1.0 (+testMode)	GET	/rooms?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:53:34	Flooding	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/lr?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:56:51	Flooding	70.36.100.42	70.36.100.42	FlickySearchBot/1.0 (+testMode)	GET	/special?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:58:57	Flooding	216.245.223.50	50-223-245-216.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	18:59:18	Flooding	216.245.223.50	50-223-245-216.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	19:00:59	Flooding	70.36.100.66	70.36.100.66	FlickySearchBot/1.0 (+testMode)	GET	/special?type=atom/	10 requests in less than 10 seconds (max = 10)
+2009-09-18	21:02:37	Page not found (404)	188.186.10.7	net10.186.188-7.yoladom.ru	Opera/9.80 (Windows NT 5.1; U; ru) Presto/2.2.15 Version/10.00	GET	/admin
+2009-09-19	11:07:08	Page not found (404)	65.55.207.137	msnbot-65-55-207-137.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-303.html
+2009-09-19	12:23:39	Page not found (404)	65.55.106.138	msnbot-65-55-106-138.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-318.html
+2009-09-19	12:49:54	Page not found (404)	72.30.79.57	llf531311.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/services/sauna.html
+2009-09-19	23:18:51	Page not found (404)	65.55.105.73	msnbot-65-55-105-73.search.msn.com	msnbot/1.1 (+http://search.msn.com/msnbot.htm)	GET	/services/sauna.html
+2009-09-20	01:30:08	Page not found (404)	74.6.22.103	llf520098.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/services/cafe.html
+2009-09-20	17:09:28	Flooding	195.88.32.160	195.88.32.160	Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 4.0) Opera 7.0 [en]	GET	/component/option,com_phocaguestbook/Itemid,79/id,1/view,phocaguestbook/	10 requests in less than 10 seconds (max = 10)
+2009-09-20	17:09:29	Flooding	195.88.32.160	195.88.32.160	Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 4.0) Opera 7.0 [en]	GET	/	11 requests in less than 10 seconds (max = 10)
+2009-09-20	17:35:37	Page not found (404)	65.55.106.133	msnbot-65-55-106-133.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-29.html
+2009-09-20	21:45:39	Page not found (404)	65.55.207.99	msnbot-65-55-207-99.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-26.html
+2009-09-21	06:54:40	Page not found (404)	77.41.77.71	host-77-41-77-71.qwerty.ru	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	06:54:44	Page not found (404)	116.0.165.20	h116-000-165-020.catv01.catv-yokohama.ne.jp	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	06:54:49	Page not found (404)	69.12.221.19	bito.ponzo.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:02:45	Page not found (404)	121.124.127.30	121.124.127.30	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=56%22%3E%D0%A1%D0%B0%D1%83%D0%BD%D1%8B%3C/a%3E%3C/span%3E
+2009-09-21	07:02:48	Page not found (404)	167.19.248.126	webmail.gmacinsurance.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=56%22%3E%D0%A1%D0%B0%D1%83%D0%BD%D1%8B%3C/a%3E%3C/span%3E
+2009-09-21	07:02:52	Page not found (404)	201.218.238.82	201.218.238.82	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=56%22%3E%D0%A1%D0%B0%D1%83%D0%BD%D1%8B%3C/a%3E%3C/span%3E
+2009-09-21	07:15:39	Flooding	167.19.248.126	webmail.gmacinsurance.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/photos.html	10 requests in less than 10 seconds (max = 10)
+2009-09-21	07:21:40	Page not found (404)	141.45.16.36	cockpit.f4.htw-berlin.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php
+2009-09-21	07:21:41	Page not found (404)	91.120.21.161	centurio.hu	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php
+2009-09-21	07:21:43	Page not found (404)	89.144.101.13	89.144.101.13	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php
+2009-09-21	07:22:56	Page not found (404)	141.45.16.36	cockpit.f4.htw-berlin.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-21	07:22:56	Page not found (404)	116.0.165.20	h116-000-165-020.catv01.catv-yokohama.ne.jp	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-21	07:22:57	Page not found (404)	93.100.184.149	93.100.184.149.pool.sknt.ru	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-21	07:23:02	Page not found (404)	93.127.35.195	93-127-35-195.static.vega-ua.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-21	07:23:11	Page not found (404)	203.232.32.134	203.232.32.134	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/news/
+2009-09-21	07:38:42	Flooding	173.45.101.10	a.65.2d.static.xlhost.com	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.13) Gecko/2009073022 Firefox/3.0.13 (.NET CLR 3.5.30729)	GET	/lr/cafe.html	10 requests in less than 10 seconds (max = 10)
+2009-09-21	07:40:32	Page not found (404)	88.212.35.207	ip-88-212-35-207.antik.sk	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:40:33	Page not found (404)	141.45.16.36	cockpit.f4.htw-berlin.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:40:39	Page not found (404)	149.2.47.74	ep.tgix.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:45:27	Page not found (404)	58.16.7.49	58.16.7.49	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/partnership/
+2009-09-21	07:46:06	Page not found (404)	211.155.234.99	234-099.srt.com.cn	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/partnership/
+2009-09-21	07:51:06	Page not found (404)	64.116.191.8	64.116.191.8	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=55%22%3E%D0%BA%D0%B0%D1%84%D0%B5%3C/a%3E%3C/span%3E
+2009-09-21	07:51:08	Page not found (404)	141.45.16.36	cockpit.f4.htw-berlin.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=55%22%3E%D0%BA%D0%B0%D1%84%D0%B5%3C/a%3E%3C/span%3E
+2009-09-21	07:51:09	Page not found (404)	149.2.47.74	ep.tgix.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/%22index.php?Itemid=55%22%3E%D0%BA%D0%B0%D1%84%D0%B5%3C/a%3E%3C/span%3E
+2009-09-21	07:53:40	Page not found (404)	195.202.76.201	uu-195-202-76-201.uunet.co.ke	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/partnership/
+2009-09-21	07:53:59	Page not found (404)	212.95.70.169	egestour.sdv.fr	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:54:01	Page not found (404)	211.116.154.220	211.116.154.220	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:54:08	Page not found (404)	190.200.13.14	190.200.13.14	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:57:22	Page not found (404)	119.42.101.184	119.42.101.184	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:57:30	Page not found (404)	203.147.4.68	203.147.4.68	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:57:31	Page not found (404)	203.147.4.68	203.147.4.68	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:57:32	Page not found (404)	203.147.4.68	203.147.4.68	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	07:57:36	Page not found (404)	141.45.16.36	cockpit.f4.htw-berlin.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-21	08:06:58	<script> tag in POST	92.48.122.34	92-48-122-34.static.as29550.net	Mozilla/4.76 [en] (Windows NT 5.0; U)	POST	/about/guestbook.html	
+2009-09-21	08:50:38	Page not found (404)	65.55.106.115	msnbot-65-55-106-115.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-30.html
+2009-09-21	13:21:56	Flooding	77.251.250.42	dhcp-077-251-250-042.chello.nl	Java/1.6.0_03	GET	/rooms/1m.html	10 requests in less than 10 seconds (max = 10)
+2009-09-21	13:21:57	Flooding	77.251.250.42	dhcp-077-251-250-042.chello.nl	Java/1.6.0_03	GET	/rooms/2m.html	10 requests in less than 10 seconds (max = 10)
+2009-09-21	13:21:57	Flooding	77.251.250.42	dhcp-077-251-250-042.chello.nl	Java/1.6.0_03	GET	/rooms/3k.html	11 requests in less than 10 seconds (max = 10)
+2009-09-21	13:21:57	Flooding	77.251.250.42	dhcp-077-251-250-042.chello.nl	Java/1.6.0_03	GET	/rooms/halflux.html	12 requests in less than 10 seconds (max = 10)
+2009-09-21	13:21:58	Flooding	77.251.250.42	dhcp-077-251-250-042.chello.nl	Java/1.6.0_03	GET	/rooms/studio.html	12 requests in less than 10 seconds (max = 10)
+2009-09-22	14:39:29	Page not found (404)	90.156.232.134	90.156.232.134	Regions	GET	/contacts.html
+2009-09-22	15:14:45	Page not found (404)	65.55.106.155	msnbot-65-55-106-155.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/_ID-10.html
+2009-09-22	20:25:13	Page not found (404)	65.55.207.45	msnbot-65-55-207-45.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/
+2009-09-23	00:55:10	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MRSPUTNIK 2, 0, 0, 36 HW; MRA 5.1 (build 02208)	GET	/shop/market.php	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-23	07:45:05	Page not found (404)	65.55.106.227	msnbot-65-55-106-227.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/_ID-16.html
+2009-09-23	09:41:45	Page not found (404)	65.55.51.70	msnbot-65-55-51-70.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-16.html
+2009-09-24	01:21:15	Page not found (404)	91.214.45.89	unknown.altushost.com	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/component/Itemid,79/id,1/view,phocaguestbook
+2009-09-24	03:31:40	Page not found (404)	88.85.81.8	c7d253.f-h.in		GET	/.svn/entries
+2009-09-24	03:31:40	Page not found (404)	88.85.81.8	c7d253.f-h.in		GET	/.svn/entries
+2009-09-24	05:36:49	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MRA 4.6 (build 01425); .NET CLR 2.0.50727)	GET	/yandex/yandex.php	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-24	06:19:52	Page not found (404)	65.55.107.179	msnbot-65-55-107-179.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-16.html
+2009-09-24	08:07:39	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/index.php?Itemid=55	10 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:39	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/lr	11 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:40	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/lr/cafe.html	12 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:40	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/lr/sauna.html	13 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:40	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/news/c-lr.html	14 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:41	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/news/mk-about-evrika.html	14 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:41	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/news/q-q.html	15 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:41	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/partnership/tourfirm.html	16 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:42	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/rooms	16 requests in less than 10 seconds (max = 10)
+2009-09-24	08:07:42	Flooding	62.163.186.205	a186205.upc-a.chello.nl	Java/1.6.0_11	GET	/special	17 requests in less than 10 seconds (max = 10)
+2009-09-24	15:05:08	Page not found (404)	65.55.106.114	msnbot-65-55-106-114.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1.html
+2009-09-24	20:15:02	Page not found (404)	65.55.106.133	msnbot-65-55-106-133.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-13.html
+2009-09-24	20:56:38	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Opera/9.00 (Windows NT 4.0; U; en)	POST	/about/guestbook.html	
+2009-09-24	22:54:05	Page not found (404)	65.55.207.26	msnbot-65-55-207-26.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-26.html
+2009-09-24	23:02:42	Page not found (404)	84.16.235.40	underclothesblog.com	Mozilla/5.0 (Windows NT 5.0; U; ru) Opera 8.50	GET	/component/option,com_datsogallery/lang,ru/	http://evrikahotel.ru
+2009-09-25	00:17:33	Page not found (404)	65.55.106.107	msnbot-65-55-106-107.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-323.html
+2009-09-25	02:28:29	Page not found (404)	65.55.106.160	msnbot-65-55-106-160.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-27.html
+2009-09-25	03:28:18	Page not found (404)	72.30.142.171	llf531095.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/services/cafe.html
+2009-09-25	03:40:00	Page not found (404)	65.55.207.131	msnbot-65-55-207-131.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-30.html
+2009-09-25	04:09:30	Page not found (404)	65.55.106.183	msnbot-65-55-106-183.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-11.html
+2009-09-25	09:06:16	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322)	POST	/about/guestbook.html	
+2009-09-25	09:09:31	Page not found (404)	65.55.106.135	msnbot-65-55-106-135.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_itype-specphoto/
+2009-09-25	10:57:52	Page not found (404)	213.248.58.125	mxserv2.bizhosting.ru	PycURL/7.18.2	GET	/.svn/entries
+2009-09-25	14:47:04	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)	GET	/yandex-market.php	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-25	15:01:38	Page not found (404)	65.55.106.158	msnbot-65-55-106-158.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-27.html
+2009-09-25	20:56:01	Page not found (404)	65.55.106.163	msnbot-65-55-106-163.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/
+2009-09-25	20:59:10	Page not found (404)	91.202.206.61	dp-206-61.lancom.ru	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php?Itemid=55&quot;&gt;%D0%BA%D0%B0%D1%84%D0%B5&lt;/a&gt;&lt;/span&gt;
+2009-09-25	20:59:22	Page not found (404)	117.32.154.222	117.32.154.222	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php?Itemid=55&quot;&gt;%D0%BA%D0%B0%D1%84%D0%B5&lt;/a&gt;&lt;/span&gt;
+2009-09-25	20:59:36	Page not found (404)	89.253.195.111	server1.rufox.ru	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php?Itemid=55&quot;&gt;%D0%BA%D0%B0%D1%84%D0%B5&lt;/a&gt;&lt;/span&gt;
+2009-09-25	21:00:06	Page not found (404)	216.104.15.134	216.104.15.134	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)	GET	/feed/&quot;index.php?Itemid=55&quot;&gt;%D0%BA%D0%B0%D1%84%D0%B5&lt;/a&gt;&lt;/span&gt;
+2009-09-25	23:00:04	Page not found (404)	65.55.207.135	msnbot-65-55-207-135.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-26.html
+2009-09-25	23:56:14	Page not found (404)	86.110.180.154	ip-86-110-180-154.spark-rostov.ru	http://seriyps.ru/blog/2009/09/23/svn-xak-pishu-grabber/	GET	/.svn/entries
+2009-09-26	09:03:01	Page not found (404)	65.55.207.119	msnbot-65-55-207-119.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-12.html
+2009-09-26	11:19:00	Page not found (404)	65.55.207.26	msnbot-65-55-207-26.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews.html
+2009-09-26	13:18:00	Page not found (404)	65.55.106.162	msnbot-65-55-106-162.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806.html
+2009-09-26	14:26:23	Flooding	66.90.104.20	.	WebAlta Crawler/1.3.23 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)	GET	/rooms/2m.html	10 requests in less than 10 seconds (max = 10)
+2009-09-26	14:26:24	Flooding	66.90.104.20	.	WebAlta Crawler/1.3.23 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)	GET	/index.php?Itemid=54&catid=34:2008-11-10-14-14-21&id=59:1-&option=com_content&view=article	10 requests in less than 10 seconds (max = 10)
+2009-09-26	14:26:25	Flooding	66.90.104.20	.	WebAlta Crawler/1.3.23 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)	GET	/index.php?Itemid=54&catid=34:2008-11-10-14-14-21&id=54:1-&option=com_content&view=article	10 requests in less than 10 seconds (max = 10)
+2009-09-26	14:26:25	Flooding	66.90.104.20	.	WebAlta Crawler/1.3.23 (http://www.webalta.net/ru/about_webmaster.html) (Windows; U; Windows NT 5.1; ru-RU)	GET	/index.php?Itemid=54&catid=34:2008-11-10-14-14-21&id=60:1-&option=com_content&view=article	11 requests in less than 10 seconds (max = 10)
+2009-09-26	15:44:01	Page not found (404)	208.82.100.141	141.100.82.208.dnsptr.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php
+2009-09-26	15:44:11	Page not found (404)	121.253.57.148	121.253.57.148	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php
+2009-09-26	15:44:17	Page not found (404)	71.198.213.149	c-71-198-213-149.hsd1.ca.comcast.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php
+2009-09-26	17:54:21	Page not found (404)	210.72.128.98	210.72.128.98	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php?Itemid=56&quot;&gt;%D0%A1%D0%B0%D1%83%D0%BD%D1%8B&lt;/a&gt;&lt;/span&gt;
+2009-09-26	17:54:34	Page not found (404)	94.186.152.18	www.paritaet-bw.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/feed/&quot;index.php?Itemid=56&quot;&gt;%D0%A1%D0%B0%D1%83%D0%BD%D1%8B&lt;/a&gt;&lt;/span&gt;
+2009-09-26	19:49:30	Page not found (404)	65.55.106.187	msnbot-65-55-106-187.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-32.html
+2009-09-27	02:03:02	Page not found (404)	65.55.207.48	msnbot-65-55-207-48.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/about/806/1218.html
+2009-09-27	04:04:47	Page not found (404)	72.30.142.245	llf531051.crawl.yahoo.net	Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)	GET	/services/
+2009-09-27	04:43:51	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?page=7/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:52	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/cafe.html?page=7	11 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:52	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/special?page=7	12 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:53	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/partnership/tourfirm.html?page=7	13 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:54	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/photos.html?page=7	14 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:54	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/guests.html?page=7	15 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:55	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/contacts.html?page=7	16 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:55	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/component/option,com_phocaguestbook/itemid,79/id,1/view,phocaguestbook?page=7	17 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:56	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/certificates.html?page=7	18 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:56	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/hotels-in-yoshkar-ola.html?page=7	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:57	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/mk-about-evrika.html?page=7	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:58	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/q-q.html?page=7	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:58	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/c-lr.html?page=7	21 requests in less than 10 seconds (max = 10)
+2009-09-27	04:43:59	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/exlinks.html?page=7	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:45:18	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?page=7/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:40	Page not found (404)	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/index.php?itemid=55
+2009-09-27	04:50:42	Page not found (404)	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/index.php?itemid=56
+2009-09-27	04:50:50	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?page=7/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:51	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/sauna.html?page=7	10 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:51	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?page=7	11 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:52	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/cafe.html?page=7	12 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:53	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/special?page=7	12 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:53	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/partnership/tourfirm.html?page=7	13 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:54	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/photos.html?page=7	13 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:54	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/guests.html?page=7	14 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:55	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/contacts.html?page=7	15 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:55	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/component/option,com_phocaguestbook/itemid,79/id,1/view,phocaguestbook?page=7	16 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:56	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/certificates.html?page=7	16 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:57	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/hotels-in-yoshkar-ola.html?page=7	16 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:57	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/mk-about-evrika.html?page=7	17 requests in less than 10 seconds (max = 10)
+2009-09-27	04:50:58	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/q-q.html?page=7	17 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:37	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?page=7/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:38	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/rss.html?itemid=55	11 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:38	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/atom.html?itemid=55	12 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:39	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?itemid=55	13 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:39	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?itemid=55	14 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:40	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?itemid=55	15 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:41	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/sauna.html?itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:41	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?itemid=55	17 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:42	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/cafe.html?itemid=55	18 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:42	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/special?itemid=55	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:43	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/partnership/tourfirm.html?itemid=55	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:43	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/photos.html?itemid=55	21 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:44	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/guests.html?itemid=55	21 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:44	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/contacts.html?itemid=55	22 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:45	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/component/option,com_phocaguestbook/itemid,79/id,1/view,phocaguestbook?itemid=55	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:45	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/certificates.html?itemid=55	21 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:46	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/hotels-in-yoshkar-ola.html?itemid=55	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:46	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/mk-about-evrika.html?itemid=55	21 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:47	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/q-q.html?itemid=55	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:47	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/c-lr.html?itemid=55	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:48	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/exlinks.html?itemid=55	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:48	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/index.php?itemid=55	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:49	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/rss.html?itemid=56	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:49	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/atom.html?itemid=56	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:50	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?itemid=56	19 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:50	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?itemid=56	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:56:51	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?itemid=56	20 requests in less than 10 seconds (max = 10)
+2009-09-27	04:57:19	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?page=7/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:12	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?itemid=56/	10 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:14	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/cafe.html?itemid=56	10 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:15	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/special?itemid=56	11 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:15	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/partnership/tourfirm.html?itemid=56	12 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:16	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/photos.html?itemid=56	13 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:17	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/guests.html?itemid=56	14 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:17	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/contacts.html?itemid=56	15 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:18	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/component/option,com_phocaguestbook/itemid,79/id,1/view,phocaguestbook?itemid=56	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:18	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/certificates.html?itemid=56	17 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:19	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/hotels-in-yoshkar-ola.html?itemid=56	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:20	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/mk-about-evrika.html?itemid=56	15 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:20	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/q-q.html?itemid=56	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:21	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/news/c-lr.html?itemid=56	15 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:22	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/exlinks.html?itemid=56	15 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:22	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/index.php?itemid=56	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:23	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/2008-11-07-10-51-23.html?itemid=56	14 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:23	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/rss.html?Itemid=55	15 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:24	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/feed/atom.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:25	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:25	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/?Itemid=55	17 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:26	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/rooms?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:27	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/sauna.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:27	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr?Itemid=55	17 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:28	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/lr/cafe.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:28	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/special?Itemid=55	17 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:29	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/partnership/tourfirm.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:30	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/photos.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:30	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/guests.html?Itemid=55	17 requests in less than 10 seconds (max = 10)
+2009-09-27	05:03:31	Flooding	69.162.82.226	226-82-162-69.reverse.lstn.net	FlickySearchBot/1.0 (+testMode)	GET	/about/contacts.html?Itemid=55	16 requests in less than 10 seconds (max = 10)
+2009-09-27	11:20:49	Page not found (404)	95.169.190.87	ns.km34614.keymachine.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90)	GET	/wp-login.php	http://www.evrikahotel.ru/wp-login.php
+2009-09-27	12:45:02	Page not found (404)	65.55.106.161	msnbot-65-55-106-161.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-32.html
+2009-09-28	01:48:39	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Opera 8.00 on Windows XP: Opera/8.00 (Windows NT 5.1; U; en)	GET	/yandex/	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-28	03:55:06	Page not found (404)	65.55.207.102	msnbot-65-55-207-102.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-17.html
+2009-09-28	05:50:22	<script> tag in POST	95.220.75.125	ip-95-220-75-125.bb.netbynet.ru	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MRA 4.6 (build 01425); .NET CLR 1.1.4322; .NET CLR 2.0.50727)	POST	/about/guestbook.html	
+2009-09-28	05:52:16	<script> tag in POST	94.142.129.98	h-129-98.cssgroup.lv	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crazy Browser 1.0.5)	POST	/about/guestbook.html	
+2009-09-28	10:39:37	Page not found (404)	95.169.190.87	ns.km34614.keymachine.de	Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90)	GET	/wp-login.php	http://www.evrikahotel.ru/wp-login.php
+2009-09-28	15:07:34	<script> tag in POST	92.241.171.38	92.241.171.38	Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0; .NET CLR 1.1.4322)	POST	/about/guestbook.html	
+2009-09-29	02:53:03	Page not found (404)	65.55.207.118	msnbot-65-55-207-118.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-29.html
+2009-09-29	05:32:06	Page not found (404)	65.55.51.111	msnbot-65-55-51-111.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-16.html
+2009-09-29	08:17:10	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/main/about/1216/1225.html
+2009-09-29	08:17:39	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-16.html
+2009-09-29	08:18:10	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-15.html
+2009-09-29	08:18:39	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-14.html
+2009-09-29	08:19:09	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-13.html
+2009-09-29	08:19:39	Page not found (404)	65.98.224.5	cust-65-98-224-5.static.o1.com	TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)	GET	/price/_spec-12.html
+2009-09-29	08:28:18	Page not found (404)	65.55.207.71	msnbot-65-55-207-71.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_archive-1/_ID-30.html
+2009-09-29	09:03:47	Page not found (404)	65.55.106.183	msnbot-65-55-106-183.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/order/_cat-10.html
+2009-09-29	10:33:19	Page not found (404)	93.174.93.222	riddle.santrex.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-29	11:48:28	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.30 Safari/525.13	GET	/yandex/ya.php	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-30	04:55:17	<script> tag in POST	195.88.33.83	195.88.33.83	Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0)	POST	/about/guestbook.html	
+2009-09-30	05:21:09	Page not found (404)	93.174.93.222	riddle.santrex.net	Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)	GET	/about/
+2009-09-30	07:55:37	<script> tag in POST	95.220.0.32	ip-95-220-0-32.bb.netbynet.ru	Opera/7.60 (Windows NT 5.2; U)  [en] (IBM EVV/3.0/EAK01AG9/LE)	POST	/about/guestbook.html	
+2009-09-30	17:49:49	Page not found (404)	65.55.106.163	msnbot-65-55-106-163.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/companynews/_ID-27.html
+2009-09-30	18:24:52	Page not found (404)	77.243.100.174	77.243.100.174		GET	/engine/modules/antibot.php
+2009-09-30	18:58:50	Page not found (404)	65.55.106.108	msnbot-65-55-106-108.search.msn.com	msnbot/2.0b (+http://search.msn.com/msnbot.htm)	GET	/main/image/_ID-303.html
+2009-09-30	22:45:26	Page not found (404)	88.198.64.245	static.88-198-64-245.clients.your-server.de	Mozilla/5.0 (Windows; U; Windows NT 5.1; uk-UA; rv:1.8.1.5) Gecko/20070713 Firefox/2.0.0.5	GET	/yandex/yandex_export.php	http://stenos.ru/index.php?p=29&id=66bcd0c8b2f32a50ad2aa8ea7249c15c
+2009-09-30	23:19:34	Page not found (404)	77.40.48.250	250.48.pppoe.mari-el.ru	Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)	GET	/(null)

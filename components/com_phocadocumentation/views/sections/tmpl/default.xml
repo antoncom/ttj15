@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="PHOCADOCUMENTATION SECTION LIST LAYOUT">
+		<message>
+			<![CDATA[PHOCADOCUMENTATION SECTION LIST LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>PHOCADOCUMENTATION SECTION LIST LAYOUT</name>
+		<description>PHOCADOCUMENTATION SECTION LIST LAYOUT DESC</description>
+		<params>			
+		</params>
+	</state>
+</metadata>

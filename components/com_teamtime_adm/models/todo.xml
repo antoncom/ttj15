@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<name>Todo Edit Form</name>
+	<params addpath="/administrator/components/com_content/elements">
+		<param name="user_id" type="author" default="" label="Author" description="DETAILAUTHOR" />
+		<param name="created" type="calendar" default="" label="Created Date" description="DETAILCREATED" />
+	</params>
+</form>

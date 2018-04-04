@@ -1,0 +1,226 @@
+body {
+	margin: 0px 0px;
+}
+
+.win {
+	width: 774px;
+	height: 80px;
+	background: #d5e2f2;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: #387dac;
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1em;
+	padding: 0 20px;
+}
+
+.win span {
+	font-size: 12px;
+	font-weight: normal;
+	color: #808080;
+}
+
+.container {
+	position: relative;
+}
+
+.content {
+	width: 812px;
+	height: 416px;
+	overflow: auto;
+}
+
+table {
+	width: 812px;
+	font-family: Arial;
+	font-size: 14px;
+	padding: 0;
+	border-collapse: collapse;
+}
+
+.content table {
+	width: 795px;
+}
+
+thead {
+	border-bottom: 1px #8bb9d9 ridge;
+	background: #e8f1f8;
+
+}
+
+tfoot {
+	font-size: 16px;
+	color: #387dac;
+	white-space: nowrap;
+}
+
+tbody {
+	vertical-align: top;
+}
+
+tbody td, tfoot td {
+	border-right: 2px #8bb9d9 ridge;
+}
+
+tfoot td {
+	border-top: 2px #8bb9d9 ridge;
+}
+
+th {
+	text-align: left;
+	color: #387dac;
+	width: 94px;
+	padding: 0 5px 0 10px;
+	height: 29px;
+}
+
+th+th {
+	width: 372px;
+}
+
+th+th+th, th+th+th+th {
+	width: 60px;
+}
+
+th+th+th+th+th {
+	width: 151px;
+}
+
+td {
+	width: 94px;
+	padding: 16px 5px 0 10px;
+}
+
+td+td {
+	width: 370px;
+}
+
+tfoot td+td {
+	width: 371px;
+}
+
+td+td+td, td+td+td+td {
+	width: 58px;
+}
+
+td+td+td+td+td {
+	width: 134px;
+}
+
+tfoot td+td+td+td+td {
+	width: 151px;
+}
+
+th:first-child {
+	padding: 0 0 0 20px;
+}
+
+td:first-child {
+	padding: 16px 0 0 20px;
+}
+
+tfoot td {
+	padding: 0 5px 0 10px;
+	height: 42px;
+}
+
+tfoot td:first-child {
+	padding: 0 0 0 20px;
+}
+
+tr.first td {
+	padding: 24px 5px 0 10px;
+}
+
+tr.first td:first-child {
+	padding: 24px 0 0 20px;
+}
+
+td span {
+	font-weight: bold;
+}
+
+.date {
+	border-right: none;
+}
+
+.date-num {
+	color: #b3b3b3;
+	float: left;
+	font-size: 28px;
+	font-weight: bold;
+	margin-right: 7px;
+	display: inline-block;
+}
+
+.date-month-year {
+	font-size: 12px;
+	line-height: 1.1em;
+	color: #b3b3b3;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.col-three, .col-four {
+	width: 70px;
+}
+
+a {
+	position: relative;
+	font-weight: normal;
+	color: black !important;
+}
+
+a:hover {
+	color: #0B55C4 !important;
+}
+
+a>span {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000;
+	background: #ffefaf;
+	white-space: nowrap;
+	padding: 3px 10px;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	left: 70px;
+	visibility: hidden;
+}
+
+a:hover>span {
+	visibility: visible;
+}
+
+.start {
+	background: url(images/start.png) 4px 0 no-repeat;
+	width: 36px;
+	float: right;
+	margin-right: 40px;
+	font-size: 12px;
+	font-weight: normal;
+	padding-top: 30px;
+	cursor: pointer;
+	color: black;
+}
+
+.end {
+	background: url(images/end.png) 5px 0 no-repeat;
+	width: 36px;
+	float: right;
+	margin-right: 15px;
+	font-size: 12px;
+	font-weight: normal;
+	padding-top: 30px;
+	cursor: pointer;
+	color: black;
+}
+
+.tableContainer {
+	width: 812px;
+	border: 1px solid #808080;
+	border-top: 2px solid #387dac;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Log Layout">
+		<message>
+			<![CDATA[STANDARD LOG LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>STANDARD LOG LAYOUT</name>
+		<description>STANDARD LOG LAYOUT DESC</description>
+		<params>
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YJ Booking Module</name>
+	<author>Youjoomla.com</author>
+	<creationDate>8/28/08</creationDate>
+	<copyright>Youjoomla.com</copyright>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0.0</version>
+<description>PLEASE GO TO YJ BOOKING MODULE FOR DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yj_booking.ini</language>
+	</languages>
+	
+	
+	
+	
+	
+<files>
+		<filename module="mod_yj_booking">mod_yj_booking.php</filename>
+		<filename>getmail.php</filename>
+		<filename>files/form.js</filename>
+		<filename>files/language/en-US.xml</filename>
+		<filename>files/images/warning.gif</filename>
+		<filename>files/images/yj_extensions.jpg</filename>
+        <filename>files/form_css.css</filename>
+		<filename>files/mootools.js</filename>
+		<filename>files/mootools.php</filename>
+		<filename>files/index.html</filename>
+		<filename>files/language/index.html</filename>
+		<filename>files/images/index.html</filename>
+		<filename>index.html</filename>
+</files>
+			
+
+	<css>
+	</css>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="_book" label="Module Class Suffix" description="Do not change" />
+		  <param name="Module options" type="spacer"/>
+				
+			
+			 
+				<param name="show_accordion" type="list" default="1" label="Show Accordion" description="Display fields in accordion.Will load additional Javascript libraries">
+			  <option value="1">Yes</option>
+			  <option value="2">No</option>
+		    </param>
+			
+			 
+				<param name="ismooloaded" type="list" default="0" label="Is Mootools loaded?" description="This option is to be used only if you set Accordion to yes.If you are using one of our templates , set this to yes">
+			  <option value="0">Yes</option>
+			  <option value="1">No</option>
+		    </param>
+			<param name="compress" type="list" default="0" label="Compress Mootools?" description="This option is to be used only if you set Accordion to yes.This option will use server side script compression for faster site load. Please make sure that  mod_gzip module compression module is enabled on your server ">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+		    </param>
+			
+<param name="SMTP_email" type="text" default="your@smtpusername.com" label="SMTP Email" description="This is username email from your SMTP server , if you do not have any and hosting on shared hosting  the email that you will receive email from will be something like your-box@your_domain.com. This must be correct if you are testing on home server like WAMP otherwise your email will not be sent out" />
+
+		
+<param name="your_email" type="text" default="change@toyourmail.com" label="Your email" description="This is the email adress where from will be received" />
+<param name="email_subject" type="text" default="New Booking Information" label="Email subject" description="Email subject text" />
+
+
+
+	            <param name="work_section" type="mos_section" default="" label="News items section" description="In this section there must be min 1 categorie and 1 news item published" />
+				
+				
+				
+				
+<param name="destination_pack_legend" type="text" default="Choose your destination:" label="Choose your destination text" description="Choose your destination text" />
+			
+<param name="destination_pack_label" type="text" default="Destination Package:" label="Destination Package text" description="Destination Package text" />
+<param name="personal_info_legend" type="text" default="Personal Information:" label="Personal info text" description="Personal info text" />
+<param name="first_name_label" type="text" default="Name:" label="Name text" description="Name text" />
+<param name="email_label" type="text" default="E-mail:" label="Email text" description="Email text" />
+<param name="phone_label" type="text" default="Phone:" label="Phone text" description="Phone text" />
+<param name="arrival_legend" type="text" default="Check-in:" label="Arrival text" description="Arrival text" />
+<param name="day_of_arrival_label" type="text" default="Day:" label="Arrival day text" description="Arrival day text" />
+<param name="month_of_arrival_label" type="text" default="Month:" label="Arrival month text" description="Arrival month text" />
+<param name="year_of_arrival_label" type="text" default="Year:" label="Arrival year text" description="Arrival year text" />
+<param name="departure_legend" type="text" default="Check-out:" label="Departure text" description="Departure text" />
+<param name="day_of_departure_label" type="text" default="Day:" label="Departure day text" description="Departure day text" />
+<param name="month_of_departure_label" type="text" default="Month:" label="Departure month text" description="Departure month textt" />
+<param name="year_of_departure_label" type="text" default="Year:" label="Departure year textt" description="Departure year text" />
+<param name="accomodation_legend" type="text" default="Accomodation:" label="Accomodation text" description="Accomodation text" />
+<param name="num_g_label" type="text" default="Количество человек:" label="Number of Guests text" description="Number of Guests text" />
+<param name="additional_info_legend" type="text" default="Additional Information:" label="Additional Information text" description="Additional Information text" />
+<param name="submit_button" type="text" default="Submit Form" label="Submit button text" description="Submit button textt" />
+<param name="reset_button" type="text" default="Reset Form" label="Reset button text" description="Reset button text" />
+<param name="sentmsg1" type="text" default="Thank you for your inquiry about." label="Message Sent Text Part 1" description="First prat of message sent text. Before the destination name.You can use HTML" />
+<param name="sentmsg2" type="text" default="We will contact you back." label="Message Sent Text Part 2" description="Second prat of message sent text. After the destination name.You can use HTML" />
+
+		
+
+		
+		
+
+	</params>
+</install>

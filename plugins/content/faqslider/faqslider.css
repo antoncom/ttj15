@@ -1,0 +1,21 @@
+/* sliders  */
+#faqslider .pane-sliders h3.title {margin:0;font-size:105%;letter-spacing:0px;}
+#faqslider .pane-sliders .title {margin:0;padding:5px;color:#666;cursor:pointer;}
+#faqslider .pane-sliders .panel {border:1px solid #ccc;margin-bottom:3px;}
+#faqslider .pane-sliders .panel h3 {background:#f6f6f6;color:#666;}
+#faqslider .pane-sliders .content {background:#ffffff;}
+#faqslider .pane-sliders div.content {padding:0px 10px 10px 10px;}
+#faqslider .jpane-toggler span {background:transparent url(../faqslider/j_arrow.png) 5px 50% no-repeat;padding-left:20px;font-weight:700;}
+#faqslider .jpane-toggler-down span {background:transparent url(../faqslider/j_arrow_down.png) 5px 50% no-repeat;padding-left:20px;font-weight:800;}
+#faqslider .jpane-toggler-down { border-bottom:1px solid #ccc;}
+/* tabs */
+#faqslider dl.tabs {float:left;margin:10px 0 -1px 0;z-index:50;}
+#faqslider dl.tabs dt {float:left;padding:4px 10px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;margin-left:3px;background:#f0f0f0;color:#666;}
+#faqslider dl.tabs dt.open {background:white;border-bottom:1px solid white;z-index:100;color:#000;}
+#faqslider dl.tabs dt span {font-size:125%;font-weight:700;}
+#faqslider dl.tabs dt.open span {font-weight:800;}
+#faqslider div.current {clear:both;border:1px solid #ccc;padding:10px 10px;}
+#faqslider div.current dd {padding:0;margin:0;}
+/* readon */
+a.fsreadon {float:right;margin-top:10px;padding:1px 5px 1px 14px;border:1px solid #F6F6F6;display:block;color:#006699;font-weight:bold;text-decoration:none;text-transform:uppercase;}
+a.fsreadon:hover, a.fsreadon:active, a.fsreadon:focus {border:1px solid #ECECEC;background-color:#F6F6F6;text-decoration:none;}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>JA Menu Parameters</name>
+	<author>www.JoomlArt.com</author>
+	<creationDate>10 Jan 2010</creationDate>
+	<copyright>Copyright (C) Copyright © 2005 - 2009 JoomlArt.com. All rights reserved.</copyright>
+	<license>http://www.joomlart.com GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://joomlart.com</authorUrl>
+	<version>1.0.2</version>
+	<description>JA Extended Menu Parameters Plugin</description>	
+	<files>
+			<folder plugin="plg_jamenuparams">plg_jamenuparams</folder>
+			<filename plugin="plg_jamenuparams">plg_jamenuparams.php</filename>
+	</files>	
+	<languages>
+      <language tag="en-GB">en-GB.plg_system_plg_jamenuparams.ini</language>
+    </languages>
+	
+	<params addpath="/plugins/system/plg_jamenuparams/element">
+	</params>
+		
+</install>

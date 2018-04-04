@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
+<install type="module" version="1.5.0" method="upgrade">
+	<name>AceSearch</name>
+	<author>JoomAce LLC</author>
+	<creationDate>10 March 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU AGPL</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.0</version>
+	<description>MOD_ACESEARCH_MODULE_DESC</description>
+	<files>
+		<filename module="mod_acesearch">mod_acesearch.php</filename>
+		<filename module="mod_acesearch">index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_acesearch.ini</language>
+	</languages>
+	<params addpath="/administrator/components/com_acesearch/library/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="set_itemid" type="text" default="" label="MOD_ACESEARCH_ITEMID" description="MOD_ACESEARCH_ITEMID_HELP"	size="30" />
+		<param name="text" type="text" default="search..." label="MOD_ACESEARCH_SEARCH_MENU_QUERY_TEXT" description="MOD_ACESEARCH_SEARCH_MENU_QUERY_TEXT_HELP"	size="30" />
+		<param name="filter" type="acesearchfilters" default="" label="MOD_ACESEARCH_SEARCH_MENU_FILTER"	description="MOD_ACESEARCH_SEARCH_MENU_FILTER"/>
+		<param type="spacer" />
+		<param name="show_ext_flt" type="radio" default="0" label="MOD_ACESEARCH_SHOW_SECTIONS" description="MOD_ACESEARCH_SHOW_SECTIONS_DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param type="spacer" />
+		<param name="show_advanced_search" type="radio" default="0" label="MOD_ACESEARCH_SHOW_ADVANCED" description="MOD_ACESEARCH_SHOW_ADVANCED_DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>
+		</param>
+		<param name="advanced_label" type="text" default="Advanced Search" size="30" label="MOD_ACESEARCH_ADVANCED_SEARCH_LABEL" description="MOD_ACESEARCH_ADVANCED_SEARCH_LABEL"/>
+		<param name="advanced_position" type="list" default="top" label="MOD_ACESEARCH_ADVANCED_LABEL_POSITION" description="MOD_ACESEARCH_ADVANCED_LABEL_POSITION_DESC">
+			<option value="right">MOD_ACESEARCH_MOD_RIGHT</option>
+			<option value="left">MOD_ACESEARCH_MOD_LEFT</option>
+			<option value="top">MOD_ACESEARCH_MOD_TOP</option>
+			<option value="bottom">MOD_ACESEARCH_MOD_BOTTOM</option>
+		</param>
+		<param type="spacer" />	
+		<param name="enable_complete" type="radio" default="1" label="MOD_ACESEARCH_ENABLE_COMP" description="MOD_ACESEARCH_ENABLE_COMP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+			<param name="text_class" type="text" default="inputbox" label="MOD_MOD_ACESEARCH_TEXT_CLASS" description="MOD_MOD_ACESEARCH_TEXT_CLASS_HELP" />
+		<param type="spacer" />
+		<param name="show_button" type="radio" default="1" label="MOD_ACESEARCH_SHOW_BUTTON" description="MOD_ACESEARCH_SHOW_BUTTON_DESC">
+			<option value="0">HIDE</option>
+			<option value="1">SHOW</option>			
+		</param>
+		<param name="button_class" type="text" default="button" label="MOD_MOD_ACESEARCH_BUTTON_CLASS" description="MOD_MOD_ACESEARCH_BUTTON_CLASS_HELP" />
+	</params>
+</install>

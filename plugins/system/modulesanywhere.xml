@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="system">
+	<name>System - Modules Anywhere</name>
+	<description>Modules Anywhere ...place modules anywhere in Joomla!</description>
+	<version>1.1.4</version>
+	<creationDate>July 2009</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2009 - NoNumber! - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Main Files -->
+	<files>
+		<filename plugin="modulesanywhere">modulesanywhere.php</filename>
+		<folder>modulesanywhere</folder>
+	</files>
+
+	<!-- Language Files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_modulesanywhere.ini</language>
+	</languages>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/modulesanywhere/elements">
+		<param name="@title" type="title" default=""
+			label="Modules Anywhere" description="Easily place modules anywhere in your site"
+			image="../plugins/system/modulesanywhere/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/modulesanywhere"
+			download_url="http://www.nonumber.nl/modulesanywhere/download"
+			help_url="http://www.nonumber.nl/modulesanywhere"
+			version_url="http://www.nonumber.nl/versions"
+			version_file="version_modulesanywhere" />
+
+		<param name="style" type="list" default="none" label="Default style" description="Default style (description)">
+			<option value="none">No wrapping - raw output (none)</option>
+			<option value="table">Wrapped by Table - Column (table)</option>
+			<option value="horz">Wrapped by Table - Horizontal (horz)</option>
+			<option value="xhtml">Wrapped by Divs (xhtml)</option>
+			<option value="rounded">Wrapped by Multiple Divs (rounded)</option>
+		</param>
+		<param name="override_style" type="radio" default="1" label="Enable style overriding" description="Enable style overriding (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="@spacer1" type="title" />
+
+		<param name="module_tag" type="text" default="module" label="Module tag" description="Module tag (description)" />
+		<param name="modulepos_tag" type="text" default="modulepos" label="Modulepos tag" description="Modulepos tag (description)" />
+		<param name="handle_loadposition" type="radio" default="0" label="Handle {loadposition} tags" description="Handle {loadposition} tags (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@toggler_handle_loadposition" type="toggler" param="handle_loadposition" value="1" />
+			<param name="@activate_jumper" type="radio" default="0" label="Activate jumper" description="Activate jumper (description)">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="@toggler_activate_jumper" type="toggler" param="@activate_jumper" value="1" />
+				<param name="@jumper" type="title" label=""
+					description="&#60;&#99;&#101;&#110;&#116;&#101;&#114;&#62;&#60;&#105;&#109;&#103;&#32;&#115;&#114;&#99;&#61;&#34;&#46;&#46;&#47;&#112;&#108;&#117;&#103;&#105;&#110;&#115;&#47;&#115;&#121;&#115;&#116;&#101;&#109;&#47;&#109;&#111;&#100;&#117;&#108;&#101;&#115;&#97;&#110;&#121;&#119;&#104;&#101;&#114;&#101;&#47;&#105;&#109;&#97;&#103;&#101;&#115;&#47;&#106;&#117;&#109;&#112;&#46;&#103;&#105;&#102;&#34;&#32;&#98;&#111;&#114;&#100;&#101;&#114;&#61;&#34;&#48;&#34;&#32;&#97;&#108;&#116;&#61;&#34;&#34;&#32;&#119;&#105;&#100;&#116;&#104;&#61;&#34;&#56;&#52;&#34;&#32;&#104;&#101;&#105;&#103;&#104;&#116;&#61;&#34;&#49;&#52;&#48;&#34;&#32;&#47;&#62;&#60;&#47;&#99;&#101;&#110;&#116;&#101;&#114;&#62;" />
+			<param name="@toggler_activate_jumper_end" type="toggler" />
+		<param name="@toggler_handle_loadposition_end" type="toggler" />
+
+		<param name="@articles" type="title" show_apply="1" label="Articles" description="Articles (description)" />
+		<param name="articles_enable" type="radio" default="1" label="Enable in articles" description="Enable in articles (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@articles_enable_toggler" type="toggler" param="articles_enable" value="1" />
+			<param name="articles_security_level" type="grouplevel" default="23" label="Security Level" description="Security Level (description)" />
+		<param name="@articles_enable_toggler_end" type="toggler" />
+
+		<param name="@components" type="title" show_apply="1" label="Components" description="Components (description)" />
+		<param name="components_enable" type="radio" default="1" label="Enable in components" description="Enable in components (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@components_enable_toggler" type="toggler" param="components_enable" value="1" />
+			<param name="components" type="components" default="" label="Disable on Components" description="Disable on Components (description)" />
+		<param name="@components_enable_toggler_end" type="toggler" />
+
+		<param name="@other" type="title" show_apply="1" label="Other Areas" description="Other Areas (description)" />
+		<param name="other_enable" type="radio" default="1" label="Enable other areas" description="Enable other areas (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+</install>

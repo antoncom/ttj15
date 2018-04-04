@@ -1,0 +1,20 @@
+
+textarea.redactorEditor {
+	font-size: 15px !important;
+}
+
+body .redactor_toolbar li a.redactor_btn_buttonhoursplan {
+	background: url('../images/buttonhoursplan.png') no-repeat;
+}
+
+body .redactor_toolbar li a.redactor_btn_buttonhoursplan span {
+	background-image: none;
+}
+
+body .redactor_toolbar li a.redactor_btn_buttontargetvector {
+	background: url('../images/buttontargetvector.png') no-repeat;
+}
+
+body .redactor_toolbar li a.redactor_btn_buttontargetvector span {
+	background-image: none;
+}

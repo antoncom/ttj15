@@ -1,0 +1,32 @@
+/*
+ *	imageflow-controlbar4 overlay preset
+*/
+.controlbar4 {
+	background: url(/plugins/content/highslide/graphics/controlbar4.gif);
+	width: 167px;
+	height: 34px;
+}
+.controlbar4 a {
+	display: block;
+	float: left;
+	/*margin: 0px 0 0 4px;*/
+	height: 27px;
+}
+.controlbar4 a:hover {
+	background-image: url(/plugins/content/highslide/graphics/controlbar4-hover.gif);
+}
+.controlbar4 .previous {
+	width: 50px;
+}
+.controlbar4 .next {
+	width: 40px;
+	background-position: -50px 0;
+}
+.controlbar4 .highslide-move {
+	width: 40px;
+	background-position: -90px 0;
+}
+.controlbar4 .close {
+	width: 36px;
+	background-position: -130px 0;
+}

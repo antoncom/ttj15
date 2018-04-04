@@ -1,0 +1,275 @@
+/**
+ * @version $Id: position.css 10387 2008-06-03 10:59:16Z pasamio $
+ * @author Design & Accessible Team ( Angie Radtke / Robert Deutz )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #897a8c;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 100.1%;
+	padding: 0px;
+	text-align: center;
+}
+
+/* ################   Position ################  */
+#all
+{
+	background:#f5f0f0;
+	border-left: solid 1px #7b5b70;
+	border-right: solid 1px #7b5b70;
+	color: #000000;
+	font-size: 0.9em;
+	line-height:130%;
+	margin: 0 auto;
+	max-width: 1004px;
+	padding: 0 0px 0px 0px;
+	text-align: left;
+	background-image:url(../../../images/bg0.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+	width:1004px;
+}
+
+#page { 
+	padding: 0px 15px 20px 15px;
+	width: 482px;
+	margin-left:0px;
+}
+
+#header
+{
+	color: #000000;
+	margin: 0;
+	position: relative;
+	text-align: right;
+}
+
+#headpic	{
+	background-image:url(../../../images/bron_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:top right;
+	height:215px;
+	width:71%;
+	float:left;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	margin: 13px 0 0 0;
+}
+
+#contentarea,#contentarea2
+{
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	overflow: hidden;
+}
+#wrapper { margin: 0 0 0 0px;
+
+}
+#left
+{
+/*	background: #f1f1d0; */
+	border-right: solid 0px #EEEEEE;
+	float: left;
+	margin: 0px 0 0 0;
+	width: 27%;
+}
+
+#right
+{
+	color: #000;
+	float:left;
+	width: 28%;
+	padding-top:10px;
+}
+
+#main2
+{
+/*	width:59%; */
+	width:700px; 
+	padding: 10px 15px 20px 15px;
+	position: relative;
+	min-height:520px;
+	float:left;
+}
+
+#main
+{
+	background: none;
+	margin: 0 0px 0 0;
+	padding: 10px 20px 20px 0px;
+	position: relative;
+	width:400px;
+	display:block;
+	/*goodmaster*/
+	float:left;
+}
+
+/*
+#main2 table#annoPlus,
+#main2 table#annoPlus td,
+#main table#annoPlus,
+#main table#annoPlus td {
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+*/
+
+/* ###################### generell ###################### */
+.unsichtbar,.u2,.invisible , .unseen
+{
+	display: inline;
+	height: 0px;
+	left: -3000px;
+	position: absolute;
+	top: -2000px;
+	width: 0px;
+	z-index: 200;
+}
+
+.wrap
+{
+/*	border: 0; */
+	clear: both;
+	float: none;
+	font-size: 1px;
+	height: 0;
+	line-height: 1px;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+#logo
+{
+	font-size: 1em !important;
+	font-weight: bold !important;
+	position: relative;
+	text-align: left;
+	text-transform: none !important;
+	z-index: 0;
+	margin-top: 1em;
+}
+
+#logo  img { display: block; }
+
+#logo span
+{
+	display: block;
+	margin: 0px 0 0 100px !important;
+	border-bottom: solid 1px #666;
+}
+
+/* ###############  main * ########################### */
+/* position */
+.leading
+{
+	background: #f6f6ea url(../images/bg1.jpg) repeat-x top left; 
+/*	background-color:#EFDEEA; */
+	border: solid 1px #fff;
+	color: #000000;
+	margin: 10px 0px 10px 3px;
+	padding: 20px 10px 40px 20px;
+	position: relative;
+}
+
+.leading_separator
+{
+	border-bottom: solid 0px #333333;
+	display: block;
+	height: 10px;
+	margin: 0 0 0px 0;
+}
+
+.article_separator
+{
+	border: solid 1px #333333;
+	display: none;
+	margin: 0px 0 0px 0;
+}
+
+.blog { padding: 0; 
+width:478px;
+}
+
+.cols1
+{
+	display: block;
+	float: none !important;
+	margin: 0 !important;
+}
+
+.cols2 { width: 45%; }
+.cols3 { width: 30%; }
+
+.column1 , .column2
+{
+	border: solid 0px #D4A7C5;
+	margin: 0 5px 0 0;
+	position: relative;
+}
+
+.column2 , .column1
+{
+	float: left;
+	margin: 0;
+}
+
+.column2
+{
+	float: right;
+	margin: 0;
+	width: 45%;
+}
+
+.article_row
+{
+	margin: 0px 0 0px 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.article_column
+{
+	border: solid 0px #ccc;
+	padding: 10px 10px 10px 0;
+}
+
+.row_separator2
+{
+	display: block;
+	clear: both;
+	margin: 0;
+	border: solid 0px;
+}
+
+div#main form.editor	{
+}
+
+#main2 div.blog div.leading h2.contentheading	{
+	text-align:left;
+}
+
+.tdleft_rosewind	{
+	padding-left:13px;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD module 1.0//EN" "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5" client="administrator" method="upgrade">
+	<name>AceSearch - Quick Icons</name>
+	<author>JoomAce LLC</author>
+	<creationDate>September 2010</creationDate>
+	<copyright>(C) 2009-2010 JoomAce LLC</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.0</version>
+	<description>This module shows AceSEARCH Quick Icons on the Admin area Home Page. Publish in "icon" position.</description>
+	<files>
+		<filename module="mod_acesearch_quickicons">mod_acesearch_quickicons.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_acesearch_quickicons.ini</language>
+	</languages>
+	<params>
+		<param name="acesearch_version" type="radio" default="1" label="MOD_ACESEARCH_VERSION_STATUS" description="MOD_ACESEARCH_VERSION_STATUS_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="acesearch_configuration" type="radio" default="0" label="MOD_ACESEARCH_CONFIG" description="MOD_ACESEARCH_CONFIG_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="acesearch_extensions" type="radio" default="0" label="MOD_ACESEARCH_EXT" description="MOD_ACESEARCH_EXT_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="acesearch_search" type="radio" default="1" label="MOD_ACESEARCH_SEARCH" decription="MOD_ACESEARCH_SEARCH_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="acesearch_filter" type="radio" default="0" label="MOD_ACESEARCH_FILTERS" decription="MOD_ACESEARCH_FILTER_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="acesearch_statistics" type="radio" default="0" label="MOD_ACESEARCH_STATISTICS" decription="MOD_ACESEARCH_STATISTICS_HELP">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+	</params>
+</install>

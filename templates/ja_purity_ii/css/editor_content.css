@@ -1,0 +1,115 @@
+ol.todo_content li
+{
+	font-size: 16px;	
+}
+
+h3.todo_content
+{
+	font-size: 24px;
+	font-family: Arial, Verdana;
+	font-weight: normal;
+	color: #808080;
+}
+
+pre, code
+{
+  display: block;
+  padding: 5px;
+  background-color: #000;
+  overflow: auto;
+  line-height: 1.3em;
+  font-size: 15px;
+  color: #fff;
+}
+
+pre code
+{
+  background-color: #000;
+}
+
+
+/* Tooltips */
+.tool-tip, .tool-tip-right {
+    border: 1px solid #D4D5AA;
+    padding: 5px;
+    background: #FFFFCC;
+    max-width: 200px;
+    font-size: 90%;
+    line-height: 150%;
+    font-weight: bold;
+    color:  #666666; 
+    font-style: italic;
+}
+.tool-tip, p.tool-tip {
+    float: left;
+    margin: 2px 2% 0px 0px;
+}
+
+.tool-tip-right, p.tool-tip-right {
+    float: right;
+    margin: 2px 0px 0px 1%;
+}
+
+.tool-title {
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: url(../../system/images/selector-arrow.png) no-repeat;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.tool-text {
+    margin: 0;
+    font-size: 100%;
+}
+
+/*  FOR ORDERED LIST WITH PICTURES INSIDE CIRCLE */
+/*  USED IN INSTRUCTIONS TEXT  */
+ol#bul li {
+	width:100%;
+	height:36px;
+	display:block;
+	background-repeat:no-repeat;
+	vertical-align:middle;
+	padding:12px 0px 0px 60px;
+	line-height: 150%;
+	list-style-type:none;
+        font-size:16px;
+	color:#666970;
+}
+ol#bul li {	background-image:url(/images/ordered-bullet_1.png); }
+ol#bul li + li { background-image:url(/images/ordered-bullet_2.png); }
+ol#bul li + li + li { background-image:url(/simages/ordered-bullet_3.png); }
+ol#bul li + li + li + li { background-image:url(/images/ordered-bullet_4.png); }
+ol#bul li + li + li + li + li {	background-image:url(/imagess/ordered-bullet_5.png); }
+ol#bul li + li + li + li + li + li { background-image:url(/images/ordered-bullet_6.png); }
+ol#bul li + li + li + li + li + li + li { background-image:url(/images/ordered-bullet_7.png); }
+ol#bul li + li + li + li + li + li + li + li { background-image:url(/images/ordered-bullet_8.png); }
+ol#bul li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_9.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li { background-image:url(/images/ordered-bullet_10.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_11.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_12.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_13.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_14.png); }
+ol#bul li + li + li + li + li + li + li + li + li + li + li + li + li + li + li {	background-image:url(/images/ordered-bullet_15.png); }
+ol#bul li:hover {
+	background-position:0px -49px;
+	color:#124500;
+}
+ol#bul li a {	
+	font-size:16px;
+	color:#767980;
+	text-decoration:none;
+	display: block;
+	width:100%;
+	padding:0px 0px 0px 60px;
+	margin:0px;
+}
+ol#bul li:hover a {	
+	color:#124500;
+}
+
+/*  END OF CSS FOR ORDERED LIST WITH PICTURES INSIDE CIRCLE */

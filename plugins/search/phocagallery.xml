@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" version="1.5" type="plugin" group="search">
+	<name>Search - Phocagallery</name>
+	<author>MCH</author>
+	<creationDate>February 2008</creationDate>
+	<copyright>Copyright (C) 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Allows Searching of PhocaGalleries</description>
+	<files>
+		<filename plugin="phocagallery">phocagallery.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_phocagallery.ini</language>
+		<language tag="de-DE">de-DE.plg_search_phocagallery.ini</language>
+	</languages>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>
+	</params>
+</install>

@@ -1,0 +1,34 @@
+
+.checklist-hoursplan::before {
+	content: attr(data-hoursplan); /* Выводим текст */
+	position: relative; /* Абсолютное позиционирование */
+	left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+	z-index: 1; /* Отображаем подсказку поверх других элементов */
+	background: #000EB3; /* Полупрозрачный цвет фона */
+	color: #fff; /* Цвет текста */
+	text-align: center; /* Выравнивание текста по центру */
+	font-family: Arial, sans-serif; /* Гарнитура шрифта */
+	font-size: 9px; /* Размер текста подсказки */
+	padding: 2px 2px; /* Поля */
+	margin-right:5px;
+	border: 1px solid #333; /* Параметры рамки */
+}
+
+.checklist-vector::after {
+	content: attr(data-vector); /* Выводим текст */
+	position: relative; /* Абсолютное позиционирование */
+	left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+	z-index: 1; /* Отображаем подсказку поверх других элементов */
+	background: #B70000; /* Полупрозрачный цвет фона */
+	color: #fff; /* Цвет текста */
+	text-align: center; /* Выравнивание текста по центру */
+	font-family: Arial, sans-serif; /* Гарнитура шрифта */
+	font-size: 9px; /* Размер текста подсказки */
+	padding: 2px 2px; /* Поля */
+	margin-left:5px;
+	border: 1px solid #333; /* Параметры рамки */
+}
+
+div.checklist-checkbox {
+	display:none;
+}

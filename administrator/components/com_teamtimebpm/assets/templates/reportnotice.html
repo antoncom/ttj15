@@ -1,0 +1,53 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<div style="font-family: Arial, sans-serif; font-size: 14px;">
+
+	<div style="margin-bottom: 30px;">
+		Ваша задача:
+		<!-- BEGIN todorow -->
+		<a href="{user_todo_url}">{user_todo_name}</a><br>
+		<!-- END todorow -->
+	</div>
+
+	<table style="width: 685px; border-color: #bad2ee; border-style: solid; border-width: 2px; border-collapse: collapse;">
+		<caption style="text-align: left; padding-bottom: 15px;">Текущий результат процесса:</caption>
+		<thead>
+			<tr>
+				<th colspan="2"
+						style="border-width: 1px; border-style: solid; border-color: #7da9e2; padding-top: 7px; padding-bottom: 7px; padding-right: 10px; padding-left: 10px; text-align: left; background-color: #e1edf5;">
+					{todo_name}
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<!-- BEGIN row -->
+			<tr>
+				<td valign="top"
+						style="border-width: 1px; border-style: solid; border-color: #7da9e2; padding-bottom: 10px; padding-top: 10px; padding-right: 10px; padding-left: 10px; font-size: 12px;">
+					{log_date}
+				</td>
+				<td valign="top"
+						style="border-width: 1px; border-style: solid; border-color: #7da9e2; padding-bottom: 10px; padding-top: 10px; padding-right: 10px; padding-left: 10px; font-size: 12px;">
+					<p style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+						{log_report}
+					</p>
+				</td>
+			</tr>
+			<!-- END row -->
+
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2"
+						style="border-width: 1px; border-style: solid; border-color: #7da9e2; font-size: 11px; text-align: right;	color: #868686;	background-color: #e1edf5;	padding-top: 2px; padding-right: 7px; padding-bottom: 2px; padding-left: 0;">
+					Сотрудник: {current_user_name}
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	<div style="margin-top: 30px; padding-top: 7px;	border-top-width: 2px; border-top-style: solid; border-top-color: #e7e7e7;	width: 685px;	font-size: 11px;	color: #868686;">
+		Вы получаете данное письмо, т.к. являетесь участником процесса
+		<a href="{process_url}">{process_name}</a>
+	</div>
+</div>

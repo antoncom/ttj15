@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Highslide</name>
+	<author>Ken Lowther</author>
+	<creationDate>Apr 2009</creationDate>
+	<copyright>This edition of Highslide JS Plugin is released under the GNU/GPL License, copyright Ken Lowther</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>www.joomlanook.com</authorUrl>
+	<version>2.0.0</version>
+	<description>HIGHSLIDE</description>
+	<files>
+		<filename plugin="Highslide">Highslide.php</filename>
+		<filename>highslide/easing_equations.js</filename>
+		<filename>highslide/highslide-full.js</filename>
+		<filename>highslide/highslide-full.packed.js</filename>
+		<filename>highslide/highslide.css</filename>
+		<filename>highslide/highslide-ie6.css</filename>
+		<filename>highslide/index.html</filename>
+		<filename>highslide/swfobject.js</filename>
+		<filename>highslide/LICENSE.php</filename>
+		<filename>highslide/LICENSES.php</filename>
+		<filename>highslide/graphics/close.png</filename>
+		<filename>highslide/graphics/closeX.png</filename>
+		<filename>highslide/graphics/controlbar2.gif</filename>
+		<filename>highslide/graphics/controlbar3.gif</filename>
+		<filename>highslide/graphics/controlbar4-hover.gif</filename>
+		<filename>highslide/graphics/controlbar4.gif</filename>
+		<filename>highslide/graphics/controlbar5-hover.gif</filename>
+		<filename>highslide/graphics/controlbar5.gif</filename>
+		<filename>highslide/graphics/controlbar-black-border.gif</filename>
+		<filename>highslide/graphics/controlbar-text-buttons.png</filename>
+		<filename>highslide/graphics/controlbar-white.gif</filename>
+		<filename>highslide/graphics/controlbar-white-small.gif</filename>
+		<filename>highslide/graphics/fullexpand.gif</filename>
+		<filename>highslide/graphics/geckodimmer.png</filename>
+		<filename>highslide/graphics/header-background.gif</filename>
+		<filename>highslide/graphics/icon.gif</filename>
+		<filename>highslide/graphics/index.html</filename>
+		<filename>highslide/graphics/loader.gif</filename>
+		<filename>highslide/graphics/loader.white.gif</filename>
+		<filename>highslide/graphics/resize.gif</filename>
+		<filename>highslide/graphics/scrollarrows.png</filename>
+		<filename>highslide/graphics/zoomin.cur</filename>
+		<filename>highslide/graphics/zoomout.cur</filename>
+		<filename>highslide/graphics/outlines/beveled.png</filename>
+		<filename>highslide/graphics/outlines/beveled-black.png</filename>
+		<filename>highslide/graphics/outlines/beveled-white.png</filename>
+		<filename>highslide/graphics/outlines/black-frame.png</filename>
+		<filename>highslide/graphics/outlines/drop-shadow.png</filename>
+		<filename>highslide/graphics/outlines/glossy-dark.png</filename>
+		<filename>highslide/graphics/outlines/gray-3d-frame.png</filename>
+		<filename>highslide/graphics/outlines/index.html</filename>
+		<filename>highslide/graphics/outlines/no-border.png</filename>
+		<filename>highslide/graphics/outlines/outer-glow.png</filename>
+		<filename>highslide/graphics/outlines/Outlines.psd</filename>
+		<filename>highslide/graphics/outlines/picture-frame1.png</filename>
+		<filename>highslide/graphics/outlines/picture-frame2.png</filename>
+		<filename>highslide/graphics/outlines/picture-frame3.png</filename>
+		<filename>highslide/graphics/outlines/picture-frame4.png</filename>
+		<filename>highslide/graphics/outlines/picture-frame5.png</filename>
+		<filename>highslide/graphics/outlines/plastic.png</filename>
+		<filename>highslide/graphics/outlines/rounded-black.png</filename>
+		<filename>highslide/graphics/outlines/rounded-white.png</filename>
+		<filename>highslide/graphics/outlines/silver-frame.png</filename>
+		<filename>highslide/graphics/outlines/thin-gold-frame.png</filename>
+		<filename>highslide/graphics/outlines/white-frame.png</filename>
+		<filename>highslide/language/index.html</filename>
+		<filename>highslide/language/ca.js</filename>
+		<filename>highslide/language/cs.js</filename>
+		<filename>highslide/language/da.js</filename>
+		<filename>highslide/language/de.js</filename>
+		<filename>highslide/language/en.js</filename>
+		<filename>highslide/language/es.js</filename>
+		<filename>highslide/language/et.js</filename>
+		<filename>highslide/language/fi.js</filename>
+		<filename>highslide/language/fr.js</filename>
+		<filename>highslide/language/fr-ca.js</filename>
+		<filename>highslide/language/he.js</filename>
+		<filename>highslide/language/hr.js</filename>
+		<filename>highslide/language/hu.js</filename>
+		<filename>highslide/language/it.js</filename>
+		<filename>highslide/language/lt.js</filename>
+		<filename>highslide/language/nb.js</filename>
+		<filename>highslide/language/nl.js</filename>
+		<filename>highslide/language/nn.js</filename>
+		<filename>highslide/language/pl.js</filename>
+		<filename>highslide/language/pt-br.js</filename>
+		<filename>highslide/language/ro.js</filename>
+		<filename>highslide/language/ru.js</filename>
+		<filename>highslide/language/sv.js</filename>
+		<filename>highslide/language/tr.js</filename>
+		<filename>highslide/language/uk.js</filename>
+		<filename>highslide/language/zh.js</filename>
+		<filename>highslide/language/zh-cn.js</filename>
+	</files>
+	<params>
+		<param name="includehighslide" type="list" default="1" label="Include Highslide script" description="PARAMINCLUDEHIGHSLIDE">
+			<option value="0">Yes(uncompressed)</option>
+			<option value="1">Yes(compressed)</option>
+			<option value="2">No</option>
+		</param>
+		<param name="includehsconfig" type="radio" default="1" label="Include Highslide Configuraton" description="PARAMINCLUDEHSCONFIG">
+			<option value="0">Selective</option>
+			<option value="1">Always</option>
+		</param>
+		<param name="detectlang" type="radio" default="1" label="Auto-detect language" description="PARAMDETECTLANG">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="defaultlang" type="filelist" default="-1" directory="plugins/content/highslide/language" stripext="1" filter=".js" hide_default="1" label="Default language" description="PARAMDEFAULTLANG" />
+    </params>
+    <languages>
+        <language tag="en-GB">en-GB.plg_content_highslide.ini</language>
+    </languages>
+</install>

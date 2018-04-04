@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_phocadocumentation/elements">
+	
+		<param name="@phocahead" type="phocahead" default="General Settings" />
+		
+		<param name="most_viewed_docs_num" default="5" size="10" type="text" label="Most Viewed Documents Number" description="Most Viewed Documents Number DESC" />
+		
+		<param name="display_sections" type="phocadocsmod" default="0"  multiple="true" size="10" label="Display Sections" description="Display Sections DESC" />
+		
+		<param name="hide_sections" type="phocadocsmod" default="0"  multiple="true" size="10" label="Hide Sections" description="Hide Sections DESC" />
+		
+		<param name="display_up_icon" type="list" default="1" label="Display Up Icon" description="Display Up Icon DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+<param name="display_num_doc_secs" type="list" default="0" label="Display Num Doc Sections" description="Display Num Doc Sections DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		<param name="display_num_doc_secs_header" type="list" default="1" label="Display Num Doc Sections Header" description="Display Num Doc Sections Header DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		
+		<param name="article_itemid" default="" size="5" type="text" label="Article Itemid" description="Article Itemid DESC" />
+	
+	</params>
+</config>

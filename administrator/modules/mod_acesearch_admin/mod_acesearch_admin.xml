@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="administrator" position="menu" method="upgrade">
+	<name>AceSearch</name>
+	<author>JoomAce LLC</author>
+	<creationDate>10 March 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU GPL</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.0</version>
+	<description>MOD_ACESEARCH_ADMIN_DESC</description>
+	<files>
+		<filename module="mod_acesearch_admin">mod_acesearch_admin.php</filename>
+		<filename module="mod_acesearch_admin">index.html</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_acesearch_admin.ini</language>
+	</languages>
+</install>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ACESEARCH_CPANEL_SEARCH">
+		<message>
+			<![CDATA[COM_ACESEARCH_CPANEL_SEARCH]]>
+		</message>
+	</layout>
+	<state>
+		<name>AceSearch: Search</name>
+		<description>Default search page.</description>
+		<url>
+			<param type="text" name="query" default="" label="COM_ACESEARCH_MENU_QUERY" description="COM_ACESEARCH_MENU_QUERY_HELP" size="30" />
+		</url>
+		<params addpath="/administrator/components/com_acesearch/library/elements">
+			<param name="filter" type="acesearchfilters" default="" label="COM_ACESEARCH_MENU_FILTER" description="COM_ACESEARCH_MENU_FILTER_HELP" />
+		</params>
+	</state>
+</metadata>

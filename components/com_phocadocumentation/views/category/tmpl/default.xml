@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="PHOCADOCUMENTATION CATEGORY LAYOUT">
+		<message>
+			<![CDATA[PHOCADOCUMENTATION CATEGORY LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>PHOCADOCUMENTATION CATEGORY LAYOUT</name>
+		<description>PHOCADOCUMENTATION CATEGORY LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_phocadocumentation/elements">
+			<param name="id" type="phocacategory" default="0" label="PHOCADOWNLOADSELECTCATEGORY" description="PHOCADOWNLOADSELECTCATEGORYDESC" />
+		</url>
+		<params>			
+		</params>
+	</state>
+</metadata>

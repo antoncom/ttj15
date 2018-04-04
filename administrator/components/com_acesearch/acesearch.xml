@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<!-- Start -->
+	<name>AceSearch</name>
+	<author>JoomAce LLC</author>
+	<creationDate>02 April 2011</creationDate>
+	<copyright>2009-2011 JoomAce LLC</copyright>
+	<license>GNU GPL, http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomace.net</authorEmail>
+	<authorUrl>www.joomace.net</authorUrl>
+	<version>1.5.6</version>
+	<description>AceSearch is a flexible and powerful Joomla! Search component with an easy-to-use user interface that provides searching through all components from front-end and back-end with custom fields.</description>
+
+	<!-- Frontend -->
+	<files folder="site">
+		<!-- Files -->
+		<filename>acesearch.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<!-- Folders -->
+		<folder>assets</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB/en-GB.com_acesearch.ini</language>
+	</languages>
+		
+	<!-- Backend -->
+	<administration>
+		<menu img="components/com_acesearch/assets/images/acesearch.png">AceSearch</menu>
+		<submenu>
+	    	<menu link="option=com_acesearch" img="components/com_acesearch/assets/images/acesearch.png">Control Panel</menu>
+	    	<menu link="option=com_acesearch&amp;controller=config&amp;task=edit" img="components/com_acesearch/assets/images/icon-16-as-config.png">Configuration</menu>
+	      	<menu link="option=com_acesearch&amp;controller=extensions&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-extensions.png">Extensions</menu>
+	      	<menu link="option=com_acesearch&amp;controller=statistics&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-statistics.png">Statistics</menu>
+			<menu link="option=com_acesearch&amp;controller=filters&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-filters.png">Filters</menu>
+			<menu link="option=com_acesearch&amp;controller=search&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-search.png">Search</menu>
+	      	<menu link="option=com_acesearch&amp;controller=upgrade&amp;task=view" img="components/com_acesearch/assets/images/icon-16-as-upgrade.png">Upgrade</menu>
+	    </submenu>
+		
+		<files folder="admin">
+			<!-- Files -->
+			<filename>acesearch.php</filename>
+			<filename>toolbar.acesearch.php</filename>
+			<filename>install.sql</filename>
+			<filename>index.html</filename>
+			<!-- Folders -->
+			<folder>adapters</folder>
+			<folder>assets</folder>
+			<folder>library</folder>
+			<folder>extensions</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB/en-GB.com_acesearch.ini</language>
+		</languages>
+	</administration>
+	
+	<!-- Config -->
+	<params>
+		<param name="version_checker" default="1" />
+		<param name="cache_versions" default="1 " />
+		<param name="cache_extensions" default="0 " />
+		<param name="show_db_errors" default="0 " />
+		<param name="show_properties" default="1" />
+		<param name="download_id" default=" " />
+		<param name="save_results" default="1" />
+		<param name="show_url" default="1" />
+		<param name="show_display" default="1" />
+		<param name="show_ext_flt" default="1" />
+		<param name="show_adv_search" default="1" />
+		<param name="search_char" default="3" />
+		<param name="access_checker" default="1" />
+		<param name="result_limit" default="50" />
+		<param name="enable_complete" default="1" />
+		<param name="enable_suggestion" default="1" />
+		<param name="enable_highlight" default="1" />
+		<param name="show_desc" default="1" />
+		<param name="title_length" default="60" />
+		<param name="description_length" default="500" />
+		<param name="max_search_char" default="20" />
+		<param name="blacklist" default=" " />
+		<param name="results_format" default="1" />
+		<param name="date_format" default="l, d F Y" />
+		<param name="admin_show_url" default="1" />
+		<param name="admin_show_desc" default="1" />
+		<param name="admin_title_length" default="80" />
+		<param name="admin_show_display" default="1" />
+		<param name="admin_show_properties" default="1" />
+		<param name="admin_show_ext_flt" default="1" />
+		<param name="admin_enable_complete" default="1" />
+		<param name="admin_enable_suggestion" default="1" />
+		<param name="admin_enable_highlight" default="1" />
+		<param name="admin_description_length" default="500" />
+		<param name="admin_max_search_char" default="20" />
+		<param name="admin_result_limit" default="50" />
+		<param name="highlight_back1" default="ffff9e"/>
+		<param name="highlight_back2" default="ffadb1"/>
+		<param name="highlight_back3" default="a3ccff"/>
+		<param name="highlight_back4" default="abffd2"/>
+		<param name="highlight_back5" default="ff8fe9"/>
+		<param name="highlight_text1" default="0a080a"/>
+		<param name="highlight_text2" default="242424"/>
+		<param name="highlight_text3" default="0f0b0f"/>
+		<param name="highlight_text4" default="141214"/>
+		<param name="highlight_text5" default="1a191a"/>
+	</params>
+	
+	<!-- Install/Uninstall SQL -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<!-- Install/Uninstall File -->
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<!-- Extensions -->
+	<extensions>
+		<extension option="com_banners" />
+		<extension option="com_content" />
+		<extension option="com_components" />
+		<extension option="com_menus" />
+		<extension option="com_modules" />
+		<extension option="com_newsfeeds" />
+		<extension option="com_plugins" />
+		<extension option="com_poll" />
+		<extension option="com_users" />
+		<extension option="com_weblinks" />
+	</extensions>
+	
+	<!-- Modules -->
+	<modules>		
+		<module module="mod_acesearch" title="AceSearch - Search" position="left" client="site">
+			<files folder="modules/site/mod_acesearch">
+				<file>index.html</file>
+				<file>mod_acesearch.php</file>
+				<file>mod_acesearch.xml</file>
+				<folder>tmpl</folder>
+			</files>
+			<languages folder="modules/site/mod_acesearch/languages">
+				<language tag="en-GB">en-GB.mod_acesearch.ini</language>
+			</languages>
+		</module>
+		<module module="mod_acesearch_admin" title="AceSearch - Search" position="menu" client="administrator">
+			<files folder="modules/admin/mod_acesearch_admin">
+				<file>index.html</file>
+				<file>mod_acesearch_admin.php</file>
+				<file>mod_acesearch_admin.xml</file>
+			</files>
+			<languages folder="modules/admin/mod_acesearch_admin/languages">
+				<language tag="en-GB">en-GB.mod_acesearch_admin.ini</language>
+			</languages>
+		</module>
+		<module module="mod_acesearch_quickicons" title="AceSearch - Quick Icons" position="icon" client="administrator">
+			<files folder="modules/admin/mod_acesearch_quickicons">
+				<file>index.html</file>
+				<file>mod_acesearch_quickicons.php</file>
+				<file>mod_acesearch_quickicons.xml</file>
+			</files>
+			<languages folder="modules/admin/mod_acesearch_quickicons/language">
+				<language tag="en-GB">en-GB.mod_acesearch_quickicons.ini</language>
+			</languages>
+		</module>
+	</modules>
+</install>
