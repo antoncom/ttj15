@@ -705,7 +705,10 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 	}
 
 	public function getTodoStateInfo($row) {
+		// error_log('====ROW ===\n' . print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 		$mTodo = new TeamtimeModelTodo();
+
+		// error_log(print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 
 		$result = array("", "");
 
@@ -717,9 +720,10 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 		}
 
 		if ($row->state != TODO_STATE_PROJECT) {
+			// error_log('====ROW ===\n' . print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 			$diff = strtotime(date("Y-m-d H:i:s")) - strtotime($row->created);
 			$diff = $diff / (24 * 60 * 60);
-			if ($diff > 7) {
+			if ($diff > 31) {
 				$result[0] = "error";
 				return $result;
 			}
@@ -764,7 +768,9 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 		$result->price = 0;
 		$result->date = 0;
 
-		list($todos, $todoInfo) = $this->getBlocks($id, true);
+		// *** ant *** //
+		//list($todos, $todoInfo) = $this->getBlocks($id, true);
+		list($todos, $todoInfo) = $this->getBlocks($id, true, true);
 
 		$result->plan = $todoInfo->totalHoursPlan;
 		$result->fact = $todoInfo->totalHoursFact;
@@ -772,6 +778,9 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 
 		$numDone = 0;
 		$sumPlanDone = 0;
+		$sumFact = 0; // ant added
+
+		// error_log('====TODOS ===\n' . print_r($todos, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 		foreach ($todos as $todo) {
 			$res = $this->getTodoStateInfo($todo);
 			if ($res[0] == "error") {
@@ -781,7 +790,16 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 			else if ($res[0] == "done") {
 				$numDone++;
 				$sumPlanDone += $todo->hours_plan;
+				$sumFact += $todo->hours_fact; // ant added
 			}
+
+			// ant start //
+			if ($res[0] == "done-part") {
+				$sumPlanDone += $todo->hours_plan;
+				$sumFact += $todo->hours_fact;
+				// error_log('====FACT = ' . $sumFact . '==== Plan == ' . $sumPlanDone . '==== RES->PLAN = ' . $result->plan , 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+			}
+			// ant stop
 
 			// find last date
 			$d = strtotime($todo->created);
@@ -795,7 +813,10 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 			$result->part = "";
 		}
 		else if ($result->state != "error") {
-			$result->part = round(($sumPlanDone / $result->plan) * 100);
+			// $result->part = round(($sumPlanDone / $result->plan) * 100);
+			// ant start //
+			$result->part = round(($sumFact / $sumPlanDone) * 100);
+			// ant stop //
 			$result->part .= "%";
 		}
 
@@ -873,7 +894,6 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 		foreach ($linkedData as $processId => $v) {
 			$params = new stdClass();
 			$processInfo = $this->getProcessStateInfo($processId);
-
 			switch ($typeInfo) {
 				case "status";
 					$params->state = $processInfo->state;

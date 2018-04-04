@@ -88,7 +88,6 @@ class TeamtimebpmControllerProcess extends Core_Joomla_EditController {
 		if (!$this->isAllowed(array($data["id"]))) {
 			jexit();
 		}
-		
 
 		$mProcess = new TeamtimebpmModelProcess();
 		print $mProcess->getDiagram($data["id"]);
