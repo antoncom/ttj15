@@ -119,6 +119,37 @@ class TeamTime_Helpers_Bpmn {
 		return $tpl->get();
 	}
 
+	private function generateReportContentFollowed($data, $proc, $user) {
+		$fname = JPATH_ADMINISTRATOR .
+			"/components/com_teamtimebpm/assets/templates/reportnotice_followed.html";
+
+		$helperBase = TeamTime::helper()->getBase();
+
+		$tpl = new HTML_Template_IT("");
+		$tpl->loadTemplatefile($fname, true, true);
+
+		$url = JURI::root() . "administrator/index.php?option=com_teamtimebpm" .
+			"&controller=process&view=processdiagrampage" .
+			"&id=" . $proc->id;
+		$tpl->setVariable("process_name", $proc->name);
+		$tpl->setVariable("process_url", $url);
+
+		foreach($data as $todo)	{
+			foreach($todo['todo_logs'] as $log)	{
+				$tpl->setVariable("log_date", JHTML::_('date', $log->date, "%d.%m.%Y"));
+				$tpl->setVariable("log_report",
+					$helperBase->processRelativeLinks($log->description, JURI::root()));
+				$tpl->parse("row");
+			}
+			$tpl->setVariable("todo_name", $todo['todo_title']);
+			$tpl->parse("rowgroup");
+		}
+
+		$tpl->setVariable("current_user_name", $user->name);
+
+		return $tpl->get();
+	}
+
 	public function sendReport($todo, $post) {
 		if (!isset($post["send_report"]) || $post["send_report"] == 0) {
 			return;
@@ -154,6 +185,61 @@ class TeamTime_Helpers_Bpmn {
 
 			JUTility::sendMail($config->mailfrom, $config->fromname, $user->email, $subject, $body, true);
 		}
+	}
+
+	public function sendReportToFollower($todo) {
+		$config = new JConfig();
+		$userFollower = & JFactory::getUser($todo->user_id);
+		$currentUser = & JFactory::getUser();
+
+		// Находим все родительские процессы
+		$mProccess = new TeamtimebpmModelProcess();
+		$todoData = $mProccess->getTodoData($todo->id);
+		if (!$todoData) {
+			return;
+		}
+		$parents = $mProccess->getParentProcesses($todoData->process_id);
+		array_unshift($parents, $todoData->process_id);
+
+		// Находим ближайший родительский процесс, имеющий флаг "Followed"
+		foreach($parents as $id)	{
+			if($mProccess->isFollowedBySomeone($id))	{
+				$closeParent = $id;
+				break;
+			}
+		}
+		// error_log('===$closeParent ' . print_r($closeParent, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
+
+		// Находим все дочерние процессы от найденного
+		$processesFollowed = $mProccess->getLinkedProcesses($closeParent);
+		array_unshift($processesFollowed, $closeParent);
+
+		// Находим все todo
+		$todos = [];
+		foreach ($processesFollowed as $id) {
+			$todos = array_merge($todos, $mProccess->getProcessTodoIds($id, $currentUser->id));
+		}
+
+		// Находим все рапорты по днным todo
+		$mLog = new TeamtimeModelLog();
+		$mTodo = new TeamtimeModelTodo();
+		$todosFollowed = [];
+		foreach($todos as $todoId)	{
+			$todoData = $mProccess->getTodoData($todoId);
+			$mProccess->setId($todoData->process_id);
+			$process = $mProccess->getData();
+			$mTodo->setId($todoId);
+			$logs = $mLog->getLogs(array("todo_id" => $todoId));
+			if(count($logs) > 0)	{
+				$todosFollowed[] = array(
+					"todo_title" => $mTodo->getData()->title,
+					"todo_process" => htmlspecialchars($process->name, ENT_COMPAT),
+					"todo_logs" => $logs);
+			}
+		}
+		$body = $this->generateReportContentFollowed($todosFollowed, $closeParent, $currentUser);
+		//error_log('===$todosFollowed ' . print_r($todosFollowed, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
+		JUTility::sendMail($config->mailfrom, $config->fromname, $userFollower->email, $subject, $body, true);
 	}
 
 	public function jsonTodoInfo($todo) {

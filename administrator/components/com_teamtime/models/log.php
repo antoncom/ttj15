@@ -119,8 +119,8 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 		}
 
 		$query = " select * from " . $table->getTableName() .
-				$where .
-				" order by date desc";
+			$where .
+			" order by date asc";
 		$this->_db->setQuery($query);
 
 		$rows = $this->_db->loadObjectList();
@@ -130,6 +130,42 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 
 		return $result;
 	}
+
+//	public function getLogs2($filter = array()) {
+//		$table = & $this->getTable($this->_table);
+//		$result = array();
+//
+//		$where = array();
+//
+//		if (isset($filter["todo_ids"])) {
+//			$where[] = " tl.todo_id IN (" . implode(",", $filter["todo_ids"]) . ")";
+//		}
+//
+//		if (sizeof($where) > 0) {
+//			$where = " where " . implode(" and ", $where);
+//		}
+//		else {
+//			$where = "";
+//		}
+//
+//		$join = " left join #__teamtime_todo AS tt ON tt.id = tl.todo_id";
+//
+//		$query = " select tl.*, tt.title from " . $table->getTableName() . " as tl" .
+//			$join .
+//			$where .
+//			" order by date desc";
+//		//error_log('====QUERY ===\n' . $query, 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+//		$this->_db->setQuery($query);
+//
+//		$rows = $this->_db->loadObjectList();
+//		if ($rows) {
+//			$result = $rows;
+//		}
+//		// error_log('====REPORT ===\n' . print_r($result, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+//
+//
+//		return $result;
+//	}
 
 	public function filterWithAllowedProjects($ids, $acl) {
 		$result = array();

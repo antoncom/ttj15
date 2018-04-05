@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d5e2f79e-b904-4805-a86f-cc86c6afda68" name="Teamlog_SSH" url="http://ssh.mediapub.nichost.ru">
+        <fileTransfer host="ssh.mediapub.nichost.ru" port="22" rootFolder="/home/mediapub/teamlog.teamtime.info/docs" accessType="SFTP" password="dfd2dff3dfc1df87df9bdfe0dff8dfdd" username="mediapub">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

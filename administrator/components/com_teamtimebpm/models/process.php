@@ -221,13 +221,22 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 		return $result;
 	}
 
-	public function getProcessTodoIds($processId) {
+	public function getProcessTodoIds($processId, $userId = null) {
 		$result = array();
 
-		$query = "select * from #__teamtimebpm_todo
-			where process_id = " . (int) $processId;
+		$select = "select * from #__teamtimebpm_todo AS tbt";
+		$join = (isset($userId)) ?
+			" left join #__teamtime_todo AS tt ON tbt.todo_id = tt.id" :
+			"";
+		$where = " where tbt.process_id = " . (int) $processId;
+		$and = (isset($userId)) ?
+			" AND tt.user_id = " . (int) $userId :
+			"";
 
-		//error_log($query);
+		$query = $select . $join . $where .$and;
+
+		error_log('===$query ' . print_r($query, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
+		// error_log($query);
 
 		$this->_db->setQuery($query);
 		$rows = $this->_db->loadObjectList();
@@ -296,6 +305,26 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 				if (!in_array($row->process_id, $result)) {
 					$result[] = $row->process_id;
 					$result = $this->getLinkedProcesses($row->process_id, $result);
+				}
+			}
+		}
+
+		return $result;
+	}
+
+	public function getParentProcesses($processId, $result = array()) {
+		$query = "select * from `#__teamtimebpm_processlink`
+      where process_id = " . (int) $processId;
+
+		//error_log($query);
+
+		$this->_db->setQuery($query);
+		$rows = $this->_db->loadObjectList();
+		if (sizeof($rows) > 0) {
+			foreach ($rows as $row) {
+				if (!in_array($row->parent_id, $result)) {
+					$result[] = $row->parent_id;
+					$result = $this->getParentProcesses($row->parent_id, $result);
 				}
 			}
 		}
@@ -723,7 +752,7 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 			// error_log('====ROW ===\n' . print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 			$diff = strtotime(date("Y-m-d H:i:s")) - strtotime($row->created);
 			$diff = $diff / (24 * 60 * 60);
-			if ($diff > 31) {
+			if ($diff > 180) {
 				$result[0] = "error";
 				return $result;
 			}
@@ -1041,6 +1070,21 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 
 		$query = "select * from #__teamtimebpm_followprocess
 			where process_id = " . (int) $id . " and user_id = " . (int) $userId;
+
+		$this->_db->setQuery($query);
+		$row = $this->_db->loadObject();
+		if ($row) {
+			$result = $row->follow;
+		}
+
+		return $result;
+	}
+
+	public function isFollowedBySomeone($id) {
+		$result = false;
+
+		$query = "select * from #__teamtimebpm_followprocess
+			where process_id = " . (int) $id;
 
 		$this->_db->setQuery($query);
 		$row = $this->_db->loadObject();
