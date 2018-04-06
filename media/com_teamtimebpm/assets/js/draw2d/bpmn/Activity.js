@@ -343,7 +343,8 @@ draw2d.bpmn.Activity.prototype.makeSubProcess = function (figure) {
 	this.setViewState("expanded");
 	this.setDimension(300, 140);
 
-	var sx, sy;
+	// ant commented this
+/*	var sx, sy;
 
 	// make start, end elements
 	var startObj = new draw2d.bpmn.Start();
@@ -377,6 +378,7 @@ draw2d.bpmn.Activity.prototype.makeSubProcess = function (figure) {
 	c.setSource(figure.getPort("output"));
 	c.setTarget(endObj.getPort("input"));
 	this.workflow.addFigure(c);
+*/
 };
 
 draw2d.bpmn.Activity.prototype.isConnectedWith = function (figure) {
@@ -440,7 +442,8 @@ draw2d.bpmn.Activity.prototype.onFigureDrop = function (figure) {
 		return;
 	}
 
-	this.makeSubProcess(figure);
+	// ant
+	// this.makeSubProcess(figure);
 };
 
 draw2d.bpmn.Activity.prototype.getContextMenuItems = function () {
