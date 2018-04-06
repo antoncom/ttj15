@@ -688,8 +688,8 @@
 }
 
 div.calendar-process-icon {
-	/* float:right; */
-    position: absolute;
+	float:right;
+    /*position: absolute;*/
     bottom: 40%;
     right: 0;
 }
