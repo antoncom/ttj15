@@ -59,9 +59,7 @@ if($notLoggedYet)	{
 		error_log('====LOGIN ATTEMPT FROM: ' . $_SERVER['HTTP_REFERER'], 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 	}
 }
-else	{
-	error_log('====ALREADY LOGGED ===', 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
-}
+
 // end of 'ant addon'
 
 
