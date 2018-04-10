@@ -9,7 +9,7 @@
 * to the GNU General Public License, and as distributed it includes or
 * is derivative of works licensed under the GNU General Public License or
 * other free or open source software licenses.
-* See COPYRIGHT.php for copyright notices and details.
+* See COPYRIGHT.php for copyright notices and details..
 */
 
 // Check to ensure this file is within the rest of the framework
@@ -322,7 +322,7 @@ class JApplication extends JObject
 		else {
 			if (!$moved && strstr(strtolower($_SERVER['HTTP_USER_AGENT']), 'webkit') !== false) {
 				// WebKit browser - Do not use 303, as it causes subresources reload (https://bugs.webkit.org/show_bug.cgi?id=38690)
-				echo '<html><head><meta http-equiv="refresh" content="0;'. $url .'" /></head><body>121212</body></html>';
+				echo '<html><head><meta http-equiv="refresh" content="0;'. $url .'" /></head><body></body></html>';
 			}
 			else {
 				// All other browsers, use the more efficient HTTP header method

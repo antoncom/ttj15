@@ -25,12 +25,47 @@ require_once( JPATH_BASE .DS.'includes'.DS.'toolbar.php' );
 
 JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
 
+
+jimport('joomla.plugin.helper');
+
 /**
  * CREATE THE APPLICATION
  *
  * NOTE :
  */
 $mainframe =& JFactory::getApplication('administrator');
+
+// ant addon
+$userM = JFactory::getUser();
+$notLoggedYet = !(isset($userM->id) && $userM->id > 0);
+$allowedReferer = ['localhost:8000', 'telemetry.mediapublish.ru'];
+if($notLoggedYet)	{
+	if ((strpos($_SERVER['HTTP_REFERER'], $allowedReferer[0]) != false
+		|| strpos($_SERVER['HTTP_REFERER'], $allowedReferer[1]) != false))	{
+
+		$u = JRequest::getVar('username', '', 'method', 'username');
+		$p = JRequest::getVar('passwd', '', 'method', 'passwd');
+		if(strlen($u) > 0 && strlen($p) > 0)	{
+			$credentials = array();
+			$credentials['username'] = JRequest::getVar('username', '', 'method', 'username');
+			$credentials['password'] = JRequest::getVar('passwd', '', 'method', 'passwd');
+
+			//perform the login action
+			$error = $mainframe->login($credentials);
+			$userM = JFactory::getUser();
+		}
+	}
+	else{
+		error_log('====LOGIN ATTEMPT FROM: ' . $_SERVER['HTTP_REFERER'], 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+	}
+}
+else	{
+	error_log('====ALREADY LOGGED ===', 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+}
+// end of 'ant addon'
+
+
+
 
 /**
  * INITIALISE THE APPLICATION

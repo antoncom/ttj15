@@ -734,11 +734,8 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 	}
 
 	public function getTodoStateInfo($row) {
-		// error_log('====ROW ===\n' . print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+
 		$mTodo = new TeamtimeModelTodo();
-
-		// error_log(print_r($row, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
-
 		$result = array("", "");
 
 		// "error", "done", "done-part"
