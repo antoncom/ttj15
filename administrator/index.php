@@ -37,18 +37,20 @@ $mainframe =& JFactory::getApplication('administrator');
 
 // ant addon
 $userM = JFactory::getUser();
+
 $notLoggedYet = !(isset($userM->id) && $userM->id > 0);
 $allowedReferer = ['localhost:8000', 'telemetry.mediapublish.ru'];
 if($notLoggedYet)	{
 	if ((strpos($_SERVER['HTTP_REFERER'], $allowedReferer[0]) != false
 		|| strpos($_SERVER['HTTP_REFERER'], $allowedReferer[1]) != false))	{
 
-		$u = JRequest::getVar('username', '', 'method', 'username');
-		$p = JRequest::getVar('passwd', '', 'method', 'passwd');
+		$u = JRequest::getVar('username', '', 'GET', 'username');
+		$p = JRequest::getVar('passwd', '', 'GET', 'passwd');
+
 		if(strlen($u) > 0 && strlen($p) > 0)	{
 			$credentials = array();
-			$credentials['username'] = JRequest::getVar('username', '', 'method', 'username');
-			$credentials['password'] = JRequest::getVar('passwd', '', 'method', 'passwd');
+			$credentials['username'] = JRequest::getVar('username', '', 'GET', 'username');
+			$credentials['password'] = JRequest::getVar('passwd', '', 'GET', 'passwd');
 
 			//perform the login action
 			$error = $mainframe->login($credentials);
@@ -59,6 +61,8 @@ if($notLoggedYet)	{
 		error_log('====LOGIN ATTEMPT FROM: ' . $_SERVER['HTTP_REFERER'], 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 	}
 }
+
+
 
 // end of 'ant addon'
 
