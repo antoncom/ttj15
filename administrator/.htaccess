@@ -30,9 +30,13 @@ Allow from 83.149.20.0/255.255.252.0
 Allow from 91.204.103.58
 </files>
 
+#<IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "*"
+#</IfModule>
+
 <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
+    SetEnvIf Origin "http(s)?://(www\.)?(localhost:8000|telemetry\.mediapublish\.ru)$" AccessControlAllowOrigin=$0$1
+    Header set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+    Header set Access-Control-Allow-Credentials true
+    Header set Access-Control-Allow-Headers "origin, x-requested-with, content-type"
 </IfModule>
-
-
-
