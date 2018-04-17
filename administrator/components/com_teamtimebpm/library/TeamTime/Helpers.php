@@ -199,14 +199,19 @@ class TeamTime_Helpers_Bpmn {
 			return;
 		}
 		$parents = $mProccess->getParentProcesses($todoData->process_id);
+		error_log('====$parents: ' . print_r($parents, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 		array_unshift($parents, $todoData->process_id);
 
 		// Находим ближайший родительский процесс, имеющий флаг "Followed"
+		$closeParent = 0;
 		foreach($parents as $id)	{
 			if($mProccess->isFollowedBySomeone($id))	{
 				$closeParent = $id;
 				break;
 			}
+		}
+		if ($closeParent == 0) {
+			return;
 		}
 		// error_log('===$closeParent ' . print_r($closeParent, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
 

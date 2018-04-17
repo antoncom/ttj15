@@ -245,6 +245,7 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 				$result[] = $row->todo_id;
 			}
 		}
+		error_log('====getProcessTodoIds: ' . print_r($result, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 
 		return $result;
 	}

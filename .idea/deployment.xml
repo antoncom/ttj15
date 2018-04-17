@@ -2,24 +2,10 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="teamlog_joomla">
     <serverData>
-      <paths name="Diesel_onRegru">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="Teamlog_SSH">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Telemetry.mediapublish">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
