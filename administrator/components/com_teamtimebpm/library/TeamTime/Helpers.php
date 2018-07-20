@@ -134,16 +134,34 @@ class TeamTime_Helpers_Bpmn {
 		$tpl->setVariable("process_name", $proc->name);
 		$tpl->setVariable("process_url", $url);
 
+		$log_total_hours = 0;
 		foreach($data as $todo)	{
 			foreach($todo['todo_logs'] as $log)	{
+				// выводим время выполнения по каждому рапорту
+				$duration = $log->duration;
+				$minutes = $duration%60;
+				if($minutes < 10) $minutes = '0' . $minutes;
+				$hours = intval($duration/60);
+				$tpl->setVariable("log_duration", $hours . ':' . $minutes);
+
 				$tpl->setVariable("log_date", JHTML::_('date', $log->date, "%d.%m.%Y"));
 				$tpl->setVariable("log_report",
 					$helperBase->processRelativeLinks($log->description, JURI::root()));
 				$tpl->parse("row");
+
+				// Считаем суммарное время выполнения по данным рапортам
+				$log_total_minutes += $duration;
 			}
 			$tpl->setVariable("todo_name", $todo['todo_title']);
+			$tpl->setVariable("todo_process_name", $todo['todo_process']);
 			$tpl->parse("rowgroup");
 		}
+
+		// Выводим суммарное время выполнения по данным рапортам
+		$minutes = $log_total_minutes%60;
+		if($minutes < 10) $minutes = '0' . $minutes;
+		$hours = intval($log_total_minutes/60);
+		$tpl->setVariable("log_total_hours", '= ' . $hours . 'ч ' . $minutes . 'мин');
 
 		$tpl->setVariable("current_user_name", $user->name);
 
@@ -205,6 +223,7 @@ class TeamTime_Helpers_Bpmn {
 		foreach($parents as $id)	{
 			if($mProccess->isFollowedBySomeone($id))	{
 				$closeParent = $id;
+				$proc_to_follow = $mProccess->getById($id);
 				break;
 			}
 		}
@@ -237,7 +256,7 @@ class TeamTime_Helpers_Bpmn {
 					"todo_logs" => $logs);
 			}
 		}
-		$body = $this->generateReportContentFollowed($todosFollowed, $closeParent, $currentUser);
+		$body = $this->generateReportContentFollowed($todosFollowed, $proc_to_follow, $currentUser);
 		//error_log('===$todosFollowed ' . print_r($todosFollowed, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
 		JUTility::sendMail($config->mailfrom, $config->fromname, $userFollower->email, $subject, $body, true);
 	}

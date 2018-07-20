@@ -235,7 +235,7 @@ class TeamtimebpmModelProcess extends Core_Joomla_Manager {
 
 		$query = $select . $join . $where .$and;
 
-		error_log('===$query ' . print_r($query, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
+		// error_log('===$query ' . print_r($query, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
 		// error_log($query);
 
 		$this->_db->setQuery($query);

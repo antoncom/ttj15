@@ -58,7 +58,7 @@ if($notLoggedYet)	{
 		}
 	}
 	else{
-		error_log('====LOGIN ATTEMPT FROM: ' . $_SERVER['HTTP_REFERER'], 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+		// error_log('====LOGIN ATTEMPT FROM: ' . $_SERVER['HTTP_REFERER'], 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 	}
 }
 

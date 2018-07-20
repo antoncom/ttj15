@@ -3,16 +3,15 @@
 <div style="font-family: Arial, sans-serif; font-size: 14px;">
 
 	<div style="margin-bottom: 30px;">
-		Отслеживание процесса: {process_name}
+		Отслеживание процесса: <a href="{process_url}" target="_blank">{process_name}</a>
 	</div>
 
 	<table style="width: 685px; border-color: #bad2ee; border-style: solid; border-width: 2px; border-collapse: collapse;">
-		<caption style="text-align: left; padding-bottom: 15px;">Текущий результат процесса:</caption>
 		<tbody>
 			<!-- BEGIN rowgroup -->
 			  <tr>
 				<td valign="top" colspan="2" style="border-width:1px;border-style:solid;border-color:#7da9e2;padding-top:7px;padding-bottom:7px;padding-right:10px;padding-left:10px;text-align:left;background-color:#e1edf5;font-weight:bolder;">
-				  {todo_name}
+				  {todo_name} <br /><sup style="color: grey;">{todo_process_name}</sup>
 				</td>
 				</td>
 			  </tr>
@@ -20,7 +19,7 @@
 			  <tr>
 				  <td valign="top"
 						  style="border-width: 1px; border-style: solid; border-color: #7da9e2; padding-bottom: 10px; padding-top: 10px; padding-right: 10px; padding-left: 10px; font-size: 12px;">
-					  {log_date}
+					  {log_date}<br /><span style="display: block; float: right; background: #924848; color: #fff; text-align: right; font-family: Arial, sans-serif; font-size: 9px; padding: 2px 2px; margin-top: 5px; border: 1px solid #333;">{log_duration}</span>
 				  </td>
 				  <td valign="top"
 						  style="border-width: 1px; border-style: solid; border-color: #7da9e2; padding-bottom: 10px; padding-top: 10px; padding-right: 10px; padding-left: 10px; font-size: 12px;">
@@ -34,15 +33,17 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<td colspan="2"
-						style="border-width: 1px; border-style: solid; border-color: #7da9e2; font-size: 11px; text-align: right;	color: #868686;	background-color: #e1edf5;	padding-top: 2px; padding-right: 7px; padding-bottom: 2px; padding-left: 0;">
+				<td style="border-width: 1px; border-style: solid; border-color: #7da9e2; font-size: 11px; text-align: right;	color: #868686;	background-color: #e1edf5;	padding-top: 2px; padding-right: 7px; padding-bottom: 2px; padding-left: 0;">
+					{log_total_hours}
+				</td>
+				<td style="border-width: 1px; border-style: solid; border-color: #7da9e2; font-size: 11px; text-align: right;	color: #868686;	background-color: #e1edf5;	padding-top: 2px; padding-right: 7px; padding-bottom: 2px; padding-left: 0;">
 					Сотрудник: {current_user_name}
 				</td>
 			</tr>
 		</tfoot>
 	</table>
 	<div style="margin-top: 30px; padding-top: 7px;	border-top-width: 2px; border-top-style: solid; border-top-color: #e7e7e7;	width: 685px;	font-size: 11px;	color: #868686;">
-		Вы получаете данное письмо, т.к. являетесь участником процесса "{process_url}".
+		<!--Вы получаете данное письмо, т.к. являетесь участником процесса "{process_url}".-->
 		<!--<a href="{process_url}">{process_name}</a>-->
 	</div>
 </div>

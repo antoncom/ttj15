@@ -97,6 +97,7 @@ class TeamtimeformalsModelFormal extends Core_Joomla_Manager {
 
 			$data[$row->type_id][] = $row;
 		}
+		// error_log('====ROWS_TODOS: ' . print_r($rowsTodos, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 
 		return array(
 			"rows_todos" => $rowsTodos,

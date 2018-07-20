@@ -100,12 +100,41 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 
 		return true;
 	}
+	public function getLogs($filter = array(), $weeks = 1) {
+		// Для формирования отчёта по конкретным датам укажите эти перемнные:
+		$sDate = "2018-07-01 00:00:00";
+		$eDate = "2018-07-20 23:59:59";
 
-	public function getLogs($filter = array()) {
 		$table = & $this->getTable($this->_table);
 		$result = array();
-
 		$where = array();
+		$weekDay = Date('w', strtotime('now'));
+
+		// Если день недели пятница, суббота или воскресенье, то делаем выборку за текущую и прошлые $weeks-1 недель
+		if($weekDay == 0 || ($weekDay >= 5 && $weekDay <= 6)) {
+
+			// start week = current week - $weeks
+			$sWeek = ($sDate === "") ? strtotime("Monday - " . ($weeks-1) . ' week') : strtotime($sDate);
+
+			// end week = current week
+			$eWeek = ($eDate === "") ? strtotime("Sunday this week 23:59") : strtotime($eDate);
+
+			// Если день недели Понедельник..четверг, значит выборка за прошлые $weeks + 1 недель
+		} else if ($weekDay >= 1 && $weekDay <= 4) {
+
+			// start week = current week - $weeks + 1
+			$sWeek = strtotime("Monday - " . ($weeks + 1) . ' week');
+
+			// end week = current week - 1
+			$eWeek = strtotime("Sunday last week 23:59");
+		}
+
+		// error_log('==== eWeek: ' . $eWeek, 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
+		// $date = JFactory::getDate();
+		// $date = $date->toUnix();
+
+		$and = " AND date BETWEEN '" . date('Y-m-d H:i:s', $sWeek) . "' AND  '" . date('Y-m-d H:i:s', $eWeek) . "'";
+
 
 		if (isset($filter["todo_id"])) {
 			$where[] = "todo_id = " . (int) $filter["todo_id"];
@@ -120,7 +149,9 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 
 		$query = " select * from " . $table->getTableName() .
 			$where .
+			$and .
 			" order by date asc";
+		// error_log('====QUERY 555: ' . $query, 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 		$this->_db->setQuery($query);
 
 		$rows = $this->_db->loadObjectList();
@@ -130,6 +161,35 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 
 		return $result;
 	}
+//	public function getLogs($filter = array()) {
+//		$table = & $this->getTable($this->_table);
+//		$result = array();
+//
+//		$where = array();
+//
+//		if (isset($filter["todo_id"])) {
+//			$where[] = "todo_id = " . (int) $filter["todo_id"];
+//		}
+//
+//		if (sizeof($where) > 0) {
+//			$where = " where " . implode(" and ", $where);
+//		}
+//		else {
+//			$where = "";
+//		}
+//
+//		$query = " select * from " . $table->getTableName() .
+//			$where .
+//			" order by date asc";
+//		$this->_db->setQuery($query);
+//
+//		$rows = $this->_db->loadObjectList();
+//		if ($rows) {
+//			$result = $rows;
+//		}
+//
+//		return $result;
+//	}
 
 //	public function getLogs2($filter = array()) {
 //		$table = & $this->getTable($this->_table);
