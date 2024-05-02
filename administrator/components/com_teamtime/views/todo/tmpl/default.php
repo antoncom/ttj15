@@ -40,6 +40,8 @@ $helperFormals = TeamTime::helper()->getFormals();
 
   TeamTime.jQuery(function ($) {
 
+  	console.log("AAAAAAAA");
+
     var loadPrice = function(target_id) {
       // update hourly rate
 

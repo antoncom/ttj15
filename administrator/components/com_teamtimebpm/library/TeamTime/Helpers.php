@@ -119,55 +119,6 @@ class TeamTime_Helpers_Bpmn {
 		return $tpl->get();
 	}
 
-	private function generateReportContentFollowed($data, $proc, $user) {
-		$fname = JPATH_ADMINISTRATOR .
-			"/components/com_teamtimebpm/assets/templates/reportnotice_followed.html";
-
-		$helperBase = TeamTime::helper()->getBase();
-
-		$tpl = new HTML_Template_IT("");
-		$tpl->loadTemplatefile($fname, true, true);
-
-		$url = JURI::root() . "administrator/index.php?option=com_teamtimebpm" .
-			"&controller=process&view=processdiagrampage" .
-			"&id=" . $proc->id;
-		$tpl->setVariable("process_name", $proc->name);
-		$tpl->setVariable("process_url", $url);
-
-		$log_total_hours = 0;
-		foreach($data as $todo)	{
-			foreach($todo['todo_logs'] as $log)	{
-				// выводим время выполнения по каждому рапорту
-				$duration = $log->duration;
-				$minutes = $duration%60;
-				if($minutes < 10) $minutes = '0' . $minutes;
-				$hours = intval($duration/60);
-				$tpl->setVariable("log_duration", $hours . ':' . $minutes);
-
-				$tpl->setVariable("log_date", JHTML::_('date', $log->date, "%d.%m.%Y"));
-				$tpl->setVariable("log_report",
-					$helperBase->processRelativeLinks($log->description, JURI::root()));
-				$tpl->parse("row");
-
-				// Считаем суммарное время выполнения по данным рапортам
-				$log_total_minutes += $duration;
-			}
-			$tpl->setVariable("todo_name", $todo['todo_title']);
-			$tpl->setVariable("todo_process_name", $todo['todo_process']);
-			$tpl->parse("rowgroup");
-		}
-
-		// Выводим суммарное время выполнения по данным рапортам
-		$minutes = $log_total_minutes%60;
-		if($minutes < 10) $minutes = '0' . $minutes;
-		$hours = intval($log_total_minutes/60);
-		$tpl->setVariable("log_total_hours", '= ' . $hours . 'ч ' . $minutes . 'мин');
-
-		$tpl->setVariable("current_user_name", $user->name);
-
-		return $tpl->get();
-	}
-
 	public function sendReport($todo, $post) {
 		if (!isset($post["send_report"]) || $post["send_report"] == 0) {
 			return;
@@ -203,67 +154,6 @@ class TeamTime_Helpers_Bpmn {
 
 			JUTility::sendMail($config->mailfrom, $config->fromname, $user->email, $subject, $body, true);
 		}
-	}
-
-	public function sendReportToFollower($todo) {
-		$config = new JConfig();
-		$userFollower = & JFactory::getUser($todo->user_id);
-		$currentUser = & JFactory::getUser();
-
-		// Находим все родительские процессы
-		$mProccess = new TeamtimebpmModelProcess();
-		$todoData = $mProccess->getTodoData($todo->id);
-		if (!$todoData) {
-			return;
-		}
-		$parents = $mProccess->getParentProcesses($todoData->process_id);
-		error_log('====$parents: ' . print_r($parents, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
-		array_unshift($parents, $todoData->process_id);
-
-		// Находим ближайший родительский процесс, имеющий флаг "Followed"
-		$closeParent = 0;
-		foreach($parents as $id)	{
-			if($mProccess->isFollowedBySomeone($id))	{
-				$closeParent = $id;
-				$proc_to_follow = $mProccess->getById($id);
-				break;
-			}
-		}
-		if ($closeParent == 0) {
-			return;
-		}
-		// error_log('===$closeParent ' . print_r($closeParent, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
-
-		// Находим все дочерние процессы от найденного
-		$processesFollowed = $mProccess->getLinkedProcesses($closeParent);
-		array_unshift($processesFollowed, $closeParent);
-
-		// Находим все todo
-		$todos = [];
-		foreach ($processesFollowed as $id) {
-			$todos = array_merge($todos, $mProccess->getProcessTodoIds($id, $currentUser->id));
-		}
-
-		// Находим все рапорты по днным todo
-		$mLog = new TeamtimeModelLog();
-		$mTodo = new TeamtimeModelTodo();
-		$todosFollowed = [];
-		foreach($todos as $todoId)	{
-			$todoData = $mProccess->getTodoData($todoId);
-			$mProccess->setId($todoData->process_id);
-			$process = $mProccess->getData();
-			$mTodo->setId($todoId);
-			$logs = $mLog->getLogs(array("todo_id" => $todoId));
-			if(count($logs) > 0)	{
-				$todosFollowed[] = array(
-					"todo_title" => $mTodo->getData()->title,
-					"todo_process" => htmlspecialchars($process->name, ENT_COMPAT),
-					"todo_logs" => $logs);
-			}
-		}
-		$body = $this->generateReportContentFollowed($todosFollowed, $proc_to_follow, $currentUser);
-		//error_log('===$todosFollowed ' . print_r($todosFollowed, true), 3, '/home/mediapub/teamlog.teamtime.info/docs/logs/my.log');
-		JUTility::sendMail($config->mailfrom, $config->fromname, $userFollower->email, $subject, $body, true);
 	}
 
 	public function jsonTodoInfo($todo) {

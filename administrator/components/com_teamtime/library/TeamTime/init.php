@@ -2,7 +2,7 @@
 
 // set for debug
 error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED);
-ini_set("display_errors", "off");
+ini_set("display_errors", "on");
 ini_set("log_errors", 1);
 ini_set("error_log", JPATH_ROOT . "/logs/error_log");
 

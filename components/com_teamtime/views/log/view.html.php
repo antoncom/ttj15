@@ -82,7 +82,7 @@ class TeamlogViewLog extends JView {
 						'class="inputbox" onchange="set_filter_state();"', 'value', 'text', $filter_state);
 
 		if ($config->show_todos_datefilter) {
-			$filter_date = 'today';
+			$filter_date = 'week';
 			$mainframe->setUserState($option . '.filter_date', $filter_date);
 			$options = array(
 				JHTML::_('select.option', '', '- ' . JText::_('All dates') . ' -', 'value', 'text')

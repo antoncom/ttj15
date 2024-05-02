@@ -343,6 +343,8 @@ class JController extends JObject
 			$name = $this->getName();
 		}
 
+		error_log("NAME::: " . $name);
+
 		if ( empty( $prefix ) ) {
 			$prefix = $this->getName() . 'Model';
 		}

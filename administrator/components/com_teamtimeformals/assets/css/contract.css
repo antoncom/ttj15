@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Courier New';
+    src: url('fonts/CourierNewPS-BoldMT.eot');
+    src: local('Courier New Bold'), local('CourierNewPS-BoldMT'),
+        url('fonts/CourierNewPS-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CourierNewPS-BoldMT.woff2') format('woff2'),
+        url('fonts/CourierNewPS-BoldMT.woff') format('woff'),
+        url('fonts/CourierNewPS-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('fonts/CourierNewPS-BoldItalicMT.eot');
+    src: local('Courier New Bold Italic'), local('CourierNewPS-BoldItalicMT'),
+        url('fonts/CourierNewPS-BoldItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CourierNewPS-BoldItalicMT.woff2') format('woff2'),
+        url('fonts/CourierNewPS-BoldItalicMT.woff') format('woff'),
+        url('fonts/CourierNewPS-BoldItalicMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('fonts/CourierNewPS-ItalicMT.eot');
+    src: local('Courier New Italic'), local('CourierNewPS-ItalicMT'),
+        url('fonts/CourierNewPS-ItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CourierNewPS-ItalicMT.woff2') format('woff2'),
+        url('fonts/CourierNewPS-ItalicMT.woff') format('woff'),
+        url('fonts/CourierNewPS-ItalicMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Courier New';
+    src: url('fonts/CourierNewPSMT.eot');
+    src: local('Courier New'), local('CourierNewPSMT'),
+        url('fonts/CourierNewPSMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CourierNewPSMT.woff2') format('woff2'),
+        url('fonts/CourierNewPSMT.woff') format('woff'),
+        url('fonts/CourierNewPSMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p { 
+    font-size: 12px;
+    line-height: 13px;
+}
+
+p, div.header { 
+    font-family: "Courier New", monospace !important;
+    margin: 0 0 20px;
+}
+

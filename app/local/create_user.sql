@@ -1,0 +1,4 @@
+
+GRANT ALL PRIVILEGES ON teamlogdb.* 
+	TO teamlogdbu@localhost IDENTIFIED BY 'tL3845915009' 
+	WITH GRANT OPTION;

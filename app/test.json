@@ -1,0 +1,267 @@
+{
+	"rows":[{
+		"id":"SwimlanePanel-row1",
+		"size":120,
+		"title":"new participant 1"
+	},{
+		"id":"SwimlanePanel-row2",
+		"size":120,
+		"title":"Tester"
+	},{
+		"id":"SwimlanePanel-row3",
+		"size":120,
+		"title":"new participant 3"
+	},{
+		"id":"SwimlanePanel-row4",
+		"size":120,
+		"title":"new participant 4"
+	}],
+	"columns":[{
+		"id":"SwimlanePanel-col1",
+		"size":727,
+		"title":"new milestone 1"
+	},{
+		"id":"SwimlanePanel-col2",
+		"size":221,
+		"title":"7 \u0434\u043d\u0435\u0439"
+	},{
+		"id":"SwimlanePanel-col3",
+		"size":150,
+		"title":"new milestone 3"
+	},{
+		"id":"SwimlanePanel-col4",
+		"size":150,
+		"title":"new milestone 4"
+	}],
+	"figures":[{
+		"id":"0d740e5d-b13d-085c-98e8-17cd107d6240",
+		"type":"bpmn.Start",
+		"x":59,
+		"y":41,
+		"width":40,
+		"height":40,
+		"parentRow":"SwimlanePanel-row1",
+		"parentCol":"SwimlanePanel-col1"
+	},{
+		"id":"cbb39eb4-02b7-1e76-9307-7cb362c14626",
+		"type":"bpmn.Activity",
+		"x":157,
+		"y":31,
+		"width":140,
+		"height":60,
+		"text":"Siple block",
+		"parentRow":"SwimlanePanel-row1",
+		"parentCol":"SwimlanePanel-col1",
+		"viewState":"simple",
+		"originalWidth":0,
+		"originalHeight":0,
+		"children":[],
+		"paramsData":{
+			"_id":11997,
+			"name":"Siple block",
+			"description":"<p><br><\/p>",
+			"user":"75",
+			"userName":"\u0420\u043e\u043c\u0430\u043d \u0421\u0435\u043c\u0435\u043d\u043e\u0432",
+			"created":"2012-05-18 11:30",
+			"project":"13",
+			"task":"565",
+			"type":"",
+			"target":"0",
+			"hoursPlan":"60",
+			"hourlyRate":"0",
+			"costs":"",
+			"sendmail":false,
+			"clientmail":false,
+			"showSkills":false,
+			"markHoursPlan":false,
+			"markExpenses":false,
+			"state":"4"
+		}
+	},{
+	"id":"5b65ac8c-0a3c-912a-53a4-3f7ad6da65d8",
+	"type":"bpmn.Activity",
+	"x":337,
+	"y":31,
+	"width":300,
+	"height":140,
+	"text":"Super block",
+	"parentRow":"SwimlanePanel-row1",
+	"parentCol":"SwimlanePanel-col1",
+	"viewState":"expanded",
+	"originalWidth":300,
+	"originalHeight":140,
+	"children":[{
+		"id":"f0c24926-4489-2ab5-2d50-31b07acb24db",
+		"type":"bpmn.Start",
+		"x":347,
+		"y":81,
+		"width":40,
+		"height":40
+	},{
+		"id":"94341aa1-c3a3-55d0-9b9c-31706811cf8a",
+		"type":"bpmn.End",
+		"x":587,
+		"y":81,
+		"width":40,
+		"height":40
+	},{
+		"id":"e84c8219-a206-001c-25a6-2a3dd2ec8785",
+		"type":"bpmn.Activity",
+		"x":417,
+		"y":71,
+		"width":140,
+		"height":60,
+		"text":"Sub-block 1",
+		"viewState":"simple",
+		"originalWidth":0,
+		"originalHeight":0,
+		"children":[],
+		"paramsData":{
+			"_id":11999,
+			"name":"Sub-block 1",
+			"description":"<p><br><\/p>",
+			"user":"69",
+			"userName":"\u0410\u0434\u043c\u0438\u043d",
+			"created":"2012-05-11 11:30",
+			"project":"13",
+			"task":"565",
+			"type":"",
+			"target":"234",
+			"hoursPlan":"90",
+			"hourlyRate":"200",
+			"costs":"",
+			"sendmail":false,
+			"clientmail":false,
+			"showSkills":false,
+			"markHoursPlan":false,
+			"markExpenses":false
+		}
+	}],
+"paramsData":{
+	"_id":11998,
+	"name":"Super block",
+	"description":"<p><br><\/p>",
+	"user":"95",
+	"userName":"\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0418\u0432\u0430\u043d\u043e\u0432",
+	"created":"2012-05-18 11:30",
+	"project":"13",
+	"task":"565",
+	"type":"",
+	"target":"0",
+	"hoursPlan":"60",
+	"hourlyRate":"0",
+	"costs":"",
+	"sendmail":false,
+	"clientmail":false,
+	"showSkills":false,
+	"markHoursPlan":false,
+	"markExpenses":false,
+	"state":"4"
+}
+},{
+	"id":"c30188bc-e553-7972-a84f-1b43ad42a579",
+	"type":"bpmn.End",
+	"x":677,
+	"y":81,
+	"width":40,
+	"height":40,
+	"parentRow":"SwimlanePanel-row1",
+	"parentCol":"SwimlanePanel-col1"
+},{
+	"id":"acc09137-0af7-b93c-e520-ec29e4eab357",
+	"type":"bpmn.Activity",
+	"x":740,
+	"y":172,
+	"width":140,
+	"height":60,
+	"text":"Activity",
+	"parentRow":"SwimlanePanel-row2",
+	"parentCol":"SwimlanePanel-col2",
+	"viewState":"simple",
+	"originalWidth":0,
+	"originalHeight":0,
+	"children":[],
+	"paramsData":{
+		"name":"Activity",
+		"description":"<h3 class=\"todo_content\">\u0414\u0430\u043d\u043e<\/h3><ol class=\"todo_content\"><li>_<\/li><\/ol><h3 class=\"todo_content\">\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f<\/h3><ol class=\"todo_content\"><li>_<\/li><\/ol><h3 class=\"todo_content\">\u0418\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0438<\/h3><ol class=\"todo_content\"><li>_<\/li><\/ol>",
+		"user":"73",
+		"state":"0",
+		"userName":"\u0410\u043d\u0442\u043e\u043d \u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432",
+		"created":"2012-05-18 14:30",
+		"project":"10",
+		"task":"564",
+		"type":"",
+		"target":"234",
+		"hoursPlan":"0",
+		"hourlyRate":"0",
+		"costs":"",
+		"sendmail":false,
+		"clientmail":false,
+		"showSkills":false,
+		"markHoursPlan":false,
+		"markExpenses":false,
+		"_id":12005
+	}
+}],
+"connections":[{
+	"label":"",
+	"source":{
+		"figureId":"0d740e5d-b13d-085c-98e8-17cd107d6240",
+		"name":"output"
+	},
+	"target":{
+		"figureId":"cbb39eb4-02b7-1e76-9307-7cb362c14626",
+		"name":"input"
+	}
+},{
+	"label":"",
+	"source":{
+		"figureId":"f0c24926-4489-2ab5-2d50-31b07acb24db",
+		"name":"output"
+	},
+	"target":{
+		"figureId":"e84c8219-a206-001c-25a6-2a3dd2ec8785",
+		"name":"input"
+	}
+},{
+	"label":"",
+	"source":{
+		"figureId":"e84c8219-a206-001c-25a6-2a3dd2ec8785",
+		"name":"output"
+	},
+	"target":{
+		"figureId":"94341aa1-c3a3-55d0-9b9c-31706811cf8a",
+		"name":"input"
+	}
+},{
+	"label":"",
+	"source":{
+		"figureId":"cbb39eb4-02b7-1e76-9307-7cb362c14626",
+		"name":"output"
+	},
+	"target":{
+		"figureId":"5b65ac8c-0a3c-912a-53a4-3f7ad6da65d8",
+		"name":"input"
+	}
+},{
+	"label":"",
+	"source":{
+		"figureId":"5b65ac8c-0a3c-912a-53a4-3f7ad6da65d8",
+		"name":"output"
+	},
+	"target":{
+		"figureId":"c30188bc-e553-7972-a84f-1b43ad42a579",
+		"name":"input"
+	}
+},{
+	"label":"",
+	"source":{
+		"figureId":"cbb39eb4-02b7-1e76-9307-7cb362c14626",
+		"name":"output2"
+	},
+	"target":{
+		"figureId":"acc09137-0af7-b93c-e520-ec29e4eab357",
+		"name":"input"
+	}
+}]
+}

@@ -9,6 +9,12 @@ $result_content = "";
 $total_sum_price = 0;
 $total_sum_hour = 0;
 $total_sum_expenses = 0;
+$worker_table = array(
+	"65" => "Frontend-программист",
+	"72" => "Гаврилюк А.Н.",
+	"120" => "Астраханцев О.С.",
+	"118" => "Тестировщик",
+);
 
 $i = 1;
 foreach ($data as $type_data) {
@@ -25,6 +31,10 @@ foreach ($data as $type_data) {
 	$type_sum_expenses = 0;
 
 	foreach ($type_data as $todo_data) {
+
+		//error_log(print_r($todo_data, true));
+
+
 		$tpl->setCurrentBlock("todos");
 
 		$tpl->setVariable("unit_measured", JText::_('MAN HR'));
@@ -32,6 +42,9 @@ foreach ($data as $type_data) {
 		$tpl->setVariable("todo_num", $j);
 		$tpl->setVariable("todo_name", $todo_data->title);
 		$tpl->setVariable("todo_hours_plan", $todo_data->hours_plan);
+		$tpl->setVariable("assigned_to", $worker_table[$todo_data->user_id]);
+
+		$tpl->setVariable("todo_hourly_rate", $todo_data->hourly_rate);
 
 		// calculate dynamic rate
 		if ($todo_data->project_dynamic_rate) {
@@ -39,7 +52,10 @@ foreach ($data as $type_data) {
 			$tmp_rate = TeamTime::helper()->getDotu()->getTargetPrice(array(
 				"task_id" => $todo_data->task_id
 					), true);
-			if ($tmp_rate === null || ($tmp_rate instanceof TeamTime_Undefined)) {
+			//error_log("TMP_RATE.." . $tmp_rate);
+			//error_log(print_r($todo_data, true));
+
+			if ($tmp_rate === null || $tmp_rate == 0 || ($tmp_rate instanceof TeamTime_Undefined)) {
 				$tmp_rate = $todo_data->task_rate;
 			}
 			$tmp_rate = $todo_data->project_hourly_rate * $tmp_rate;
@@ -76,6 +92,9 @@ foreach ($data as $type_data) {
 	$total_sum_hour += $type_sum_hour;
 }
 
+error_log("I=" . $i);
+
+
 $tpl->setCurrentBlock();
 
 $tpl->setVariable("total_overhead_expenses", $total_sum_expenses);
@@ -89,3 +108,5 @@ $tpl->setVariable("total_sum_string_rest", $price_str[2]);
 
 // return generated content
 $result_content .= $tpl->get();
+
+error_log("======== result_content ========== \n" . $result_content);

@@ -1,0 +1,2 @@
+sudo /bin/chown -R apache:apache /var/www/teamlog.teamtime.info/http
+sudo /bin/chmod -R 775 /var/www/teamlog.teamtime.info/http

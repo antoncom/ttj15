@@ -126,9 +126,12 @@ class Todo extends YObject {
 		$db = & JFactory::getDBO();
 
 		$result = TeamTime::helper()->getDotu()->getPrice($params);
+
 		if ($result !== null && !($result instanceof TeamTime_Undefined)) {
+			error_log(">>> 0 result: ", $result);
 			return $result;
 		}
+
 
 		if (isset($params["user_id"])) {
 			$query = "SELECT * FROM #__teamtime_userdata
@@ -136,9 +139,11 @@ class Todo extends YObject {
 			$db->setQuery($query);
 			$row = $db->loadObject();
 			if ($row->hour_price > 0) {
+				error_log(">>> 1 row->hour_price: ", $row->hour_price);
 				return $row->hour_price;
 			}
 		}
+
 
 		if (isset($params["task_id"])) {
 			$query = "SELECT * FROM #__teamtime_task
@@ -146,6 +151,7 @@ class Todo extends YObject {
 			$db->setQuery($query);
 			$row = $db->loadObject();
 			if ($row->rate > 0) {
+				error_log(">>> 2 row->rate: ", $row->rate);
 				return $row->rate;
 			}
 		}
@@ -156,6 +162,7 @@ class Todo extends YObject {
 			$db->setQuery($query);
 			$row = $db->loadObject();
 			if ($row->rate > 0) {
+				error_log(">>> 3 row->rate: ", $row->rate);
 				return $row->rate;
 			}
 		}
@@ -166,6 +173,7 @@ class Todo extends YObject {
 			$db->setQuery($query);
 			$row = $db->loadObject();
 			if ($row->rate > 0) {
+				error_log(">>> 4 row->rate: ", $row->rate);
 				return $row->rate;
 			}
 		}
@@ -176,9 +184,12 @@ class Todo extends YObject {
 			$db->setQuery($query);
 			$row = $db->loadObject();
 			if ($row->rate > 0) {
+				error_log(">>> 5 row->rate: ", $row->rate);
 				return $row->rate;
 			}
 		}
+
+		error_log(">>> 6 default_rate: ", $default_rate);
 
 		return $default_rate;
 	}

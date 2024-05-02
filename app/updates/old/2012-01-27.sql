@@ -1,0 +1,1 @@
+ALTER TABLE  `jos_teamtimeformals_type` CHANGE  `using_in`  `using_in` ENUM(  'project',  'user',  'system' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;

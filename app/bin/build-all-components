@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#
+# build assets
+#
+cd builder
+./js-build compile
+cd ..
+
+#
+# build components
+#
+path_to_site=../../
+
+# check for tools https://github.com/rdeckard/php-skeletons/tree/master/joomla/v1.5
+~/bin/joomla/build-component teamtime $path_to_site
+~/bin/joomla/build-component teamtimecalendar $path_to_site
+~/bin/joomla/build-component teamtimeformals $path_to_site
+~/bin/joomla/build-component teamtimecareer $path_to_site
+~/bin/joomla/build-component teamtimeattachments $path_to_site
+
+~/bin/joomla/build-component teamtimebpm $path_to_site
+rm ./com_teamtimebpm/media/assets/js/draw2d/*.js
+rm ./com_teamtimebpm/media/assets/js/draw2d/*.tmp
+rm ./com_teamtimebpm/media/assets/js/draw2d/bpmn/*.js
+rm ./com_teamtimebpm/media/assets/js/swimlane/SwimlanePanel.js
+rm ./com_teamtimebpm/media/assets/js/swimlane/SwimlanePanelBlocksMenu.js
+rm ./com_teamtimebpm/media/assets/js/swimlane/SwimlanePanelToolbar.js
+rm ./com_teamtimebpm/media/assets/js/swimlane/app.js
+rm ./com_teamtimebpm/media/assets/js/ordered.txt
+
+~/bin/joomla/build-plugin jredactor $path_to_site/plugins/editors
+~/bin/joomla/build-plugin teamtimeattachfiles $path_to_site/plugins/editors-xtd

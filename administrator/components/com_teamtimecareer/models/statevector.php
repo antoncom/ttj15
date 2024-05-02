@@ -54,6 +54,7 @@ class TeamtimecareerModelStatevector extends Core_Joomla_Manager {
 	}
 
 	public function store($data) {
+		error_log("STATEVECTOR.PHP");
 		$row = & $this->getTable($this->_table);
 
 		// bind the form fields

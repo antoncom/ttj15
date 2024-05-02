@@ -328,7 +328,8 @@ class TeamTime_Helpers_Dotu {
 				$achievement = 100;
 			}
 			if ($target->parent == 0) {
-				$total_achievement += $achievement;
+				// $total_achievement += $achievement;
+				$total_achievement = $achievement;
 			}
 
 			if (isset($user_data["balance"][$target->id])) {
@@ -355,6 +356,7 @@ class TeamTime_Helpers_Dotu {
 			$tmp_sum = 0;
 			if ($user_data["varsdata"] != null &&
 					!($user_data["varsdata"] instanceof TeamTime_Undefined)) {
+
 				list($result_money, $user_tax_data) = TeamTime::helper()->getFormals()
 						->getUserTaxData($user_data["varsdata"], $money, array("user_tax_1"));
 				foreach ($user_tax_data as $tagname => $value) {
@@ -564,6 +566,7 @@ class TeamTime_Helpers_Dotu {
 	}
 
 	public function getPrice($params, $checkTargetId = false) {
+
 		$result = null;
 		$model = new TeamtimecareerModelTargetvector();
 
@@ -587,6 +590,7 @@ class TeamTime_Helpers_Dotu {
 		$task = $mtask->getData();
 		$result = $model->getDotuPriceForTask($task, $user_id, $target_id);
 
+
 		return $result;
 	}
 
@@ -607,11 +611,16 @@ class TeamTime_Helpers_Dotu {
 			return $result;
 		}
 
+		error_log("---" . $target_id);
+
 		$model->setId($target_id);
 		$target_data = $model->getData();
 		$result = $target_data->hourprice;
 
+		error_log(print_r($target_data, true));
+
 		return $result;
+		//return 555;
 	}
 
 	public function getTasksSqlData($filter = array()) {

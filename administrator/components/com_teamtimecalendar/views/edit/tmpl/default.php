@@ -127,7 +127,7 @@ $helperFormals = TeamTime::helper()->getFormals();
 
             <select name="etparttime" id="hoursPlan-etparttime">
 							<?
-							$endtime = 60 * 60;
+							$endtime = 120 * 60;
 							$selected = false;
 							for ($time = 0; $time <= $endtime; $time += 5) {
 								$stime = str_pad(floor($time / 60), 2, "0", STR_PAD_LEFT) . ":" .

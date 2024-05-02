@@ -310,5 +310,108 @@ class TeamTime_Helpers_Formals {
 		return $variablem->getUserTaxData($user_variables, $money, $exclude);
 	}
 
+	public function getReportText($log, $convertTextLinks = false) {
+		$oldEncoding = mb_internal_encoding();
+		mb_internal_encoding("utf-8");
+
+		$maxLen = 180;
+		$result = strip_tags($log["content"], "<a>");
+
+		$addLink = false;
+		if (mb_strlen($result) > $maxLen) {
+			$addLink = true;
+			$result = mb_substr($result, 0, $maxLen);
+
+			// remove last link
+			if (preg_match_all('{\<a[^<]+href=([^<]+)}i', $result, $matches,
+							PREG_SET_ORDER | PREG_OFFSET_CAPTURE)) {
+				$m = $matches[sizeof($matches) - 1];
+				$p = $m[0][1];
+				$result = substr($result, 0, $p);
+			}
+		}
+
+		//if ($convertTextLinks) {
+		//	$result = $this->convertTextLinks($result);
+		//}
+
+		if ($addLink) {
+			// make link for popup content
+			$loaderUrl = JURI::root() .
+					"index.php?option=com_teamtime&controller=reports&task=loadReport";
+
+			$result .= '&nbsp;<a href="' . $loaderUrl . "&id=" . $log["id"] .
+					'" class="fancybox">[....]</a>';
+		}
+
+		mb_internal_encoding($oldEncoding);
+
+		return $result;
+	}
+
+	private function generateReportContent($data) {
+		$fname = JPATH_ADMINISTRATOR .
+				"/components/com_teamtimebpm/assets/templates/reportnotice.html";
+
+		$helperBase = TeamTime::helper()->getBase();
+
+		$tpl = new HTML_Template_IT("");
+		$tpl->loadTemplatefile($fname, true, true);
+
+		$url = JURI::root() . "administrator/index.php?option=com_teamtimebpm" .
+				"&controller=process&view=processdiagrampage" .
+				"&id=" . $data['process']->id;
+		$tpl->setVariable("process_name", $data['process']->name);
+		$tpl->setVariable("process_url", $url);
+
+		$tpl->setVariable("todo_name", $data['todo']->title);
+		$tpl->setVariable("current_user_name", $data['current_user']->name);
+
+		$url = JURI::root();
+		foreach ($data['user']->todos as $userTodo) {
+			$tpl->setVariable("user_todo_name", $userTodo->title);
+			$tpl->setVariable("user_todo_url", $url); //$userTodo->id
+			$tpl->parse("todorow");
+		}
+
+		foreach ($data['logs'] as $log) {
+			$tpl->setVariable("log_date", JHTML::_('date', $log->date, "%d.%m.%Y"));
+			$tpl->setVariable("log_report",
+					$helperBase->processRelativeLinks($log->description, JURI::root()));
+			$tpl->parse("row");
+		}
+
+		return $tpl->get();
+	}
+
+	public function getTodoLog($todo) {
+
+		$currentUser = & JFactory::getUser();
+		$config = new JConfig();
+		$mLog = new TeamtimeModelLog();
+		$mProccess = new TeamtimebpmModelProcess();
+
+		$mProccess->setId($todoData->process_id);
+		error_log("TODO_ID:: " . $todo->id);
+		$todoData = $mProccess->getTodoData($todo->id);
+		if (!$todoData) {
+			return;
+		}
+
+		$process = $mProccess->getData();
+		$mSpace = new TeamtimebpmModelSpace();
+		$mSpace->setId($process->space_id);
+		$space = $mSpace->getData();
+
+
+		$body = $this->generateReportContent(array(
+			"logs" => $mLog->getLogs(array("todo_id" => $todo->id)),
+			"process" => $process,
+			"todo" => $todo,
+			"user" => 121,
+			"current_user" => 72));
+
+	}
+
 }
 

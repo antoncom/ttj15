@@ -104,6 +104,7 @@ TeamTime.Base = {
 		$.get(TeamTime.baseUrl +
 			"index.php?option=com_teamtime&controller=task&task=loadpriceinfo" + params,
 			function (data) {
+				console.log("MMMMMMMMM");
 				// update hourly rate
 				$("#hourly_rate").val(data);
 				$("#hourly_rate1").val(data);

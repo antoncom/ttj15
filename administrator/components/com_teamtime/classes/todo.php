@@ -211,6 +211,7 @@ class Todo extends YObject {
 		$db = & JFactory::getDBO();
 
 		$result = TeamTime::helper()->getDotu()->getPrice($params);
+		error_log("___getHourlyRateByParams___");
 		if ($result !== null && !($result instanceof TeamTime_Undefined)) {
 			return $result;
 		}

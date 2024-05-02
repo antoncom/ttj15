@@ -368,16 +368,18 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 		}
 
 		//init real_hours_fact
-		//$ids = array();
-		//foreach ($list as $row) {
-		//  $ids[] = $row->id;
-		//}
-		//$item->hours_fact += $todo->get_hours_fact($ids, $where_hours);
+// 		$ids = array();
+// 		foreach ($list as $row) {
+// 		 $ids[] = $row->id;
+// 		}
+// 		$item->hours_fact += $todo->get_hours_fact($ids, $where_hours);
 
 		return $result;
 	}
 
 	public function getTargetIdByTaskId($taskId) {
+
+		error_log("taskid..." . $taskId);
 		$query = "select * from #__teamtimecareer_task_target as a
       where id = " . (int) $taskId;
 
@@ -454,6 +456,8 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 		}
 	}
 
+
+	// Set Dynamic calculation of the task price (task is not todo)
 	public function setTaskPrice($taskId, $check) {
 		$query = "insert into `#__teamtimecareer_task_price`
       (id, price)
@@ -495,6 +499,7 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 
 		$this->_db->setQuery($query);
 		$rows = $this->_db->loadObjectList();
+
 		if (!$rows) {
 			return $result;
 		}
@@ -546,6 +551,7 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 			$result = 0;
 		}
 		else {
+// TODO
 			$result = $targetData->hourprice * ($svValue / $tvValue);
 		}
 
@@ -559,7 +565,14 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 	public function getBalanceHourPrice($targetData, $userId) {
 		$result = 0;
 		$b = $this->getTargetBalanceValue($userId, $targetData->id);
+// TODO
 		$result = $targetData->hourprice * $b / 100;
+
+		$mstate = new TeamtimecareerModelStatevector();
+		$svValue = $mstate->getStateVectorValue($targetData->id, $userId);
+		$tvValue = $targetData->num;
+
+
 
 		return $result;
 	}
@@ -608,7 +621,22 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 			return $result;
 		}
 
-		/* foreach ($balance_sv_tv as $target_id => $b) {
+
+		// error_log("-------- balanceSvTv ------ s");
+		// error_log(print_r($balanceSvTv, true));
+		// error_log("-------------- e");
+
+		// error_log("-------- stateUserData ------ s");
+		// error_log(print_r($stateUserData, true));
+		// error_log("-------------- e");
+
+		// error_log("------- targetUserData ------- s");
+		// error_log(print_r($targetUserData, true));
+		// error_log("-------------- e");
+
+
+        /*
+		foreach ($balanceSvTv as $target_id => $b) {
 		  $tv_value = $target_user_data[$target_id];
 
 		  // get state vector value
@@ -620,7 +648,7 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 		  }
 
 		  $result += $tmp;
-		  } */
+		} */
 
 		$targetResult = 0;
 		$stateResult = 0;
@@ -642,11 +670,19 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 			$result = 1;
 		}
 
-		//return $result / sizeof($balance_sv_tv);
+
+//		error_log("targetData->hourprice: " . $targetData->hourprice);
+
+//		error_log("targetData: ---------- s ");
+//		error_log(print_r($targetData, true));
+//		error_log("targetData: ---------- e ");
+
+		//return $result / sizeof($balanceSvTv);
 		return $result;
 	}
 
-	public function getDotuPriceForTask($task, $userId, $targetId = null) {
+	/*public function getDotuPriceForTask($task, $userId, $targetId = null) {
+
 		if ($targetId == null) {
 			$targetId = $this->getTargetIdByTaskId($task->id);
 		}
@@ -659,9 +695,6 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 		$stateUserData = $this->getStateUserData($balanceSvTv, $userId);
 		$targetUserData = $this->getTargetUserData($balanceSvTv, $userId);
 
-		//error_log(print_r($balance_sv_tv, true));
-		//error_log(print_r($state_user_data, true));
-		//error_log(print_r($target_user_data, true));
 
 		if (sizeof($balanceSvTv) == 0) {
 			$result = $this->_getDotuPriceForTask($targetData, $userId);
@@ -669,18 +702,54 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 		}
 
 		$balanceHourPrice = $this->getBalanceHourPrice($targetData, $userId);
+		error_log("balanceHourPrice: " . $balanceHourPrice);
 		$diffHourPrice = $targetData->hourprice - $balanceHourPrice;
+		
+
 		$svTvAvg = $this->getSvTvAvg($balanceSvTv, $stateUserData, $targetUserData);
 
 		$addBalanceHourPrice = $diffHourPrice * $svTvAvg;
 
-		//error_log("balance_hour_price: " . $balance_hour_price);
-		//error_log("diff_hour_price: " . $diff_hour_price);
-		//error_log("sv_tv_avg: " . $sv_tv_avg);
-		//error_log("add_balance_hour_price: " . $add_balance_hour_price);
 
 		$result = $balanceHourPrice + $addBalanceHourPrice;
+		
+		error_log("result: " . $result);
+		error_log("userId " . $userId);
+		error_log("targetId " . $targetId);
+		error_log("svTvAvg " . $svTvAvg);
+		error_log("--------------");
+		error_log(print_r($task, true));
+		
+		return $result;
+	}*/
 
+
+	public function getDotuPriceForTask($task, $userId, $targetId = null) {
+
+		if ($targetId == null) {
+			$targetId = $this->getTargetIdByTaskId($task->id);
+		}
+
+		// get target vector value
+		$this->setId($targetId);
+		$targetData = $this->getData();
+
+		$balanceSvTv = $this->getSvTvBalance($userId);
+		if (sizeof($balanceSvTv) == 0) {
+			$result = $this->_getDotuPriceForTask($targetData, $userId);
+			return $result;
+		}
+		$stateUserData = $this->getStateUserData($balanceSvTv, $userId);
+		$targetUserData = $this->getTargetUserData($balanceSvTv, $userId);
+
+		$svTvAvg = $this->getSvTvAvg($balanceSvTv, $stateUserData, $targetUserData);
+
+
+		$balanceHourPrice = $this->getBalanceHourPrice($targetData, $userId);
+
+		$result = $balanceHourPrice * $svTvAvg;
+		
+		
 		return $result;
 	}
 
@@ -691,6 +760,7 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 
 		$this->_db->setQuery($query);
 		$rows = $this->_db->loadObjectList();
+		
 
 		return $rows;
 	}

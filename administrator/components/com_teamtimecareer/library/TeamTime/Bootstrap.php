@@ -53,6 +53,7 @@ class TeamTime_Bootstrap_Career {
 	}
 
 	public function run() {
+		error_log("@@@ " . JPATH_COMPONENT . '/controllers/' . $this->controllerName . '.php');
 		require_once(JPATH_COMPONENT . '/controllers/' . $this->controllerName . '.php');
 
 		$className = 'TeamtimecareerController' . $this->controllerName;

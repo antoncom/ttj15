@@ -1,0 +1,31 @@
+<style type="text/css">@import "jquery.svg.css";</style> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.debug.js"></script>
+<script type="text/javascript" src="jquery.tabs.js"></script>
+<script type="text/javascript" src="jquery.bookmark.js"></script>
+
+<script type="text/javascript" src="jquery.svg.js"></script>
+<script type="text/javascript" src="jquery.svganim.js"></script>
+<script type="text/javascript" src="jquery.svgdom.js"></script>
+<script type="text/javascript" src="jquery.svgfilter.js"></script>
+<script type="text/javascript" src="jquery.svggraph.js"></script>
+<script type="text/javascript" src="jquery.svgplot.js"></script>
+<script type="text/javascript" src="svg.js"></script>
+<script type="text/javascript" src="jquery.chili-2.0.js"></script>
+<script type="text/javascript">
+svg.describe("Example script01 - invoke an 
+    ECMAScript function from an onclick event"); 
+svg.script("function circle_click(evt) {\n  var 
+    circle = evt.target;\n  var currentRadius = 
+    circle.getAttribute(\"r\");\n  if (currentRadius 
+    == 100)\n    circle.setAttribute(\"r\", 
+    currentRadius*2);\n  else\n    
+    circle.setAttribute(\"r\", 
+    currentRadius*0.5);\n}", "text/ecmascript"); 
+svg.circle(300, 150, 100, {onclick: 
+    "circle_click(evt)", fill: "red"}); 
+svg.text(300, 280, "Click on circle to change its 
+    size", {fontFamily: "Verdana", fontSize: 35, 
+    textAnchor: "middle"}); 
+    
+</script>

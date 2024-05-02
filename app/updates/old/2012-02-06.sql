@@ -1,0 +1,1 @@
+ALTER TABLE  `jos_teamlog_todo` ADD  `is_autotodo` BOOLEAN NOT NULL AFTER  `showskills`;

@@ -33,12 +33,12 @@ class TeamTime_HelpersDispatcher {
 	}
 
 	public function sortByOrder($a, $b) {
-		if ($a::ORDER_INDEX > $b::ORDER_INDEX) {
-			return 1;
-		}
-		else if ($a::ORDER_INDEX < $b::ORDER_INDEX) {
-			return -1;
-		}
+// 		if ($a::ORDER_INDEX > $b::ORDER_INDEX) {
+// 			return 1;
+// 		}
+// 		else if ($a::ORDER_INDEX < $b::ORDER_INDEX) {
+// 			return -1;
+//		}
 
 		return 0;
 	}

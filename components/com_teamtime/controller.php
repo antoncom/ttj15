@@ -437,8 +437,6 @@ class TeamlogController extends JController {
 			$todo->save();
 
 			TeamTime::helper()->getBpmn()->sendReport($todo, $post);
-
-			TeamTime::helper()->getBpmn()->sendReportToFollower($todo);
 		}
 
 		$link = JRoute::_('index.php?option=com_teamtime&view=log&status=stopped', false);

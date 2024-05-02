@@ -36,7 +36,7 @@ if ($created) {
 		<select class="hours" name="hours" id="hours"
 						<? if ($mUser->checkPause()) { ?>disabled<? } ?>
 						>
-							<?php for ($i = 0; $i <= 10; $i++) : ?>
+							<?php for ($i = 0; $i <= 120; $i++) : ?>
 				<option value ="<?php echo $i; ?>" <?php if ($i == $hDif) echo "selected"; ?>><?php echo $i; ?></option>
 			<?php endfor; ?>
 		</select>

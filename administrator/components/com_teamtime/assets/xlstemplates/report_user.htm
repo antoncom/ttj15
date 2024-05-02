@@ -271,18 +271,21 @@ tags will be replaced.-->
 
 <div id="report2_4623" align=center x:publishsource="Excel">
 
-<table border=0 cellpadding=0 cellspacing=0 width=1117 class=xl634623
- style='border-collapse:collapse;table-layout:fixed;width:840pt'>
+<table border=0 cellpadding=10 cellspacing=0 width=1117 class=xl634623
+ style='table-layout:fixed;width:840pt'>
  <col class=xl634623 width=212 style='mso-width-source:userset;mso-width-alt:
  8155;width:159pt'>
- <col class=xl634623 width=217 style='mso-width-source:userset;mso-width-alt:
- 8338;width:163pt'> 
+ 
  <col class=xl634623 width=114 style='mso-width-source:userset;mso-width-alt:
  4388;width:86pt'>
+  <col class=xl634623 width=125 style='mso-width-source:userset;mso-width-alt:
+ 4827;width:94pt'>
  <col class=xl634623 width=342 style='mso-width-source:userset;mso-width-alt:
  13165;width:257pt'>
- <col class=xl634623 width=125 style='mso-width-source:userset;mso-width-alt:
- 4827;width:94pt'>
+ <col class=xl634623 width=107 style='mso-width-source:userset;mso-width-alt:
+ 4132;width:81pt'>
+ <col class=xl634623 width=107 style='mso-width-source:userset;mso-width-alt:
+ 4132;width:81pt'>
  <col class=xl634623 width=107 style='mso-width-source:userset;mso-width-alt:
  4132;width:81pt'>
  <col class=xl634623 width=107 style='mso-width-source:userset;mso-width-alt:
@@ -290,6 +293,16 @@ tags will be replaced.-->
  <col class=xl634623 width=107 style='mso-width-source:userset;mso-width-alt:
  4132;width:81pt'>
 
+ <!-- BEGIN user_info -->
+
+
+ <div>
+ 	<h1 style="text-align: left;">Ежедневные отчёты сотрудника: {username}</h1>
+ 	<p style="text-align: left;"><b>Отчётный период: с {from_period} по {until_period}.</b></p>
+ </div>
+
+ <!-- END user_info -->
+ 
  <!-- BEGIN week -->
 
  <tr class=xl644623 height=36 style='mso-height-source:userset;height:27.1pt'>
@@ -306,70 +319,81 @@ tags will be replaced.-->
  </tr>
 
  <tr height=15 style='mso-height-source:userset;height:11.6pt'>
+ <td class=xl664623 width=114 style='width:86pt'>{s_date}</td>
   <td height=15 class=xl664623 width=212 style='height:11.6pt;width:159pt'>{s_project}</td>
-  <td class=xl664623 width=217 style='width:163pt'>{s_task}</td>
 	<td class=xl664623 width=114 style='width:86pt'>{s_todo}</td>
   <td class=xl664623 width=342 style='width:257pt'>{s_log}</td>
-  <td class=xl664623 width=114 style='width:86pt'>{s_date}</td>
-  <td class=xl664623 width=125 style='width:94pt'>{s_duration}</td>
-	<td class=xl664623 width=107 style='width:81pt'>{s_hourly_rate}</td>
-	<td class=xl664623 width=107 style='width:81pt'>{s_planned_cost}</td>
-	<td class=xl664623 width=107 style='width:81pt'>{s_actual_cost}</td>
-	<td class=xl664623 width=107 style='width:81pt'>{s_overhead_expenses}</td>
+  <td class=xl664623 width=125 style='width:94pt'>{s_duration}, чч:мм</td>
+	<td class=xl664623 width=107 style='width:81pt'>{s_hourly_rate}, р.</td>
+	<td class=xl664623 width=107 style='width:81pt'>Сделка, р.</td>
+	<td class=xl664623 width=107 style='width:81pt'>Оклад, р.</td>
+	<td class=xl664623 width=107 style='width:81pt'>{s_overhead_expenses}, р.</td>
  </tr>
 
  <!-- BEGIN rows -->
 
 <!-- BEGIN row1 -->
  <tr class=xl724623 height=37 style='mso-height-source:userset;height:27.8pt'>
+ <td class=xl694623 width=114 style='border-left:none;width:86pt'>{date}</td>
   <td height=37 class=xl694623 width=212 style='height:27.8pt;width:159pt'>{project}</td>
-  <td class=xl694623 width=217 style='border-left:none;width:163pt'>{task}</td>
 	<td class=xl694623 width=114 style='border-left:none;width:86pt'>{todo}</td>
   <td class=xl694623 width=342 style='border-left:none;width:257pt'>{log}</td>
-  <td class=xl694623 width=114 style='border-left:none;width:86pt'>{date}</td>
   <td class=xl704623 width=125 style='border-left:none;width:94pt'>{duration}</td>
   <td class=xl714623 width=107 style='border-left:none;width:81pt'>{hourly_rate}</td>
-	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{hours_plan_price}</td>
 	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{hours_fact_price}</td>
-	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{costs} / {money}</td>
+	<td class=xl664623 width=107 style='border-left:none;width:81pt; border-bottom: none;'>{salary}</td>
+	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{money}</td>
  </tr>
 
  <!-- END row1 -->
 
  <!-- BEGIN row2 -->
  <tr class=xl724623 height=37 style='mso-height-source:userset;height:27.8pt'>
+ 	<td class=xl694623 width=114 style='border-left:none;width:86pt'>{date}</td>
   <td height=37 class=xl734623 width=212 style='height:27.8pt;border-top:none;
   width:159pt'>{project}</td>
-  <td class=xl694623 width=217 style='border-left:none;width:163pt'>{task}</td>
 	<td class=xl694623 width=114 style='border-left:none;width:86pt'>{todo}</td>
   <td class=xl694623 width=342 style='border-left:none;width:257pt'>{log}</td>
-  <td class=xl694623 width=114 style='border-left:none;width:86pt'>{date}</td>
   <td class=xl704623 width=125 style='border-left:none;width:94pt'>{duration}</td>
   <td class=xl714623 width=107 style='border-left:none;width:81pt'>{hourly_rate}</td>
-	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{hours_plan_price}</td>
 	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{hours_fact_price}</td>
-	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{costs} / {money}</td>
+	<td class=xl664623 width=107 style='border-left:none;width:81pt; border-bottom: none;'>{salary}</td>
+	<td class=xl714623 width=107 style='border-left:none;width:81pt'>{money}</td>
  </tr>
   <!-- END row2 -->
 
  <!-- END rows -->
 
 
- <tr height=19 style='mso-height-source:userset;height:14.3pt'>
+ <tr height=19 style='mso-height-source:userset;height:14.3pt;'>
   <td colspan=5 height=19 class=xl674623 width=1010 style='height:14.3pt;
-  width:759pt'>{total}</td>
-  <td class=xl674623 width=107 style='width:81pt'>{total_money}</td>
+  width:759pt;'>{total} ч.</td>
+  <td height=19 class=xl674623></td>
+  <td height=19 class=xl674623 width=1010 style='height:14.3pt;
+  width:759pt;'>{week_earnings} р.</td>
+  <td class=xl674623 width=107 style='width:81pt;'></td>
+  <td class=xl674623 width=107 style='width:81pt;'>{totalsum} р.</td>
  </tr>
 
  <!-- END week -->
 
- <tr height=25 style='mso-height-source:userset;height:18.55pt'>
-  <td height=25 class=xl674623 colspan=5 style='height:18.55pt'></td>
-	<td class=xl674623>{total_amount}</td>
-  <td class=xl674623></td>
-  <td class=xl674623>{total_plan_price}</td>
-	<td class=xl674623>{total_fact_price}</td>
-  <td class=xl674623>{total_costs} / {total_money}</td>
+ <tr height=25 style='mso-height-source:userset;height:18.55pt;'>
+ 	<td class=xl674623 colspan=5 style="font-size: 18px; padding-bottom: 0px;">{total_amount} ч.</td>
+	<td height=19 class=xl674623></td>
+  <td class=xl674623 style="font-size: 18px; padding-bottom: 0px;">{total_fact_price} р.</td>
+	<td class=xl674623 style="font-size: 18px; padding-bottom: 0px;">{total_salary} р.</td>
+  <td class=xl674623 style="font-size: 18px; padding-bottom: 0px;">{total_money} р.</td>
+ </tr>
+ <tr height=15 style='mso-height-source:userset;height:11.6pt'>
+ <td class=xl664623 width=114 style='width:86pt'></td>
+  <td height=15 class=xl664623 width=212 style='height:11.6pt;width:159pt'></td>
+	<td class=xl664623 width=114 style='width:86pt'></td>
+  <td class=xl664623 width=342 style='width:257pt'></td>
+  <td class=xl664623 width=125 style='width:94pt; vertical-align: top; text-align: right;'>Всего факт.часов</td>
+	<td class=xl664623 width=107 style='width:81pt'></td>
+	<td class=xl664623 width=107 style='width:81pt; vertical-align: top; text-align: right;'>Сумма сделки</td>
+	<td class=xl664623 width=107 style='width:81pt; vertical-align: top; text-align: right;'>Оклад</td>
+	<td class=xl664623 width=107 style='width:81pt; vertical-align: top; text-align: right;'>Накладные расходы</td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
@@ -378,6 +402,9 @@ tags will be replaced.-->
   <td width=342 style='width:257pt'></td>
   <td width=114 style='width:86pt'></td>
   <td width=125 style='width:94pt'></td>
+  <td width=107 style='width:81pt'></td>
+  <td width=107 style='width:81pt'></td>
+  <td width=107 style='width:81pt'></td>
   <td width=107 style='width:81pt'></td>
  </tr>
  <![endif]>

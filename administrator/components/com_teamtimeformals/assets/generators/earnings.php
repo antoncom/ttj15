@@ -83,8 +83,19 @@ foreach (range(1, 10) as $v) {
 }
 
 $i = 1;
+
+ // error_log("------ earnings ------ s");
+ // error_log(print_r($data, true));
+ // error_log("------ earnings ------ s");
+
+// error_log("OKLAD: " . $variables["user_oklad"]);
+
+$tpl->setVariable("user_oklad", $variables["user_oklad"]);
+
+
+
 foreach ($data as $project_type_data) {
-	$tpl->setCurrentBlock("rows");
+	$tpl->setCurrentBlock("rows");	
 
 	$tpl->setVariable("current_project_name", $project_type_data[0]->project_name);
 	$tpl->setVariable("current_type_name", $project_type_data[0]->type_name);

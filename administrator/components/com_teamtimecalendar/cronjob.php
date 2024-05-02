@@ -1,8 +1,5 @@
 <?php
 
-
-echo "SERVER=" . $_SERVER["HTTP_HOST"];
-
 if (isset($_SERVER["HTTP_HOST"])) {
 	die("Start only from cron or command line.");
 }

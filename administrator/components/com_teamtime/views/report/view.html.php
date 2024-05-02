@@ -312,6 +312,7 @@ class TeamtimeViewReport extends JView {
 	public function display($tpl = null) {
 		$mainframe =& JFactory::getApplication();
 		$option = JRequest::getCmd('option');
+
 		
 		$helperBase = TeamTime::helper()->getBase();
 		$user = & JFactory::getUser();
@@ -503,11 +504,30 @@ class TeamtimeViewReport extends JView {
 		$tpl->show();
 	}
 
+	private function makeURLtoLinks($log_text) {
+		return (str_replace('<a href="/images', '<a href="https://teamtime.rosze.ru/images', $log_text));
+	}
+
 	private function generate_report_user($fname) {
 		$format = JText::_('DATE_FORMAT_LC1');
 
+		$mainframe =& JFactory::getApplication();
+		$userId = $mainframe->getUserStateFromRequest(
+				$option . '.filter_user_id', 'user_id', 0, 'int');
+
 		$tpl = new HTML_Template_IT("");
 		$tpl->loadTemplatefile($fname, true, true);
+
+		$user = & JFactory::getUser($userId);
+		
+
+		$mvar = TeamTime::helper()->getFormals()->getUserVariables($userId, Array("user_full_name"));
+		$tpl->setCurrentBlock("user_info");
+		$tpl->setVariable("username", $mvar[1]["user_full_name"]);
+		$tpl->setVariable("from_period", $this->from_period);
+		$tpl->setVariable("until_period", $this->until_period);
+		
+		$tpl->parseCurrentBlock("user_info");
 
 		foreach ($this->report['data'] as $i => $week_logs) {
 			$tpl->setCurrentBlock("week");
@@ -523,14 +543,25 @@ class TeamtimeViewReport extends JView {
 			$tpl->setVariable("s_actual_cost", JText::_('Actual cost'));
 			$tpl->setVariable("s_overhead_expenses", JText::_('Overhead expenses'));
 
+
+			$first_row_for_salary = 1;
+			$week_earnings = 0;
 			foreach ($week_logs['logs'] as $j => $log) {
 				$block = $j % 2 == 0 ? "row1" : "row2";
+
+				if ($first_row_for_salary == 1) {
+					$tpl->setVariable("salary", $this->report['salary']);
+				} else {
+					$tpl->setVariable("salary", "");
+				}
+				$first_row_for_salary++;
 
 				$tpl->setCurrentBlock($block);
 				$tpl->setVariable("project", $log['project_name']);
 				$tpl->setVariable("task", $log['task_name']);
 				$tpl->setVariable("todo", $log['todo_title']);
-				$tpl->setVariable("log", strip_tags($log['log']));
+				//$tpl->setVariable("log", strip_tags($log['log']));
+				$tpl->setVariable("log", $this->makeURLtoLinks($log['log']));
 				$tpl->setVariable("date", JHTML::_('date', $log['date'], $format));
 				$tpl->setVariable("duration", DateHelper::formatTimespan($log['duration'], 'h:m'));
 				$tpl->setVariable("hourly_rate", $log['hourly_rate']);
@@ -538,15 +569,18 @@ class TeamtimeViewReport extends JView {
 				$tpl->setVariable("hours_fact_price", round($log['hours_fact_price'], 2));
 				$tpl->setVariable("costs", (int) $log['costs']);
 				$tpl->setVariable("money", (float) $log['money']);
-				$tpl->parseCurrentBlock($block);
+				$week_earnings += round($log['hours_fact_price'], 2);
 
+				$tpl->parseCurrentBlock($block);
 				$tpl->parse("rows");
 			}
 
 			$tpl->setCurrentBlock("week");
 			$tpl->setVariable("week", $week_logs['title']);
 			$tpl->setVariable("total", round($week_logs['total'] / 60, 2));
-			$tpl->setVariable("totalsum", $week_logs['total_money'] != 0 ? $week_logs['total_money'] : "");
+			
+			$tpl->setVariable("week_earnings", $week_earnings);
+			$tpl->setVariable("totalsum", $week_logs['total_money'] != 0 ? $week_logs['total_money'] : 0);
 			$tpl->parseCurrentBlock("week");
 		}
 
@@ -554,10 +588,11 @@ class TeamtimeViewReport extends JView {
 
 		$tpl->setVariable("total_amount", round($this->report['total'] / 60, 2));
 
-		$tpl->setVariable("total_plan_price", round($this->report['total_plan_price'], 2));
-		$tpl->setVariable("total_fact_price", round($this->report['total_fact_price'], 2));
-		$tpl->setVariable("total_costs", (int) $this->report['total_costs']);
-		$tpl->setVariable("total_money", (float) round($this->report['total_money'], 2));
+		$tpl->setVariable("total_plan_price", number_format($this->report['total_plan_price'],2));
+		$tpl->setVariable("total_fact_price", number_format($this->report['total_fact_price'],2));
+		$tpl->setVariable("total_costs", number_format($this->report['total_costs'], 2));
+		$tpl->setVariable("total_salary", number_format($this->report['salary'], 2));
+		$tpl->setVariable("total_money", number_format($this->report['total_money'], 2));
 
 		$tpl->show();
 	}

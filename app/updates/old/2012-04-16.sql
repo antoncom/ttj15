@@ -1,0 +1,1 @@
+ALTER TABLE  `jos_teamtimebpmn_process` ADD  `is_started` BOOLEAN NOT NULL AFTER  `space_id`;

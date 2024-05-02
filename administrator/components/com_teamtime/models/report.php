@@ -312,7 +312,7 @@ class TeamtimeModelReport extends Core_Joomla_Manager {
 		$query = "SELECT a.id AS id, a.description AS log, a.duration AS duration,
 			a.date AS date, b.id AS task_id, b.name AS task_name, c.id AS type_id, c.name AS type_name,
 			d.id AS project_id, d.name AS project_name, a.money,
-			e.title as todo_title, e.hourly_rate, e.hours_plan, f.hour_price, a.todo_id, e.costs,
+			e.title as todo_title, e.hourly_rate, e.hours_plan, f.hour_price, f.salary, a.todo_id, e.costs,
       e.description as todo_description
 			FROM #__teamtime_log AS a
 			LEFT JOIN #__teamtime_task AS b ON a.task_id = b.id
@@ -375,6 +375,9 @@ class TeamtimeModelReport extends Core_Joomla_Manager {
 			$todoPrice = $row->todo_id ? $row->hourly_rate : $row->hour_price;
 			$todoPlanPrice = $todoPrice * $row->hours_plan;
 			$todoFactPrice = $todoPrice * $row->duration / 60;
+			$todoPlanHours = $row->hours_plan;
+
+			//error_log(print_r($row, true));
 
 			$totalFactPrice += $todoFactPrice;
 
@@ -400,12 +403,14 @@ class TeamtimeModelReport extends Core_Joomla_Manager {
 						$row->todo_description, JURI::root()),
 				'hourly_rate' => $todoPrice,
 				'hours_plan_price' => $todoPlanPrice,
+				'hours_plan' => $todoPlanHours,
 				'hours_fact_price' => $todoFactPrice,
 				'costs' => $row->costs,
 			);
 
 			$report['total'] += $row->duration;
 			$report['total_money'] += $row->money;
+			$report['salary'] = $row->salary;
 		}
 
 		$report['total_plan_price'] = $totalPlanPrice;
@@ -419,6 +424,10 @@ class TeamtimeModelReport extends Core_Joomla_Manager {
 
 		$report['from'] = $from;
 		$report['until'] = $until;
+
+		
+		error_log(print_r($report, true));
+
 
 		return $report;
 	}

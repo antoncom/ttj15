@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guardProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" appName="TeamTime" appVersion="0.1" targetDir="/home/user/web/_mediapublish/_teamtime_encoded" xsi:noNamespaceSchemaLocation="guard.xsd">
+	<globalVariables/>
+	
+	<options>
+		<phpVersion value="5.3"/>
+
+		<phpFilesExtensions>
+			<extension>php</extension>
+			<extension>inc</extension>
+			<extension>php3</extension>
+			<extension>php4</extension>
+			<extension>phtml</extension>
+		</phpFilesExtensions>
+
+		<supportShortTags value="true"/>
+		<supportASPTags value="false"/>
+		<workWithEncodedFilesOnly value="false"/>
+		
+		<expiration>
+			<none/>
+		</expiration>
+
+		<licenseType value="none"/>
+		<privateKey>
+			<keyData/>
+		</privateKey>
+
+		<headerInformation>
+			<default/>
+		</headerInformation>
+
+		<optimizationLevel value="full"/>
+		<ignoreErrors value="true"/>
+		<verbosityLevel value="verbose"/>
+		<allowEncodedFileModification value="true"/>
+		<resolveSymlinks value="true"/>
+		
+		<securityMethodList>
+			<securityMethod name="encodePhpFiles" value="true"/>
+			<securityMethod name="removeLineNumbers" value="false"/>
+			<securityMethod name="removePhpDoc" value="true"/>
+			<securityMethod name="obfuscateVariables" value="false"/>
+			<securityMethod name="obfuscateFunctions" value="false"/>
+			<securityMethod name="obfuscateClasses" value="false"/>
+			<securityMethod name="obfuscatePhpEntities" value="false"/>
+		</securityMethodList>
+
+		<ignorePatterns>
+			<pattern>CVS</pattern>
+			<pattern>.svn</pattern>
+			<pattern>.#*</pattern>
+			<pattern>.cvsignore</pattern>
+		</ignorePatterns>
+	</options>
+
+	<!-- Source entries: -->
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtime">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtimeattachments">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtimebpm">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtimecalendar">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtimecareer">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/com_teamtimeformals">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/bin/plugins/jredactor">
+		<options/>
+	</source>
+	<source path="/home/user/web/_mediapublish/teamlog.mediapublish.ru/_data/project/com_teamtimecreport">
+		<options/>
+	</source>
+</guardProject>

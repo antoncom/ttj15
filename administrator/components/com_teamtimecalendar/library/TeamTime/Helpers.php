@@ -147,10 +147,13 @@ class TeamTime_Helpers_Calendar {
 				}
 			}
 
+			$sqlFilter[] = "a.state != 4"; // TODO_STATE_PROJECTED
+
 			// change to hide completed
 			if ($hidesuborders) {
 				//$sql_filter[] = "(tp.parent_id is null or a.is_parent = 1)";
 				$sqlFilter[] = "a.state != 2"; // TODO_STATE_CLOSED
+
 			}
 
 			$todoModel = new TeamtimeModelTodo();

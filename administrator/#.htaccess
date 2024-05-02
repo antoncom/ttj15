@@ -1,0 +1,32 @@
+<files index.php>
+ Order Deny,Allow
+ Deny from all
+# Volga Telecom
+ Allow from 77.40.0.0/255.255.128.0
+
+#Nata Info
+ Allow from 91.214.120.0/255.255.252.0
+
+# ER Telecom Dom_Ru
+ Allow from 91.144.160.0/255.255.252.0
+ Allow from 92.255.242.0/255.255.254.0
+ Allow from 188.187.128.0/255.255.192.0
+ Allow from 188.187.192.0/255.255.240.0
+ Allow from 188.187.208.0/255.255.248.0
+ Allow from 188.187.247.0/255.255.255.0
+ Allow from 176.215.64.0/255.255.240.0
+ Allow from 176.215.80.0/255.255.248.0
+ Allow from 5.167.76.0/255.255.252.0
+
+# EVRIKA
+Allow from 217.22.172.51
+
+# Megafon
+Allow from 85.26.164.0/255.255.252.0
+Allow from 85.26.232.0/255.255.252.0
+Allow from 83.149.20.0/255.255.252.0
+
+# VIPTEC
+Allow from 91.204.103.58
+</files>
+

@@ -30,7 +30,8 @@ class TeamtimecareerControllerStatevector extends Core_Joomla_EditController {
 		// for saving html
 		$post["description"] = JRequest::getVar('description', '', 'post', 'string', JREQUEST_ALLOWHTML);
 
-		$model = $this->getModel();
+		//$model = $this->getModel();
+		$model = $this->getModel($this->viewEdit);
 
 		$msg = "";
 		if ($this->checkPost($post)) {
@@ -44,15 +45,18 @@ class TeamtimecareerControllerStatevector extends Core_Joomla_EditController {
 
 		switch ($this->_task) {
 			case 'apply':
-				$item = & $model->getData();
-				$link = 'index.php?option=' . $option . '&controller=' . $this->getName() .
+				$item = & $model->getData($this->viewEdit);
+				//$link = 'index.php?option=' . $option . '&controller=' . $this->getName() .
+				$link = 'index.php?option=' . $option . '&controller=' . $this->viewEdit .
 						'&view=type&task=edit&cid[]=' . $item->id;
 				break;
 			case 'save':
 			default:
-				$link = 'index.php?option=' . $option . '&controller=' . $this->getName();
+				// $link = 'index.php?option=' . $option . '&controller=' . $this->getName();
+				$link = 'index.php?option=' . $option . '&controller=' . $this->viewEdit;
 				break;
 		}
+
 
 		$this->setRedirect($link, $msg);
 	}

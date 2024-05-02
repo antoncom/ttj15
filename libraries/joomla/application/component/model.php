@@ -102,31 +102,47 @@ class JModel extends JObject
 	*/
 	function &getInstance( $type, $prefix = '', $config = array() )
 	{
+		error_log("--- getInstance here!");
 		$type		= preg_replace('/[^A-Z0-9_\.-]/i', '', $type);
 		$modelClass	= $prefix.ucfirst($type);
 		$result		= false;
 
+		error_log("1 type = " . $type);
+		error_log("1 modelClass = " . $modelClass);
+		error_log("1 JModel::addIncludePath() ");
+		//error_log(print_r(JModel::addIncludePath()));
+
 		if (!class_exists( $modelClass ))
 		{
+
+			error_log("2");
 			jimport('joomla.filesystem.path');
+			error_log("2 JModel::_createFileName() " . JModel::_createFileName( 'model', array( 'name' => $type)));
 			$path = JPath::find(
 				JModel::addIncludePath(),
 				JModel::_createFileName( 'model', array( 'name' => $type))
 			);
+			error_log("PATH: " . $path);
 			if ($path)
 			{
+				error_log("3");
 				require_once $path;
 
 				if (!class_exists( $modelClass ))
 				{
+					error_log("3 3 3 3 ");
 					JError::raiseWarning( 0, 'Model class ' . $modelClass . ' not found in file.' );
 					return $result;
 				}
 			}
-			else return $result;
+			else {
+				error_log("4");
+				return $result;
+			}
 		}
 
 		$result = new $modelClass($config);
+		error_log("5");
 		return $result;
 	}
 

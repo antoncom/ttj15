@@ -97,7 +97,6 @@ class TeamtimeformalsModelFormal extends Core_Joomla_Manager {
 
 			$data[$row->type_id][] = $row;
 		}
-		// error_log('====ROWS_TODOS: ' . print_r($rowsTodos, true), 3, "/home/mediapub/teamlog.teamtime.info/docs/logs/my-errors.log");
 
 		return array(
 			"rows_todos" => $rowsTodos,
@@ -442,6 +441,7 @@ class TeamtimeformalsModelFormal extends Core_Joomla_Manager {
 		}
 		else if ($using_in == "user") {
 			$tmp_data = $this->getDataForUser($params, $variables);
+			//error_log(print_r($tmp_data, true));
 			extract($tmp_data);
 		}
 

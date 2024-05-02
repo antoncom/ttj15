@@ -1,0 +1,1 @@
+ALTER TABLE  `jos_teamtimebpmn_role` ADD  `user_id` INT NOT NULL AFTER  `rate_from_dotu`;
