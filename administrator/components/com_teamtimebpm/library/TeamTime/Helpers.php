@@ -143,14 +143,15 @@ class TeamTime_Helpers_Bpmn {
 		foreach ($mProccess->getDestUsers($todo->id) as $user) {
 			$subject = $space->name . " / " . $process->name;
 			$body = $this->generateReportContent(array(
-				"logs" => $mLog->getLogs(array("todo_id" => $todo->id)),
+				"logs" => $mLog->getLogs(array("todo_id" => $todo->id, "limit" => 1)),
 				"process" => $process,
 				"todo" => $todo,
 				"user" => $user,
 				"current_user" => $currentUser));
 
-			//error_log($subject);
-			//error_log($body);
+			error_log("__SUBJECT_BODY");
+			error_log($subject);
+			error_log($body);
 
 			JUTility::sendMail($config->mailfrom, $config->fromname, $user->email, $subject, $body, true);
 		}

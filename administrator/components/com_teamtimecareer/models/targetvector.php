@@ -379,7 +379,7 @@ class TeamtimecareerModelTargetvector extends Core_Joomla_Manager {
 
 	public function getTargetIdByTaskId($taskId) {
 
-		error_log("taskid..." . $taskId);
+		// error_log("taskid..." . $taskId);
 		$query = "select * from #__teamtimecareer_task_target as a
       where id = " . (int) $taskId;
 

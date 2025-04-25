@@ -593,6 +593,8 @@ class TeamtimeViewReport extends JView {
 		$tpl->setVariable("total_costs", number_format($this->report['total_costs'], 2));
 		$tpl->setVariable("total_salary", number_format($this->report['salary'], 2));
 		$tpl->setVariable("total_money", number_format($this->report['total_money'], 2));
+		$sum = ceil($this->report['total_fact_price'] + $this->report['salary'] + $this->report['total_money']);
+		$tpl->setVariable("total_sum", number_format($sum, 2));
 
 		$tpl->show();
 	}

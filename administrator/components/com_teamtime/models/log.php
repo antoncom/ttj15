@@ -106,6 +106,7 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 		$result = array();
 
 		$where = array();
+		$limit = "";
 
 		if (isset($filter["todo_id"])) {
 			$where[] = "todo_id = " . (int) $filter["todo_id"];
@@ -118,15 +119,25 @@ class TeamtimeModelLog extends Core_Joomla_Manager {
 			$where = "";
 		}
 
+		// Лимит добавлен для того, чтобы при отметке чекбокса вида "Передать рапорт сотрудникам: gan@",
+		// отправлялся только один, самый последний рапорт по данному ToDo.
+		// В противном случае, получатель каждый раз видел всю таблицу рапортов по данному ToDo
+		// и старые и новые. Это утомляет, когда в почту приходит одна и таже портянка старых рапортов.
+		if (isset($filter["limit"])) {
+			$limit = " limit " . (int) $filter["limit"];
+		}
+
 		$query = " select * from " . $table->getTableName() .
 				$where .
-				" order by date desc";
+				" order by date desc" .
+				$limit;
 		$this->_db->setQuery($query);
 
 		$rows = $this->_db->loadObjectList();
 		if ($rows) {
 			$result = $rows;
 		}
+
 
 		return $result;
 	}

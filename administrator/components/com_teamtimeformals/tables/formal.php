@@ -38,7 +38,7 @@ class TableFormal extends JTable {
 	}
 	
 	function getFormals() {
-		error_log("FORMALS");
+		// error_log("FORMALS");
 
 
 		$query = " SELECT * "
@@ -49,8 +49,8 @@ class TableFormal extends JTable {
 		$result = $this->_db->loadAssocList();
 		$return = $this->loadObjects($result);
 
-		error_log(print_r($result, true));
-		error_log(print_r($return, true));
+		// error_log(print_r($result, true));
+		// error_log(print_r($return, true));
 
 		return $return;
 	}

@@ -1,0 +1,1 @@
+mysqldump -umediapub_mysql -pakssr2uo mediapub_teamlog > db_tt.sql

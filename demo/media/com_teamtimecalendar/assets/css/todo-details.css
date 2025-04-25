@@ -1,0 +1,68 @@
+html
+{
+	margin:0px;
+	padding:0px;
+	height: 100%;
+	width:100%;
+}
+
+body.contentpane
+{
+	margin: 0;
+	background-color: #E8F1F8;
+	font-size: 12px;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	padding: 0;
+	height: 100%;
+	width:100%;
+}
+
+select#curtaskid, select#project_id, select#curtodoid {
+	background-color: #FFDDDD;
+}
+
+select#curtaskid, select#project_id {
+	width:150px;
+}
+
+select#curtaskid option.option2, select#project_id option.option2{
+	color: #777777;
+	background-color: #E6E6E6;
+}
+
+select#curtodoid {
+	width: 306px;
+}
+
+select#target_id {
+	width: 210px;
+}
+
+td.key{
+	font-weight: bold;
+	white-space: nowrap;
+	padding-right: 12px;
+}
+
+span.key {
+	font-weight: bold;
+	padding-right: 6px;
+}
+
+td.val {
+	white-space: nowrap;
+	padding-right: 12px;
+}
+
+table.t3col td {
+	padding-top: 8px;
+	padding-right: 12px;
+}
+
+#Subject {
+	font-size:14px;
+}
+
+input, select {
+	font-size: 14px;
+}

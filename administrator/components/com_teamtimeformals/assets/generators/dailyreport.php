@@ -25,8 +25,8 @@ foreach ($data as $type_data) {
 
 			$todo_log = TeamTime::helper()->getFormals()->getTodoLog($todo_data);
 
-			error_log("--- TODO_LOG_DATA --");
-			error_log(print_r($todo_log, true));
+//			error_log("--- TODO_LOG_DATA --");
+//			error_log(print_r($todo_log, true));
 
 			$tpl->setCurrentBlock("todos");
 

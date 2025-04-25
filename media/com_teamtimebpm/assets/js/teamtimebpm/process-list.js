@@ -69,7 +69,7 @@ TeamTime.jQuery(function ($) {
 		}
 		else if (key == "delete") {
 			var name = $.trim($(".browserShortenedLabel.name", src).text());
-			if (confirm("Вы удаляете процесс: " + name + "\nБудут удалены все приказы процесса")) {
+			if (confirm("Вы удаляете процесс: " + name + "\nБудут удалены все задания процесса")) {
 				$("#processId").val(processId);
 				$("#task").val("remove");
 				$(adminForm).submit();

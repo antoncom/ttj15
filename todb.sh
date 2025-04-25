@@ -1,0 +1,1 @@
+mysql -umediapub_mysql -pakssr2uo mediapub_teamlog < db.sql
