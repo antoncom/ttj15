@@ -194,13 +194,14 @@ echo $text;
 										$weekly_earnings += round($log['hours_fact_price'], 2);
 										?>
 									</td>
-									<? if ($n == 1) { ?>
+									
+									<!-- <? if ($n == 1) { ?>
 									<td rowspan="<?php echo count($week_logs['logs']); ?>" class="col_salary" align="center">
 										<?php
 										echo $this->report['salary'];
 										?>
 									</td>
-									<? } ?>
+									<? } ?> -->
 								<? } ?>
 
 								<td class="col_overhead_expenses" align="center">
@@ -249,7 +250,7 @@ echo $text;
 								$weekly_earnings = 0;
 								?>
 								</td>
-								<td class="" style="font-weight:bold;"></td>
+								<!-- <td class="" style="font-weight:bold;"></td> -->
 								<td class="" style="font-weight:bold;">
 								<?php
 								echo $week_logs['total_money']; // != 0 ? $week_logs['total_money'] : ""								
@@ -257,7 +258,7 @@ echo $text;
 							</td>
 							<? } ?>
 
-							<td class="col_overhead_expenses"></td>
+							<!-- <td class="col_overhead_expenses"></td> -->
 						</tr>
 
 						<? if ($week_i >= sizeof($this->report['data'])) { ?>
@@ -289,14 +290,14 @@ echo $text;
 									<td class="col_actual_cost" style="font-weight:bold;text-align:center;"><?
 						echo round($this->report['total_fact_price'], 2)
 									?></td>
- 								<td class="col_salary"  style="font-weight:bold;text-align:center;">
+ 								<!-- <td class="col_salary"  style="font-weight:bold;text-align:center;">
 									<?php echo (int) $this->report['salary'] ?>
-								</td>
+								</td> -->
 							<? } ?>
 
 
 
-									<td class="col_overhead_expenses"  style="font-weight:bold;text-align:center;">
+								<td class="col_overhead_expenses"  style="font-weight:bold;text-align:center;">
 									<?php echo (int) $this->report['total_money'] ?>
 								</td>
 
